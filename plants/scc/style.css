@@ -510,4 +510,14 @@ html {
     padding: 0;
     width: 100vw;
     height: 100vh;
+    display: flex;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__link {
+    text-decoration: none;
+    position: ;
 }
