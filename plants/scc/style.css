@@ -504,6 +504,11 @@ html {
     box-sizing: inherit;
 }
 
+* {
+    max-width: 1440px;
+    background-color: #EDF2EC;
+}
+
 .wrapper,
 .main {
     max-width: 1440px;
@@ -512,6 +517,7 @@ html {
     width: 100vw;
     height: 134px;
     display: flex;
+    background-color: #EDF2EC;
 }
 
 .header__list {
@@ -526,4 +532,10 @@ html {
 .welcome {
     display: flex;
     height: 532px;
+
+}
+
+.welcome__image {
+    width: 448.8px;
+    height: 407.36px;
 }
