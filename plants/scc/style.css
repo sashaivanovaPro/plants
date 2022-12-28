@@ -504,12 +504,13 @@ html {
     box-sizing: inherit;
 }
 
-.wrapper {
+.wrapper,
+.main {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0;
     width: 100vw;
-    height: 100vh;
+    height: 134px;
     display: flex;
 }
 
@@ -520,4 +521,9 @@ html {
 .header__link {
     text-decoration: none;
     position: ;
+}
+
+.welcome {
+    display: flex;
+    height: 532px;
 }
