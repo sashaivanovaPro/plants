@@ -494,24 +494,17 @@ textarea {
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-html {
-    box-sizing: border-box;
-}
-
 *,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
-* {
+::before,
+::after {
+    box-sizing: border-box;
     max-width: 1440px;
     background-color: #EDF2EC;
 }
 
 .wrapper,
 .main {
-    max-width: 1440px;
+    min-width: 1440px;
     margin: 0 auto;
     padding: 0;
     width: 100vw;
