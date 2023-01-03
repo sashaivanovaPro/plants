@@ -1,11 +1,52 @@
-* {
+/* inter-regular - latin */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/inter-v12-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/inter-v12-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* inter-700 - latin */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/inter-v12-latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/inter-v12-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+*,
+::after,
+::before {
     box-sizing: border-box;
 }
 
-.body {
+body {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0;
     width: 100vw;
     height: 100vh;
+    display: block;
+    justify-content: center;
+}
+
+.header {
+    height: 134px;
+    width: 100%;
+    background-color: #EDF2EC;
+}
+
+.header__wrapper {
+    width: 1220px;
+    height: 50px;
+    left: 111px;
+    top: 42px;
 }
