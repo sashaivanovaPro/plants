@@ -36,6 +36,11 @@ body {
     height: 100vh;
     display: block;
     justify-content: center;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 50px;
 }
 
 .header {
@@ -45,8 +50,36 @@ body {
 }
 
 .header__wrapper {
-    width: 1220px;
+    max-width: 1220px;
     height: 50px;
-    left: 111px;
-    top: 42px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.header__list {
+    display: flex;
+    list-style-type: none;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 50px;
+
+}
+
+.header_nav {
+    height: 50px;
+    width: 452px;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #010201;
+}
+
+#home {
+    color: #E06733;
 }
