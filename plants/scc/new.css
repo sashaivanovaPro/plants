@@ -43,11 +43,13 @@ body {
     line-height: 50px;
 }
 
+
+/* Header styles start*/
+
 .header {
     height: 134px;
     width: 100%;
     background-color: #EDF2EC;
-    position: fixed;
     top: 0;
     left: 0;
 }
@@ -60,7 +62,6 @@ body {
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-between;
-    padding-top: 42px;
 }
 
 .header__list {
@@ -103,3 +104,5 @@ body {
 .header__link:active {
     opacity: 0.75;
 }
+
+/* Header styles end*/
