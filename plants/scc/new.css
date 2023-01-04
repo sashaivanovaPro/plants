@@ -22,10 +22,38 @@
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-*,
-::after,
-::before {
+/* inika-regular - latin */
+@font-face {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/inika-v21-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/inika-v21-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* inika-700 - latin */
+@font-face {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/inika-v21-latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/inika-v21-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
     box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
 }
 
 body {
@@ -34,30 +62,22 @@ body {
     padding: 0;
     width: 100vw;
     height: 100vh;
-    display: block;
     justify-content: center;
-    font-family: 'Inika';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 50px;
 }
-
 
 /* Header styles start*/
 
 .header {
-    height: 134px;
-    width: 100%;
     background-color: #EDF2EC;
-    top: 0;
-    left: 0;
+    height: 134px;
+}
+
+.wrapper {
+    max-width: 1220px;
+    margin: 0 auto;
 }
 
 .header__wrapper {
-    max-width: 1220px;
-    height: 50px;
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
@@ -67,30 +87,19 @@ body {
 .header__list {
     display: flex;
     flex-wrap: wrap;
-    list-style-type: none;
-    font-family: 'Inika';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 50px;
+
 }
 
-.header_nav {
-    height: 50px;
-    width: 452px;
-}
-
-.header__link {
+.header__item {
     margin-right: 46px;
-    text-decoration: none;
-    color: #010201;
+
 }
 
 .header__item:last-child {
     margin-right: 0;
 }
 
-.header__item:first-child {
+#home.header__item {
     color: #E06733;
     font-family: 'Inika';
     font-style: normal;
@@ -99,6 +108,48 @@ body {
     line-height: 50px;
 }
 
+.header__link {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 50px;
+    color: #010201;
+    text-decoration: none;
+}
+
+/*list-style-type: none;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 50px;
+.header__logo {
+    height: 21px;
+    width: 79px;
+}
+
+
+
+.header_nav {
+    height: 50px;
+    width: 452px;
+}
+
+header__list {
+    margin: 0 auto;
+}
+
+.header__link {
+    margin-right: 46px;
+    text-decoration: none;
+    color: #010201;
+}
+
+
+
+
+
 .header__link:hover,
 .header__link:focus,
 .header__link:active {
@@ -106,3 +157,7 @@ body {
 }
 
 /* Header styles end*/
+
+/* Welcome styles START*/
+
+/* Welcome styles END*/
