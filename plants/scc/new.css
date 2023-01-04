@@ -99,15 +99,6 @@ body {
     margin-right: 0;
 }
 
-#home.header__item {
-    color: #E06733;
-    font-family: 'Inika';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 50px;
-}
-
 .header__link {
     font-family: 'Inika';
     font-style: normal;
@@ -118,7 +109,21 @@ body {
     text-decoration: none;
 }
 
-/*list-style-type: none;
+.header__list {
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+#home.header__link:first-child {
+    color: #E06733;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 50px;
+}
+
+/*
     font-family: 'Inika';
     font-style: normal;
     font-weight: 400;
@@ -136,9 +141,7 @@ body {
     width: 452px;
 }
 
-header__list {
-    margin: 0 auto;
-}
+
 
 .header__link {
     margin-right: 46px;
