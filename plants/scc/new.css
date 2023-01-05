@@ -148,13 +148,14 @@ body {
 .welcome__wrapper {
     display: flex;
     align-items: flex-end;
-    padding-top: 60px;
+    padding-top: 54px;
+    margin-left: -10px;
     justify-content: space-between;
 }
 
 .welcome__image {
-    width: 455px;
-    height: 413px;
+    width: 460px;
+    height: auto;
     padding: 0;
 }
 
@@ -166,7 +167,7 @@ body {
     line-height: 50px;
     color: #717171;
     margin: 0;
-    margin-top: -35px;
+    margin-top: -38px;
 }
 
 .colortext {
@@ -177,11 +178,11 @@ body {
     width: 549px;
     height: 340px;
     margin: 0;
-    margin-left: 217px;
+    margin-left: 222px;
 }
 
 .welcome__paragraph {
-    margin-top: 43px;
+    margin-top: 44px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
