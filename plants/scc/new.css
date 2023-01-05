@@ -327,7 +327,11 @@ body {
     font-size: 20px;
     line-height: 20px;
     color: #E06733;
+    padding: 0;
     margin: 0;
+    margin-top: 9px;
+    margin-left: -4px;
+    text-align: center;
 }
 
 .service__pick--description {
@@ -338,6 +342,10 @@ body {
     line-height: 20px;
     color: #717171;
     margin: 0;
+    padding: 0;
+    margin-top: 14px;
+    margin-left: -2px;
+    text-align: center;
 }
 
 .services__gallery--image {
@@ -345,12 +353,9 @@ body {
 }
 
 .description__wrapper {
-    display: block;
     height: 100px;
     margin-top: -4px;
     margin-left: 1px;
-    justify-content: center;
-    align-items: center;
     border: 1px solid #E3E1D5;
     border-radius: 0px 0px 20px 20px;
 }
