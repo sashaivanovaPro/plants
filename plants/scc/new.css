@@ -195,7 +195,7 @@ body {
     width: 158px;
     height: 44px;
     border: 2px solid #E06733;
-    border-radius: 8px;
+    border-radius: 10px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -253,3 +253,61 @@ body {
 }
 
 /* ABOUT styles END*/
+
+/* SERVICES styles START*/
+
+.service {
+    height: 1300px;
+    color: #EDF2EC;
+}
+
+.services__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1007px;
+    margin-top: 40px;
+}
+
+.service__headder {
+    width: 306px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+    margin: 0;
+}
+
+.button__wrapper {
+    display: flex;
+    margin-top: 29px;
+}
+
+.service_button {
+    width: 161px;
+    height: 50px;
+    left: 955px;
+    margin-right: 38px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    color: #E06733;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 0;
+}
+
+.service_button:last-child {
+    margin-right: 0;
+}
+
+.grid__wrapper {
+    display: grid;
+    width: 1220px;
+    grid-template-columns: repeat (3, 1fr);
+}
+
+/* SERVICES styles END*/
