@@ -211,7 +211,7 @@ body {
 
 .about {
     height: 666px;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
 }
 
 .about__wrapper {
@@ -258,14 +258,16 @@ body {
 
 .service {
     height: 1300px;
-    color: #EDF2EC;
+    width: 100%;
+    background-color: #EDF2EC;
 }
 
 .services__wrapper {
     display: flex;
     justify-content: space-between;
     width: 1007px;
-    margin-top: 40px;
+    padding-top: 40px;
+    margin: 0;
 }
 
 .service__headder {
@@ -298,6 +300,8 @@ body {
     font-size: 20px;
     line-height: 26px;
     padding: 0;
+    text-align: center;
+    padding-right: 4px;
 }
 
 .service_button:last-child {
