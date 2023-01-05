@@ -177,7 +177,31 @@ body {
     width: 549px;
     height: 340px;
     margin: 0;
-    margin-left: 218px;
+    margin-left: 217px;
+}
+
+.welcome__paragraph {
+    margin-top: 43px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    color: #636060;
+}
+
+.welcome__button {
+    width: 158px;
+    height: 44px;
+    border: 2px solid #E06733;
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-top: 28px;
 }
 
 /* Welcome styles END*/
