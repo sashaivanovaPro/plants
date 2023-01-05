@@ -206,3 +206,50 @@ body {
 }
 
 /* Welcome styles END*/
+
+/* ABOUT styles START*/
+
+.about {
+    height: 666px;
+    color: #FFFFFF;
+}
+
+.about__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 92px;
+}
+
+.text__wrapper {
+    width: 605px;
+    height: 350px;
+    padding-top: 69px;
+}
+
+.about__header {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+    margin: 0;
+}
+
+.orangetext {
+    color: #E06733;
+}
+
+.about__paragraph {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #636060;
+    margin: 0;
+    margin-top: 38px;
+}
+
+/* ABOUT styles END*/
