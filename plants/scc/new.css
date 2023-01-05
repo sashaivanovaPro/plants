@@ -130,32 +130,54 @@ body {
 }
 
 .header__logo {
-    padding-bottom: 12px;
+    padding-bottom: 40px;
+    height: 21px;
+    width: 79px;
 }
-
-/*
-
-.header_nav {
-    height: 50px;
-    width: 452px;
-}
-
-
-
-.header__link {
-    margin-right: 46px;
-    text-decoration: none;
-    color: #010201;
-}
-
-
-
-
-
-
 
 /* Header styles end*/
 
 /* Welcome styles START*/
+
+.welcome {
+    background-color: #EDF2EC;
+    height: 532px;
+    width: 100%;
+}
+
+.welcome__wrapper {
+    display: flex;
+    align-items: flex-end;
+    padding-top: 60px;
+    justify-content: space-between;
+}
+
+.welcome__image {
+    width: 455px;
+    height: 413px;
+    padding: 0;
+}
+
+.welcome__header {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+    color: #717171;
+    margin: 0;
+    margin-top: -35px;
+}
+
+.colortext {
+    color: #499A18;
+}
+
+.welcome__description {
+    width: 549px;
+    height: 340px;
+    margin: 0;
+    margin-left: 218px;
+}
 
 /* Welcome styles END*/
