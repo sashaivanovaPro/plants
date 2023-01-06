@@ -607,4 +607,10 @@ body {
     color: #000000;
 }
 
+.links__wrapper {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+}
+
 /* FOOTTER styles END*/
