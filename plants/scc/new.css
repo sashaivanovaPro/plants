@@ -510,10 +510,101 @@ body {
 .contacts {
     height: 550px;
     background-color: #EDF2EC;
+    margin: 0;
 }
+
+.contacts__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.contacts__image {
+    margin-top: 53px;
+}
+
+.contacts__headder {
+    margin: 0;
+    margin-left: 115px;
+    margin-top: 20px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+    width: 195px;
+    height: 51px;
+}
+
+.city__picker {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 450px;
+    height: 50px;
+    background-color: #D6E7D2;
+    margin-top: 0px;
+    margin-right: 109px;
+}
+
+.city__name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #717171;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.city__button {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    margin-right: 35px;
+}
+
 
 /* CONTACTS styles END*/
 
 /* FOOTTER styles START*/
+
+.footer {
+    height: 130px;
+    background-color: #FFFFFF;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.copyright__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright__font {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    color: #000000;
+}
+
+.RSS {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    color: #000000;
+}
 
 /* FOOTTER styles END*/
