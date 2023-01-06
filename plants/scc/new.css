@@ -360,6 +360,32 @@ body {
     border-radius: 0px 0px 20px 20px;
 }
 
-
-
 /* SERVICES styles END*/
+
+/* PRICES styles START*/
+
+.prices {
+    height: 560px;
+    background-color: #FFFFFF;
+}
+
+.prices__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.plans__wrapper {}
+
+.prices__options {
+    display: block;
+}
+
+/* PRICES styles END*/
+
+/* CONTACTS styles START*/
+
+/* CONTACTS styles END*/
+
+/* FOOTTER styles START*/
+
+/* FOOTTER styles END*/
