@@ -491,12 +491,15 @@ body {
     font-size: 20px;
     line-height: 26px;
     margin-top: -5px;
+    background-color: #FFFFFF;
 }
 
 .prices__image {
-    width: 152px;
-    height: 174.99px;
-
+    width: 166px;
+    height: 187px;
+    margin: 0;
+    margin-top: 35px;
+    margin-right: -10px;
 }
 
 /* PRICES RIGHTSIDE styles END*/
