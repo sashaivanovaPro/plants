@@ -372,17 +372,102 @@ body {
 .prices__wrapper {
     display: flex;
     justify-content: space-between;
+    margin-top: 40px;
+    align-items: flex-end;
 }
 
-.plans__wrapper {}
+.plans__wrapper {
+    display: block;
+    width: 332px;
+    height: 391.01px;
+    margin: 0;
+}
+
+.prices__headder--left {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+    margin: 0;
+}
 
 .prices__options {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 332px;
+    height: 282.01px;
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+    margin: 0;
+    margin-top: 58px;
+}
+
+.prices__options--item {
+    width: 250px;
+    height: 50px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    background-color: #EDF2EC;
+    border: none;
+    border-radius: 20px;
+    text-align: left;
+    margin-top: 34px;
+    /*margin-left: 40px;
+    background: url(/plants/img/svg/accordion_btn.svg);*/
+
+}
+
+.prices__headder--right {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: right;
+    color: #000000;
+    width: 452px;
+    height: 103px;
+    margin: 0;
+}
+
+.greentext {
+    color: #499A18;
+}
+
+.contact__button {
+    width: 162px;
+    height: 50px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    color: #E06733;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.prices__image {
+    width: 152px;
+    height: 174.99px;
+
 }
 
 /* PRICES styles END*/
 
 /* CONTACTS styles START*/
+
+.contacts {
+    height: 550px;
+    background-color: #EDF2EC;
+}
 
 /* CONTACTS styles END*/
 
