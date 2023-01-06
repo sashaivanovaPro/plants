@@ -421,8 +421,6 @@ body {
     border: none;
     border-radius: 20px;
     text-align: left;
-    /*margin-left: 40px;
-    background: url(/plants/img/svg/accordion_btn.svg);*/
 }
 
 .prices__options--item1 {
@@ -444,6 +442,23 @@ body {
 
 .prices__button {
     margin-right: 40px;
+}
+
+/* PRICES RIGHTSIDE styles START*/
+
+.rightside__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0;
+}
+
+.contact-us__wrapper {
+    display: block;
+    width: 452px;
+    height: 191.01px;
+    margin: 0;
+    justify-items: end;
 }
 
 .prices__headder--right {
@@ -482,6 +497,7 @@ body {
 
 }
 
+/* PRICES RIGHTSIDE styles END*/
 /* PRICES styles END*/
 
 /* CONTACTS styles START*/
