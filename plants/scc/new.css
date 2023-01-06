@@ -406,6 +406,9 @@ body {
 }
 
 .prices__options--item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 250px;
     height: 50px;
     font-family: 'Inter';
@@ -418,10 +421,29 @@ body {
     border: none;
     border-radius: 20px;
     text-align: left;
-    margin-top: 34px;
     /*margin-left: 40px;
     background: url(/plants/img/svg/accordion_btn.svg);*/
+}
 
+.prices__options--item1 {
+    margin-top: 34px;
+}
+
+.prices__options--item2 {
+    margin-top: 32px;
+}
+
+.prices__options--item3 {
+    margin-top: 32px;
+}
+
+.prices__name {
+    margin: 0;
+    margin-left: 40px;
+}
+
+.prices__button {
+    margin-right: 40px;
 }
 
 .prices__headder--right {
