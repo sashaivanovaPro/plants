@@ -373,7 +373,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
-    align-items: flex-end;
+    /*align-items: flex-end;*/
 }
 
 .plans__wrapper {
@@ -472,6 +472,7 @@ body {
     width: 452px;
     height: 103px;
     margin: 0;
+    margin-bottom: 40px;
 }
 
 .greentext {
@@ -486,9 +487,10 @@ body {
     color: #E06733;
     font-family: 'Inika';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 20px;
     line-height: 26px;
+    margin-top: -5px;
 }
 
 .prices__image {
