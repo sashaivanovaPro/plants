@@ -625,12 +625,13 @@ body {
     margin: 0;
 }
 
-.links__wrapper--item {
+.links__wrapper--item2 {
     margin: 0;
+    margin-left: 8px;
 }
 
-.links__wrapper--item2 {
-    padding-left:
+.links__wrapper--item3 {
+    margin-left: 6px;
 
 }
 
