@@ -101,6 +101,14 @@ body {
     margin-right: 0;
 }
 
+.header__link:hover,
+.header__link:active,
+.header__link:focus {
+    color: #E06733;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
 .header__link {
     font-family: 'Inika';
     font-style: normal;
@@ -123,13 +131,6 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 50px;
-}
-
-.header__link:hover,
-.header__link:focus,
-.header__link:active {
-    opacity: 0.75;
-    cursor: pointer;
 }
 
 .header__logo {
@@ -212,8 +213,9 @@ body {
 .welcome__button:hover,
 .welcome__button:active,
 .welcome__button:focus {
-    opacity: 0.75;
-    background-color: #dccbcb;
+    background-color: #E06733;
+    color: #FFFFFF;
+    transition: 0.3s;
 }
 
 /* Welcome styles END*/
@@ -319,8 +321,9 @@ body {
 .service__button:hover,
 .service__button:active,
 .service__button:focus {
-    opacity: 0.75;
-    background-color: #dccbcb;
+    background-color: #E06733;
+    color: #FFFFFF;
+    transition: 0.3s;
 }
 
 .service__button:last-child {
@@ -448,6 +451,7 @@ body {
 .prices__options--item:focus {
     opacity: 0.75;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .prices__options--item1 {
@@ -525,8 +529,9 @@ body {
 .contact__button:hover,
 .contact__button:active,
 .contact__button:focus {
-    opacity: 0.75;
-    background-color: #dccbcb;
+    background-color: #E06733;
+    color: #FFFFFF;
+    transition: 0.3s;
 }
 
 .prices__image {
@@ -586,8 +591,9 @@ body {
 .city__picker:hover,
 .city__picker:active,
 .city__picker:focus {
-    opacity: 0.75;
     cursor: pointer;
+    background-color: #C1E698;
+    transition: 0.3s;
 }
 
 .city__name {
@@ -654,6 +660,7 @@ body {
 .copyright__font--link:active {
     opacity: 0.75;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .RSS {
@@ -672,6 +679,7 @@ body {
 .RSS:active {
     opacity: 0.75;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .links__wrapper {
@@ -692,6 +700,7 @@ body {
 .links__wrapper--item:active,
 .links__wrapper--item:focus {
     opacity: 0.75;
+    transition: 0.3s;
 }
 
 .links__wrapper--item2 {
