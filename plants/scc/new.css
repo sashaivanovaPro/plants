@@ -374,7 +374,6 @@ body {
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
-    /*align-items: flex-end;*/
 }
 
 .plans__wrapper {
@@ -509,7 +508,7 @@ body {
 /* CONTACTS styles START*/
 
 .contacts {
-    height: 550px;
+    height: 549px;
     background-color: #EDF2EC;
     margin: 0;
 }
@@ -521,7 +520,7 @@ body {
 }
 
 .contacts__image {
-    margin-top: 53px;
+    margin-top: 52px;
 }
 
 .contacts__headder {
@@ -576,18 +575,21 @@ body {
 .footer {
     height: 130px;
     background-color: #FFFFFF;
+    margin: 0;
 }
 
 .footer__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    padding-top: 40px;
 }
 
 .copyright__wrapper {
     display: flex;
     justify-content: space-between;
+    margin: 0;
+
 }
 
 .copyright__font {
@@ -597,6 +599,8 @@ body {
     font-size: 20px;
     line-height: 50px;
     color: #000000;
+    margin: 0;
+    margin-right: 20px;
 }
 
 .RSS {
@@ -606,12 +610,28 @@ body {
     font-size: 20px;
     line-height: 50px;
     color: #000000;
+    margin: 0;
 }
 
 .links__wrapper {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-decoration: none;
     list-style-type: none;
+    height: 50px;
+    width: 188px;
+    padding: 0;
+    margin: 0;
+}
+
+.links__wrapper--item {
+    margin: 0;
+}
+
+.links__wrapper--item2 {
+    padding-left:
+
 }
 
 /* FOOTTER styles END*/
