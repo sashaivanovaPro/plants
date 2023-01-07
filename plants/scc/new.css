@@ -525,15 +525,15 @@ body {
 
 .contacts__headder {
     margin: 0;
-    margin-left: 115px;
-    margin-top: 20px;
+    margin-left: 53px;
+    margin-top: 58px;
     font-family: 'Inika';
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
     color: #499A18;
-    width: 195px;
+    width: 200px;
     height: 51px;
 }
 
@@ -544,8 +544,7 @@ body {
     width: 450px;
     height: 50px;
     background-color: #D6E7D2;
-    margin-top: 0px;
-    margin-right: 109px;
+    margin-top: 146px;
 }
 
 .city__name {
@@ -557,7 +556,7 @@ body {
     letter-spacing: 0.05em;
     color: #717171;
     margin: 0;
-    margin-left: 20px;
+    margin-left: 21px;
 }
 
 .city__button {
