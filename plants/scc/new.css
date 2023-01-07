@@ -129,6 +129,7 @@ body {
 .header__link:focus,
 .header__link:active {
     opacity: 0.75;
+    cursor: pointer;
 }
 
 .header__logo {
@@ -205,6 +206,14 @@ body {
     line-height: 20px;
     text-transform: uppercase;
     margin-top: 28px;
+    cursor: pointer;
+}
+
+.welcome__button:hover,
+.welcome__button:active,
+.welcome__button:focus {
+    opacity: 0.75;
+    background-color: #dccbcb;
 }
 
 /* Welcome styles END*/
@@ -288,7 +297,7 @@ body {
     margin-top: 29px;
 }
 
-.service_button {
+.service__button {
     width: 161px;
     height: 50px;
     left: 955px;
@@ -304,9 +313,17 @@ body {
     padding: 0;
     text-align: center;
     padding-right: 4px;
+    cursor: pointer;
 }
 
-.service_button:last-child {
+.service__button:hover,
+.service__button:active,
+.service__button:focus {
+    opacity: 0.75;
+    background-color: #dccbcb;
+}
+
+.service__button:last-child {
     margin-right: 0;
 }
 
@@ -425,6 +442,14 @@ body {
     text-align: left;
 }
 
+
+.prices__options--item:hover,
+.prices__options--item:active,
+.prices__options--item:focus {
+    opacity: 0.75;
+    cursor: pointer;
+}
+
 .prices__options--item1 {
     margin-top: 34px;
 }
@@ -494,6 +519,14 @@ body {
     line-height: 26px;
     margin-top: -5px;
     background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.contact__button:hover,
+.contact__button:active,
+.contact__button:focus {
+    opacity: 0.75;
+    background-color: #dccbcb;
 }
 
 .prices__image {
@@ -548,6 +581,13 @@ body {
     background-color: #D6E7D2;
     margin-top: 146px;
     box-shadow: 0 4px 4px #AEA1A1;
+}
+
+.city__picker:hover,
+.city__picker:active,
+.city__picker:focus {
+    opacity: 0.75;
+    cursor: pointer;
 }
 
 .city__name {
@@ -613,6 +653,7 @@ body {
 .copyright__font--link:focus,
 .copyright__font--link:active {
     opacity: 0.75;
+    cursor: pointer;
 }
 
 .RSS {
@@ -630,6 +671,7 @@ body {
 .RSS:focus,
 .RSS:active {
     opacity: 0.75;
+    cursor: pointer;
 }
 
 .links__wrapper {
