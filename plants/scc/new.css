@@ -64,6 +64,7 @@ body {
     width: 100vw;
     height: 100vh;
     justify-content: center;
+    /*background-color: #EDF2EC;*/
 }
 
 /* Header styles start*/
@@ -546,6 +547,7 @@ body {
     height: 50px;
     background-color: #D6E7D2;
     margin-top: 146px;
+    box-shadow: 0 4px 4px #AEA1A1;
 }
 
 .city__name {
@@ -607,6 +609,12 @@ body {
     text-decoration: none;
 }
 
+.copyright__font--link:hover,
+.copyright__font--link:focus,
+.copyright__font--link:active {
+    opacity: 0.75;
+}
+
 .RSS {
     font-family: 'Inter';
     font-style: normal;
@@ -616,6 +624,12 @@ body {
     color: #000000;
     margin: 0;
     text-decoration: none;
+}
+
+.RSS:hover,
+.RSS:focus,
+.RSS:active {
+    opacity: 0.75;
 }
 
 .links__wrapper {
@@ -628,6 +642,14 @@ body {
     width: 188px;
     padding: 0;
     margin: 0;
+}
+
+/*change link opacity*/
+
+.links__wrapper--item:hover,
+.links__wrapper--item:active,
+.links__wrapper--item:focus {
+    opacity: 0.75;
 }
 
 .links__wrapper--item2 {
