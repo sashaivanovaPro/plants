@@ -367,12 +367,13 @@ body {
 .prices {
     height: 560px;
     background-color: #FFFFFF;
+    margin: 0;
 }
 
 .prices__wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    padding-top: 40px;
     /*align-items: flex-end;*/
 }
 
