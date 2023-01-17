@@ -70,6 +70,9 @@ body {
 
 .header {
     background-color: #EDF2EC;
+    /*    position: fixed;
+    top: 0;
+    left: 0;*/
     height: 134px;
     width: 100%;
 }
@@ -720,7 +723,9 @@ body {
 
 .links__wrapper--item3 {
     margin-left: 6px;
-
 }
 
 /* FOOTTER styles END*/
+
+/* Media styles START */
+/* Media styles END */
