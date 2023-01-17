@@ -180,7 +180,7 @@ body {
 }
 
 .welcome__description {
-    width: 549px;
+    max-width: 549px;
     height: 340px;
     margin: 0;
 }
@@ -235,8 +235,8 @@ body {
 }
 
 .text__wrapper {
-    width: 605px;
-    height: 350px;
+    max-width: 605px;
+    max-height: 350px;
     padding-top: 69px;
 }
 
@@ -483,18 +483,12 @@ body {
 
 .rightside__wrapper {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-end;
     margin: 0;
-}
-
-.contact-us__wrapper {
-    display: block;
-    width: 452px;
-    height: 191.01px;
-    margin: 0;
-    justify-items: end;
+    max-width: 452px;
+    height: 103px;
+    padding: 0;
 }
 
 .prices__headder--right {
@@ -505,14 +499,17 @@ body {
     line-height: 50px;
     text-align: right;
     color: #000000;
-    width: 452px;
-    height: 103px;
     margin: 0;
     margin-bottom: 40px;
+    padding: 0;
 }
 
 .greentext {
     color: #499A18;
+}
+
+.contact__button--block {
+    display: flex;
 }
 
 .contact__button {
@@ -526,9 +523,10 @@ body {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
-    margin-top: -5px;
     background-color: #FFFFFF;
     cursor: pointer;
+    margin: 0;
+    text-align: center;
 }
 
 .contact__button:hover,
@@ -545,6 +543,8 @@ body {
     margin: 0;
     margin-top: 35px;
     margin-right: -10px;
+    padding: 0;
+
 }
 
 /* PRICES RIGHTSIDE styles END*/
