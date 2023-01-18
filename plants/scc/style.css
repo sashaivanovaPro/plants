@@ -734,17 +734,34 @@ body {
         margin: 0 auto;
     }
 
+    /*mHEADER st START */
+
+    .header {
+        width: 100%;
+        height: 117px;
+        margin: 0 auto;
+        padding: 0;
+        padding-top: 35px;
+    }
+
     .header__wrapper {
-        height: 47px;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         align-items: flex-end;
         justify-content: space-between;
+        margin: 0;
+        padding: 0;
     }
+
+    /*mHEADER st END */
+
+    /*mWELCOME st START */
 
     .welcome {
         height: 420px;
+        padding: 0;
+        margin: 0;
     }
 
     .welcome__wrapper {
@@ -778,8 +795,10 @@ body {
 
     .welcome__header {
         font-size: 35px;
+        line-height: 50px;
         margin: 0;
         padding: 0;
+        padding-top: 10px;
     }
 
     .welcome__paragraph {
@@ -797,6 +816,73 @@ body {
         margin-top: 35px;
     }
 
+    /*mWELCOME st END */
+
+    /*mABOUT st START */
+
+    .about {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 783px;
+
+    }
+
+    .about__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .text__wrapper {
+        padding: 0;
+        margin: 0;
+        width: 668px;
+    }
+
+    .about__header {
+        font-size: 35px;
+        line-height: 45.61px;
+        padding: 0;
+        margin: 0 auto;
+        padding-top: 40px;
+        max-width: 423px;
+        height: 102px;
+    }
+
+    .about__paragraph {
+        font-size: 20px;
+        line-height: 30px;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+        padding-top: 40px;
+        height: 208px;
+        width: 100%;
+    }
+
+    .about__image--wraper {
+        display: inline-block;
+        margin: 0, auto;
+    }
+
+    .about__image {
+        height: 258px;
+        width: 250px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+    /*mABOUT st END */
+
+    /*mSERVICE st START */
 }
 
 /* Media styles END */
