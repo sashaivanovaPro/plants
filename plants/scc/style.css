@@ -1005,6 +1005,62 @@ body {
     /*mPRICES st END */
 
     /*mCONTACTS st START */
+
+    .contacts {
+        height: 739px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contacts__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 739px;
+    }
+
+    .contacts__block--one {
+        order: 3;
+    }
+
+    .contacts__block--two {
+        order: 1;
+    }
+
+    .contacts__block--three {
+        order: 2;
+    }
+
+    .contacts__headder {
+        font-size: 40px;
+        line-height: 52.12px;
+        margin: 0;
+        padding: 0;
+        padding-left: 3px;
+        margin-top: 40px;
+    }
+
+    .city__picker {
+        margin: 0;
+        padding: 0;
+        margin-top: -145px;
+    }
+
+    .contacts__image {
+        height: 248px;
+        width: 200px;
+        margin: 0;
+        padding: 0;
+        margin-left: 20px;
+    }
+
+
+
+    /*mCONTACTS st END */
+
+    /*mFOOTER st START */
+
+    /*mFOOTER st END */
 }
 
 /* Media styles END */
