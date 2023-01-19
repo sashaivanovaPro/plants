@@ -1054,11 +1054,63 @@ body {
         margin-left: 20px;
     }
 
-
-
     /*mCONTACTS st END */
 
     /*mFOOTER st START */
+
+    .footer {
+        height: 181px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer__wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .RSS {
+        display: block;
+        margin: 0;
+        padding: 0;
+        margin-top: -10px;
+    }
+
+    .copyright__wrapper {
+        font-family: 'Inter';
+        font-weight: 400;
+        padding: 0;
+        margin: 0;
+        margin-left: 0px;
+        margin-top: 20px;
+        font-size: 20px;
+        line-height: 24.2px;
+        width: 169px;
+    }
+
+    .links__wrapper {
+        padding: 0;
+        margin: 0;
+        margin-top: 5px;
+    }
+
+    .copyright__font {
+        margin: 0;
+        margin-right: 20px;
+
+    }
+
+    .copyright__font:last-child {
+        margin-right: 0;
+    }
+
+    /*
+    .copyright__font--link {
+        display: flex;
+        margin-right: 2px;
+    }
 
     /*mFOOTER st END */
 }
