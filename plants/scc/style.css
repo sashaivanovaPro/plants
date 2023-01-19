@@ -142,6 +142,46 @@ body {
     width: 79px;
 }
 
+
+.header__burger {
+    display: none;
+    width: 40px;
+    height: 24px;
+    position: relative;
+    font-size: 0;
+    margin: 0;
+    top: -15px;
+}
+
+.burger__line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #717171;
+    position: absolute;
+    left: 0;
+}
+
+
+.burger__line--one {
+    top: 0;
+}
+
+.burger__line--two {
+    top: 7.5px;
+    /*translate: translateY(-8px);*/
+    ;
+}
+
+.burger__line--three {
+    top: 15px;
+    /*transform: translateY(-16px);*/
+}
+
+.burger__line--four {
+    bottom: 0px;
+}
+
 /* Header styles end*/
 
 /* Welcome styles START*/
@@ -1106,13 +1146,97 @@ body {
         margin-right: 0;
     }
 
-    /*
-    .copyright__font--link {
-        display: flex;
-        margin-right: 2px;
+    /*mFOOTER st END */
+}
+
+/* MOBILE VERSION */
+
+@media screen and (max-width:380px) {
+
+    /*mHEADER st START */
+
+    .header__burger {
+        display: block;
     }
 
-    /*mFOOTER st END */
+    .header {
+        height: 96px;
+    }
+
+    .wrapper {
+        max-width: 330px;
+        margin: 0 auto;
+    }
+
+    .header__nav {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #E06733;
+        z-index: 10;
+        padding-top: 100px;
+        transform: translateX(-100%);
+        transition: 0.2s all linear;
+    }
+
+    .header__nav_active {
+        transform: translateX(0);
+    }
+
+    .header__nav--close {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        z-index: 11;
+    }
+
+    .header__nav--close-line {
+        display: block;
+        height: 2px;
+        background-color: #000000;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+    }
+
+    .header__nav--close-line:first-child {
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    .header__nav--close-line:last-child {
+        transform: translateY(-50%) rotate(135deg);
+    }
+
+    .header__item {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    .header__item:last-child {
+        margin-bottom: 0px;
+    }
+
+    .header__link {
+        font-size: 40px;
+        line-height: 48px;
+        color: #FFFFFF;
+    }
+
+    .header__logo {
+        margin: o;
+    }
+
+    /*mHEADER st END */
+
+    /*mHEADER st START */
+
+    /*mHEADER st END */
+
 }
 
 /* Media styles END */
