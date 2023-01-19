@@ -963,6 +963,48 @@ body {
     /*mSERVICE st END */
 
     /*mPRICES st START */
+
+    .prices {
+        height: 585px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .prices__wrapper {
+        display: flex;
+    }
+
+    .prices__headder--left {
+        font-size: 35px;
+        line-height: 42.36px;
+        padding-left: 15px;
+    }
+
+    .prices__headder--right {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .plans__wrapper {
+        width: 332px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .rightside__wrapper {
+        width: 296px;
+        margin: 0;
+        padding: 0;
+        margin-top: 100px;
+    }
+
+    .contact__button--block {
+        margin-top: -11px;
+    }
+
+    /*mPRICES st END */
+
+    /*mCONTACTS st START */
 }
 
 /* Media styles END */
