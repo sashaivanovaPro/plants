@@ -1251,7 +1251,7 @@ body {
         font-size: 25px;
         line-height: 35px;
         padding: 0;
-        padding-top: 25px;
+        padding-top: 27px;
     }
 
     .welcome__paragraph {
@@ -1265,7 +1265,7 @@ body {
         border-radius: 10px;
         font-size: 10px;
         line-height: 20px;
-        margin-top: 25px;
+        margin-top: 26px;
     }
 
     /*mobile WELCOME style END */
@@ -1274,10 +1274,6 @@ body {
 
     .about {
         height: 516px;
-    }
-
-    .about__wrapper {
-        p
     }
 
     .about__header {
@@ -1295,7 +1291,7 @@ body {
     .about__image {
         width: 150px;
         height: 147px;
-        margin-top: 27px;
+        margin-top: 26px;
     }
 
     /*mobile ABOUT style END */
@@ -1304,6 +1300,30 @@ body {
 
     .service {
         height: 3150px;
+    }
+
+    .service__headder {
+        font-size: 25px;
+        line-height: 32.57px;
+        width: 187px;
+        padding-top: 30px;
+    }
+
+    .services__wrapper {
+        padding: 0;
+    }
+
+    .button__wrapper {
+        padding-top: 40px;
+    }
+
+    .service__button {
+        width: 121px;
+        height: 35px;
+        border-radius: 5px;
+        font-size: 15px;
+        line-height: 19.54px;
+        margin-right: 11px;
     }
 
     /*mobile SERVICE style END */
