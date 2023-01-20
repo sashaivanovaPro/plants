@@ -784,7 +784,7 @@ body {
         margin: 0 auto;
     }
 
-    /*mHEADER st START */
+    /*tablet HEADER st START */
 
     .header {
         width: 100%;
@@ -804,9 +804,9 @@ body {
         padding: 0;
     }
 
-    /*mHEADER st END */
+    /*tablet HEADER st END */
 
-    /*mWELCOME st START */
+    /*tablet WELCOME st START */
 
     .welcome {
         height: 420px;
@@ -866,9 +866,9 @@ body {
         margin-top: 35px;
     }
 
-    /*mWELCOME st END */
+    /*tablet WELCOME st END */
 
-    /*mABOUT st START */
+    /*tablet ABOUT st START */
 
     .about {
         margin: 0;
@@ -931,9 +931,9 @@ body {
         margin-top: 120px;
     }
 
-    /*mABOUT st END */
+    /*tablet ABOUT st END */
 
-    /*mSERVICE st START */
+    /*tablet SERVICE st START */
 
     .service {
         margin: 0;
@@ -1000,9 +1000,9 @@ body {
         margin-top: 7px;
     }
 
-    /*mSERVICE st END */
+    /*tablet SERVICE st END */
 
-    /*mPRICES st START */
+    /*tablet PRICES st START */
 
     .prices {
         height: 585px;
@@ -1042,9 +1042,9 @@ body {
         margin-top: -11px;
     }
 
-    /*mPRICES st END */
+    /*tablet PRICES st END */
 
-    /*mCONTACTS st START */
+    /*tablet CONTACTS st START */
 
     .contacts {
         height: 739px;
@@ -1094,9 +1094,9 @@ body {
         margin-left: 20px;
     }
 
-    /*mCONTACTS st END */
+    /*tablet CONTACTS st END */
 
-    /*mFOOTER st START */
+    /*tablet FOOTER st START */
 
     .footer {
         height: 181px;
@@ -1146,14 +1146,14 @@ body {
         margin-right: 0;
     }
 
-    /*mFOOTER st END */
+    /*tablet FOOTER st END */
 }
 
 /* MOBILE VERSION */
 
 @media screen and (max-width:380px) {
 
-    /*mHEADER st START */
+    /*mobile HEADER style START */
 
     .header__burger {
         display: block;
@@ -1231,11 +1231,107 @@ body {
         margin: o;
     }
 
-    /*mHEADER st END */
+    /*mobile HEADER style END */
 
-    /*mHEADER st START */
+    /*mobile WELCOME style START */
 
-    /*mHEADER st END */
+    .welcome {
+        height: 300px;
+    }
+
+    .welcome__wrapper {
+        padding: 0;
+    }
+
+    .welcome__image {
+        display: none;
+    }
+
+    .welcome__header {
+        font-size: 25px;
+        line-height: 35px;
+        padding: 0;
+        padding-top: 25px;
+    }
+
+    .welcome__paragraph {
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .welcome__button {
+        height: 34.14px;
+        width: 100px;
+        border-radius: 10px;
+        font-size: 10px;
+        line-height: 20px;
+        margin-top: 25px;
+    }
+
+    /*mobile WELCOME style END */
+
+    /*mobile ABOUT style START */
+
+    .about {
+        height: 516px;
+    }
+
+    .about__wrapper {
+        p
+    }
+
+    .about__header {
+        font-size: 25px;
+        line-height: 32.57px;
+        padding-top: 30px;
+    }
+
+    .about__paragraph {
+        font-size: 15px;
+        line-height: 25px;
+        padding-top: 8px;
+    }
+
+    .about__image {
+        width: 150px;
+        height: 147px;
+        margin-top: 27px;
+    }
+
+    /*mobile ABOUT style END */
+
+    /*mobile SERVICE style START */
+
+    .service {
+        height: 3150px;
+    }
+
+    /*mobile SERVICE style END */
+
+    /*mobile PRICES style START */
+
+    .prices {
+        height: 512px;
+    }
+
+    /*mobile PRICES style END */
+
+    /*mobile CONTACTS style START */
+
+    .contacts {
+        height: 445px;
+    }
+
+    /*mobile CONTACTS style END */
+
+    /*mobile FOOTER style START */
+
+    .footer {
+        height: 146px;
+    }
+
+    /*mobile FOOTER style END */
+
 
 }
 
