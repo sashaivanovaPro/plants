@@ -1314,7 +1314,10 @@ body {
     }
 
     .button__wrapper {
+        display: flex;
         padding-top: 40px;
+        width: 270px;
+        justify-content: left;
     }
 
     .service__button {
@@ -1323,7 +1326,12 @@ body {
         border-radius: 5px;
         font-size: 15px;
         line-height: 19.54px;
-        margin-right: 11px;
+        margin-right: 10px;
+        padding: 0;
+    }
+
+    .service__button:last-child {
+        margin-top: 10px;
     }
 
     /*mobile SERVICE style END */
