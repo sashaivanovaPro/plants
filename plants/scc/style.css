@@ -58,11 +58,11 @@ html {
 }
 
 body {
+
     margin: 0 auto;
     padding: 0;
     width: 100vw;
     height: 100vh;
-    justify-content: center;
 }
 
 /* Header styles start*/
@@ -71,9 +71,9 @@ body {
     background-color: #EDF2EC;
     /*    position: fixed;
     top: 0;
-    left: 0;*/
+    left: 0;
     height: 134px;
-    width: 100%;
+    width: 100%;*/
 }
 
 .wrapper {
