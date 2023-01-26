@@ -233,6 +233,56 @@ body {
 
 /* Welcome styles END*/
 
+/* ABOUT styles START*/
+
+.about {
+    background-color: #FFFFFF;
+}
+
+.about__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 92px 0;
+}
+
+.text__wrapper {
+    max-width: 605px;
+    margin-top: 69px;
+}
+
+.about__header {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.orangetext {
+    color: #E06733;
+}
+
+.about__paragraph {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #636060;
+    margin: 0;
+}
+
+.about__image--wrapper {
+    margin: 0;
+    padding: 0;
+}
+
+/* ABOUT styles END*/
+
 @media screen and (max-width:1220px) {
 
     .wrapper {
@@ -310,6 +360,62 @@ body {
     }
 
     /*tablet WELCOME st END */
+
+    /*tablet ABOUT st START */
+
+    .about {
+        margin: 0;
+        padding: 0;
+    }
+
+    .about__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .text__wrapper {
+        padding: 0;
+        margin: 0;
+        max-width: 668px;
+        margin-bottom: 40px;
+    }
+
+    .h2__wrapper {
+        text-align: center;
+        margin-bottom: 40px;
+        padding-left: 20px;
+    }
+
+    .about__header {
+        font-size: 35px;
+        line-height: 45.61px;
+        margin: 0 auto;
+        padding-top: 40px;
+        max-width: 423px;
+    }
+
+    .about__paragraph {
+        font-size: 20px;
+        line-height: 30px;
+        text-align: left;
+        padding-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .about__image--wrapper {
+        padding-left: 20px;
+    }
+
+    .about__image {
+        max-height: 258px;
+        max-width: 250px;
+        margin-bottom: 95px;
+    }
+
+    /*tablet ABOUT st END */
 
     @media screen and (max-width:730px) {
 
@@ -428,6 +534,8 @@ body {
 
         .welcome__wrapper {
             padding: 26px 0;
+            text-align: left;
+            justify-content: center;
         }
 
         .welcome__header {
@@ -451,6 +559,47 @@ body {
         }
 
         /*mobile WELCOME style END */
+
+        /*mobile ABOUT style START */
+
+        .about__wrapper {
+            max-width: 330px;
+        }
+
+        .about__header {
+            font-size: 25px;
+            line-height: 32.57px;
+            padding-top: 30px;
+            margin-bottom: 0;
+        }
+
+        .text__wrapper {
+            margin-bottom: 0;
+        }
+
+        .h2__wrapper {
+            margin-bottom: 15px;
+            padding: 0;
+        }
+
+        .about__paragraph {
+            font-size: 15px;
+            line-height: 25px;
+            padding-top: 0;
+            margin-bottom: 0;
+        }
+
+        .about__image--wrapper {
+            padding: 0;
+        }
+
+        .about__image {
+            max-width: 150px;
+            max-height: 147px;
+            margin-bottom: 30px;
+        }
+
+        /*mobile ABOUT style END */
 
 
     }
