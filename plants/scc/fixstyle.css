@@ -404,6 +404,148 @@ body {
 
 /* SERVICES styles END*/
 
+/* PRICES styles START*/
+
+.prices {
+    background-color: #FFFFFF;
+}
+
+.prices__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0 0;
+}
+
+.plans__wrapper {
+    max-width: 332px;
+}
+
+.prices__headder--left {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 60px;
+}
+
+.prices__options {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    max-width: 332px;
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+    margin: 0;
+    padding: 34px 41px;
+    gap: 32px;
+    margin-bottom: 128px;
+}
+
+.prices__options--item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    height: 50px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    background-color: #EDF2EC;
+    border: none;
+    border-radius: 20px;
+    text-align: left;
+}
+
+
+.prices__options--item:hover,
+.prices__options--item:active,
+.prices__options--item:focus {
+    opacity: 0.75;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.prices__name {
+    margin: 0;
+    margin-left: 40px;
+}
+
+.prices__button {
+    margin-right: 40px;
+}
+
+/* PRICES RIGHTSIDE styles START*/
+
+.rightside__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 452px;
+}
+
+.prices__headder--right {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: right;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 38px;
+}
+
+.greentext {
+    color: #499A18;
+}
+
+.contact__button--block {
+    display: flex;
+}
+
+.contact__button {
+    width: 162px;
+    height: 50px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    color: #E06733;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 39px;
+}
+
+.contact__button:hover,
+.contact__button:active,
+.contact__button:focus {
+    background-color: #E06733;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+.prices__image {
+    max-width: 166px;
+    margin-right: -10px;
+}
+
+/* PRICES RIGHTSIDE styles END*/
+
+/* PRICES styles END*/
+
 @media screen and (max-width:1220px) {
 
     .wrapper {
@@ -415,7 +557,7 @@ body {
     .welcome__wrapper {
         display: flex;
         align-items: flex-start;
-        max-width: 668px;
+        max-width: 1220px;
         padding: 0;
         margin: 0;
         padding: 40px 0 70px 0;
@@ -437,6 +579,7 @@ body {
         max-height: 254.15px;
         max-width: 280px;
         margin: 0;
+        margin-right: 20px;
         padding: 0px;
         object-fit: cover;
     }
@@ -461,10 +604,7 @@ body {
         margin: 0;
         margin-top: 35px;
     }
-
 }
-
-
 
 @media screen and (max-width:768px) {
 
