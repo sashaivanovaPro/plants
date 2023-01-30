@@ -617,9 +617,7 @@ body {
 /* FOOTTER styles START*/
 
 .footer {
-    height: 130px;
     background-color: #FFFFFF;
-    margin: 0;
 }
 
 .footer__wrapper {
@@ -627,7 +625,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-top: 40px;
+    padding: 40px 0;
 }
 
 .copyright__wrapper {
@@ -712,7 +710,7 @@ body {
 
 /* FOOTTER styles END*/
 
-/* DESCTOP styles END*/
+/* DESkTOP styles END*/
 
 @media screen and (max-width:1220px) {
 
@@ -943,9 +941,59 @@ body {
         margin-bottom: 95px;
     }
 
+    /*tablet ABOUT st END */
+
+    /*tablet FOOTER st START */
+
+    .footer {
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer__wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        padding: 23px 169px 18px 169px;
+    }
+
+    .RSS {
+        display: block;
+        margin: 0;
+        padding: 0;
+        margin-top: -10px;
+    }
+
+    .copyright__wrapper {
+        font-family: 'Inter';
+        font-weight: 400;
+        padding: 0;
+        margin: 0;
+        margin-left: 0px;
+        font-size: 20px;
+        line-height: 24.2px;
+    }
+
+    .links__wrapper {
+        padding: 0;
+        margin: 0;
+        padding-top: 5px;
+    }
+
+    .copyright__font {
+        margin: 0;
+        margin-right: 22px;
+    }
+
+    .copyright__font:last-child {
+        margin-right: 0;
+    }
+
+    /*tablet FOOTER st END */
 }
 
-/*tablet ABOUT st END */
+
 
 @media screen and (max-width:730px) {
 
