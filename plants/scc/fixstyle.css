@@ -850,6 +850,7 @@ body {
         font-size: 35px;
         line-height: 42.36px;
         padding-left: 15px;
+        margin-bottom: 55px;
     }
 
     .prices__headder--right {
@@ -858,9 +859,13 @@ body {
     }
 
     .plans__wrapper {
-        width: 332px;
+        max-width: 332px;
         margin: 0;
         padding: 0;
+    }
+
+    .contact__button {
+        margin-bottom: 34px;
     }
 
     .rightside__wrapper {
@@ -868,6 +873,7 @@ body {
         margin: 0;
         padding: 0;
         margin-top: 100px;
+        margin-bottom: 78px;
     }
 
     .contact__button--block {
@@ -968,7 +974,7 @@ body {
     .h2__wrapper {
         text-align: center;
         margin-bottom: 40px;
-        padding-left: 20px;
+
     }
 
     .about__header {
@@ -985,10 +991,6 @@ body {
         text-align: left;
         padding-top: 10px;
         margin-bottom: 30px;
-    }
-
-    .about__image--wrapper {
-        padding-left: 20px;
     }
 
     .about__image {
