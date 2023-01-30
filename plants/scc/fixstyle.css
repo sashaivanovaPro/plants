@@ -560,7 +560,11 @@ body {
     justify-content: space-between;
 }
 
-.contacts__info--wrapper {}
+.contacts__info--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 .contacts__image {
     margin-top: 53px;
@@ -575,6 +579,7 @@ body {
     color: #499A18;
     margin: 0;
     margin-top: 60px;
+    margin-right: 70px;
 }
 
 .city__picker {
@@ -585,8 +590,8 @@ body {
     width: 450px;
     height: 50px;
     background-color: #D6E7D2;
-    margin-top: 36px;
     box-shadow: 0 4px 4px #AEA1A1;
+    margin-top: 148px;
 }
 
 .city__picker:hover,
@@ -774,6 +779,57 @@ body {
     .contacts__image {
         max-width: 250px;
     }
+
+    /*tablet CONTACTS st START */
+
+    .contacts__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+    }
+
+    .contacts__info--wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacts__block--one {
+        order: 3;
+    }
+
+    .contacts__block--two {
+        order: 1;
+    }
+
+    .contacts__block--three {
+        order: 2;
+    }
+
+    .contacts__headder {
+        font-size: 40px;
+        line-height: 52.12px;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 100px;
+    }
+
+    .city__picker {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 250px;
+    }
+
+    .contacts__image {
+        max-height: 248px;
+        width: 200px;
+        margin: 0;
+        padding: 0;
+        margin-left: 20px;
+    }
+
+    /*tablet CONTACTS st END */
 
 }
 
