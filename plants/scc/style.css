@@ -776,6 +776,7 @@ body {
 /* FOOTTER styles END*/
 
 /* Media styles START */
+
 @media screen and (max-width:768px) {
     .wrapper {
         max-width: 668px;
