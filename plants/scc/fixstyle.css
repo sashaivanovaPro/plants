@@ -463,7 +463,6 @@ body {
     background-color: #EDF2EC;
     border: none;
     border-radius: 20px;
-    text-align: left;
 }
 
 
@@ -1363,21 +1362,23 @@ body {
 
     /*mobile SERVICE style END */
 
-
     /*mobile PRICES style START */
 
+    .prices__image {
+        display: none;
+    }
+
     .plans__wrapper {
+        flex-direction: column;
         padding-top: 25px;
+        margin: 0 auto;
+        margin-bottom: 19px;
+        text-align: center;
     }
 
     .prices__wrapper {
         margin: 0;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .prices__image {
-        display: none;
+        justify-content: center;
     }
 
     .prices__headder--left {
@@ -1385,32 +1386,19 @@ body {
         line-height: 30.26px;
         margin: 0 auto;
         padding-left: 0;
-        margin-bottom: 40px;
-    }
-
-    .plans__wrapper {
-        width: 100%;
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .rightside__wrapper {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        width: 230px;
-        align-items: center;
-        margin: 0;
-        margin-top: 22px;
-        padding: 0;
-        padding-left: 50px;
+        margin-bottom: 35px;
     }
 
     .prices__options {
-        margin: 0 54px;
-        padding: 29px 22px;
+        max-width: 224px;
+        margin: 0;
         gap: 14px;
+        padding: 29px 22px;
+    }
+
+    .prices__options--item {
+        width: 180px;
+        height: 50px;
     }
 
     .prices__name {
@@ -1421,13 +1409,25 @@ body {
         padding: 0;
     }
 
+    .rightside__wrapper {
+        align-items: center;
+        margin: 0;
+    }
+
     .prices__headder--right {
-        width: 230px;
+        margin: 0;
+        margin-bottom: 18px;
+        max-width: 230px;
         font-size: 20px;
         line-height: 35px;
-        margin: 0 auto;
         padding: 0;
         text-align: center;
+        width: 230px;
+    }
+
+    .contact__button--block {
+        margin: 0;
+
     }
 
     .contact__button {
@@ -1436,9 +1436,7 @@ body {
         font-size: 15px;
         line-height: 19.54px;
         border-radius: 5px;
-        margin: 0 auto;
-        margin-top: 30px;
-        margin-left: 47px;
+        margin-bottom: 40px;
     }
 
     /*mobile PRICES style END */
@@ -1450,6 +1448,7 @@ body {
         flex-direction: column;
         justify-content: space-between;
         height: inherit;
+        padding-top: 25px;
     }
 
     .contacts__headder {
@@ -1458,6 +1457,7 @@ body {
         margin: 0;
         padding: 0;
         text-align: center;
+        margin-bottom: 80px;
     }
 
     .contacts__image {
@@ -1471,7 +1471,6 @@ body {
         height: 50px;
         width: 300px;
         margin: 0;
-        margin-top: 62px;
     }
 
     .city__name {
