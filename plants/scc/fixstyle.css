@@ -999,7 +999,7 @@ body {
     .about__image {
         max-height: 258px;
         max-width: 250px;
-        margin-bottom: 95px;
+        margin-bottom: 90px;
     }
 
     /*tablet ABOUT st END */
@@ -1032,6 +1032,7 @@ body {
         grid-template-rows: repeat(3, 450px);
         grid-column-gap: 106px;
         grid-row-gap: 38px;
+        padding-bottom: 70px;
     }
 
     .grid__item {
@@ -1216,7 +1217,7 @@ body {
     }
 
     .header__wrapper {
-        padding: 32px 0;
+        padding: 34px 0;
     }
 
     .header__logo {
@@ -1245,7 +1246,7 @@ body {
 
     .welcome__paragraph {
         margin: 0;
-        margin-bottom: 25px;
+        margin-bottom: 24px;
     }
 
     .welcome__button {
@@ -1357,7 +1358,7 @@ body {
     }
 
     .services__gallery {
-        padding-bottom: 27px;
+        padding-bottom: 26px;
     }
 
     /*mobile SERVICE style END */
@@ -1416,7 +1417,7 @@ body {
 
     .prices__headder--right {
         margin: 0;
-        margin-bottom: 18px;
+        margin-bottom: 20px;
         max-width: 230px;
         font-size: 20px;
         line-height: 35px;
