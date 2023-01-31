@@ -1511,6 +1511,54 @@ body {
 
     /*mobile CONTACTS style END */
 
+    /*mobile CONTACTS style START */
+
+    .contacts {
+        height: 445px;
+    }
+
+    .contacts__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: inherit;
+    }
+
+    .contacts__headder {
+        font-size: 25px;
+        line-height: 32.57px;
+        margin: 0;
+        margin-top: 25px;
+        padding: 0;
+        text-align: center;
+    }
+
+    .contacts__image {
+        width: 100px;
+        height: 124.125px;
+        margin: 0;
+        margin-top: 133px;
+    }
+
+    .city__picker {
+        height: 50px;
+        width: 300px;
+        margin: 0;
+        margin-top: 62px;
+    }
+
+    .city__name {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .city__button {
+        margin: 0;
+        margin-right: 17px;
+    }
+
+    /*mobile CONTACTS style END */
+
     /*mobile FOOTER style START */
 
     .footer {
