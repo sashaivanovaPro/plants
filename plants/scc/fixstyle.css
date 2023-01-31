@@ -362,8 +362,8 @@ body {
 
 .services__gallery--image {
     object-fit: cover;
-    max-width: 329px;
     height: 350px;
+    width: 100%;
 }
 
 .service__pick--name {
@@ -715,7 +715,7 @@ body {
 
 /* FOOTTER styles END*/
 
-/* DESkTOP styles END*/
+/* DESKTOP styles END*/
 
 @media screen and (max-width:1220px) {
 
@@ -778,6 +778,10 @@ body {
 
     .contacts__image {
         max-width: 250px;
+    }
+
+    .grid__wrapper {
+        grid-column-gap: 75px;
     }
 
     /*tablet CONTACTS st START */
@@ -1000,6 +1004,68 @@ body {
     }
 
     /*tablet ABOUT st END */
+
+    /*tablet SERVICE st START */
+
+    .services__wrapper {
+        margin: 0;
+        padding: 0;
+        display: block;
+        padding-top: 60px;
+    }
+
+    .service__headder {
+        font-size: 35px;
+        line-height: 45.61px;
+        margin-bottom: 43px;
+    }
+
+    .button__wrapper {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    .grid__wrapper {
+        display: grid;
+        max-width: 668px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 450px);
+        grid-column-gap: 106px;
+        grid-row-gap: 38px;
+    }
+
+    .grid__item {
+        font-size: 0;
+    }
+
+    .services__gallery--image {
+        object-fit: cover;
+        width: 280px;
+        height: 350px;
+    }
+
+    .description__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .service__pick--description {
+        text-align: center;
+        width: 201px;
+        height: 40px;
+    }
+
+    .service__pick--name {
+        margin: 0;
+        padding: 0;
+        margin-top: 7px;
+    }
+
+    /*tablet SERVICE st END */
 
     /*tablet FOOTER st START */
 
@@ -1234,6 +1300,69 @@ body {
     }
 
     /*mobile ABOUT style END */
+
+    /*mobile SERVICE style START */
+
+    .service__headder {
+        font-size: 25px;
+        line-height: 32.57px;
+        max-width: 187px;
+        padding-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .services__wrapper {
+        padding: 0;
+    }
+
+    .button__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 35px);
+        grid-template-columns: repeat(2, 121px);
+        column-gap: 10px;
+        row-gap: 9px;
+    }
+
+    .service__button {
+        width: 121px;
+        height: 35px;
+        border-radius: 5px;
+        font-size: 15px;
+        line-height: 19.54px;
+        padding: 0;
+    }
+
+    .grid__wrapper {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 280px;
+        height: 2870px;
+    }
+
+    .grid__item {
+        margin: 0;
+        margin-top: -3px;
+        justify-content: space-between;
+    }
+
+    .service__pick--name {
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .service__pick--description {
+        margin: 0;
+        margin-top: 12px;
+    }
+
+    .services__gallery {
+        padding-bottom: 27px;
+    }
+
+    /*mobile SERVICE style END */
+
 
     /*mobile PRICES style START */
 
