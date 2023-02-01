@@ -711,7 +711,63 @@ body {
 
 /* DESKTOP styles END*/
 
-@media screen and (max-width:1220px) {
+@media screen and (max-width:1320px) {
+
+    /*tablet ABOUT st START */
+
+    .about {
+        margin: 0;
+        padding: 0;
+    }
+
+    .about__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .text__wrapper {
+        padding: 0;
+        margin: 0;
+        max-width: 668px;
+        margin-bottom: 40px;
+    }
+
+    .h2__wrapper {
+        text-align: center;
+        margin-bottom: 40px;
+
+    }
+
+    .about__header {
+        font-size: 35px;
+        line-height: 45.61px;
+        margin: 0 auto;
+        padding-top: 40px;
+        max-width: 423px;
+    }
+
+    .about__paragraph {
+        font-size: 20px;
+        line-height: 30px;
+        text-align: left;
+        padding-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .about__image {
+        max-height: auto;
+        max-width: 450px;
+        margin-bottom: 90px;
+    }
+
+    /*tablet ABOUT st END */
+}
+
+
+@media screen and (max-width:1230px) {
 
     .wrapper {
         max-width: 1220px;
@@ -1006,6 +1062,7 @@ body {
         padding: 0;
         display: block;
         padding-top: 60px;
+        max-width: 560px;
     }
 
     .service__headder {
@@ -1112,6 +1169,45 @@ body {
     /*tablet FOOTER st END */
 }
 
+@media screen and (max-width:750px) {
+
+    .prices__options {
+        margin-bottom: 40px;
+    }
+
+    .rightside__wrapper {
+        margin-top: 0;
+    }
+
+
+    .plans__wrapper {
+        flex-direction: column;
+        padding-top: 25px;
+        margin: 0 auto;
+        margin-bottom: 19px;
+        text-align: center;
+    }
+
+    .prices__wrapper {
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .rightside__wrapper {
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .prices__headder--right {
+        text-align: center;
+    }
+
+    .contact__button--block {
+        margin: 0;
+    }
+}
+
 @media screen and (max-width:730px) {
 
     .welcome__image {
@@ -1122,6 +1218,7 @@ body {
         text-align: center;
         justify-content: center;
     }
+
 }
 
 @media screen and (max-width: 680px) {
