@@ -711,12 +711,12 @@ body {
 
 /* DESKTOP styles END*/
 
-/* ANIMATION BLOCK */
+/* ANIMATION BLOCK START*/
 
 /* PLAN CARDS styles START*/
 
 .price__card {
-    /*   display: none;*/
+    display: none;
     height: 154px;
     width: 250px;
     background-color: #D6E7D2;
@@ -792,6 +792,78 @@ hr {
 }
 
 /* PLAN CARDS styles END*/
+
+/* CITY CARDS styles START*/
+
+.city__card1,
+.city__card2,
+.city__card3,
+.city__card4 {
+    display: none;
+}
+
+.city__card--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    height: 214px;
+    width: 448px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    background-color: #EDF2EC;
+}
+
+.left__city--wrapper {
+    margin: 0;
+    padding-left: 35px;
+    padding-top: 17px;
+}
+
+.right__city--wrapper {
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 17px;
+}
+
+.city__card--item {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+.city__card--description {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    color: #717171;
+}
+
+.city__card--button {
+    height: 26px;
+    width: 122px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    font-family: 'Inika';
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    margin-top: 18px;
+    background-color: #EDF2EC;
+}
+
+/* CITY CARDS styles END*/
+
+/* ANIMATION BLOCK END*/
 
 @media screen and (max-width:1350px) {
 
