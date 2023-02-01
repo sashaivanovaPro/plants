@@ -711,6 +711,88 @@ body {
 
 /* DESKTOP styles END*/
 
+/* ANIMATION BLOCK */
+
+/* PLAN CARDS styles START*/
+
+.price__card {
+    /*   display: none;*/
+    height: 154px;
+    width: 250px;
+    background-color: #D6E7D2;
+    border-radius: 20px;
+    padding: 16px 40px 12px 40px;
+    margin-bottom: 10px;
+}
+
+.price__card--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.price__card--plan {
+    margin: 0;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+}
+
+hr {
+    border: 0.5px solid #AEA1A1;
+    margin: 8px 6px 6px 0;
+
+}
+
+.plan__dscrptn {
+    margin: 0;
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 10px;
+    color: #717171;
+    margin-bottom: 6px;
+}
+
+.plan__price {
+    margin: 0;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.red__span {
+    color: #E06733;
+    font-weight: 700;
+}
+
+.red__big--span {
+    font-size: 16px;
+    color: #E06733;
+    font-weight: 700;
+}
+
+.order__button {
+    text-align: center;
+    height: 25px;
+    width: 86px;
+    background-color: #FFFFFF;
+    border: 0px;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #717171;
+}
+
+/* PLAN CARDS styles END*/
+
 @media screen and (max-width:1350px) {
 
     /*tablet ABOUT st START */
