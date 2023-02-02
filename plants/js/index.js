@@ -34,3 +34,11 @@ console.log("Total score - points: 66. \n Вёрстка соответству�
     });
 }());
 
+/* FUNCTION THAT BLUR SERVICES */
+/*(function(){
+    const blurLawnClick = document.querySelector("#lawn");
+    blurLawnClick.addEventListener("click", () => {
+        menu.classList.add('');
+    });
+})
+*/

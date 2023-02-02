@@ -716,13 +716,16 @@ body {
 /* PLAN CARDS styles START*/
 
 .price__card {
-    display: none;
     height: 154px;
     width: 250px;
     background-color: #D6E7D2;
     border-radius: 20px;
     padding: 16px 40px 12px 40px;
     margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
 }
 
 .price__card--wrapper {
@@ -799,7 +802,7 @@ hr {
 .city__card2,
 .city__card3,
 .city__card4 {
-    /*    display: none;*/
+    display: none;
 }
 
 .city__card--wrapper {
@@ -1585,7 +1588,7 @@ hr {
     .city__card2,
     .city__card3,
     .city__card4 {
-        /*  display: none;*/
+        display: none;
     }
 
     .city__card--wrapper {

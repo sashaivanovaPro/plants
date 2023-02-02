@@ -74,7 +74,7 @@
                         <h2 class="service__headder">Service and our projects</h2>
                         <div class="button__wrapper">
                             <button class="service__button service__button1">Gardens</button>
-                            <button class="service__button service__button2">Lawn</button>
+                            <button class="service__button service__button2" id="lawn">Lawn</button>
                             <button class="service__button service__button3">Planting</button>
                         </div>
                     </div>
@@ -132,49 +132,47 @@
                         <div class="plans__wrapper">
                             <h2 class="prices__headder--left">Prices</h2>
                             <div class="prices__options">
-                                <div class="prices__options--item prices__options--item1">
+                                <div class="prices__options--item prices__options--item1" data-name="accordeon-title">
                                     <h4 class="prices__name prices__name1">Basics</h4>
                                     <img class="prices__button prices__button1" src="./img/svg/accordion_btn.svg" alt="btn">
                                 </div>
-                                <div class="prices__options--item prices__options--item2">
+                                <div class="price__card hidden" id="basics">
+                                    <div class="price__card--wrapper">
+                                        <h3 class="price__card--plan">Basics</h3>
+                                        <img src="./img/svg/accordion_btn_top.svg" alt="">
+                                    </div>
+                                    <hr>
+                                    <p class="plan__dscrptn">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                    <h4 class="plan__price"><span class="red__span">$</span><span class="red__big--span">15</span> / per hour</h4>
+                                    <button class="order__button">Order</button>
+                                </div>
+                                <div class="prices__options--item prices__options--item2" data-name="accordeon-title">
                                     <h4 class="prices__name prices__name2">Standard</h4>
                                     <img class="prices__button prices__button2" src="./img/svg/accordion_btn.svg" alt="btn">
                                 </div>
-                                <div class="prices__options--item prices__options--item3">
+                                <div class="price__card hidden" id="standart">
+                                    <div class="price__card--wrapper">
+                                        <h3 class="price__card--plan">Standard</h3>
+                                        <img src="./img/svg/accordion_btn_top.svg" alt="">
+                                    </div>
+                                    <hr>
+                                    <p class="plan__dscrptn">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                    <h4 class="plan__price"><span class="red__span">$</span><span class="red__big--span">25</span> / per hour</h4>
+                                    <button class="order__button">Order</button>
+                                </div>
+                                <div class="prices__options--item prices__options--item3" data-name="accordeon-title">
                                     <h4 class="prices__name prices__name3">Pro care</h4>
                                     <img class="prices__button prices__button3" src="./img/svg/accordion_btn.svg" alt="btn">
                                 </div>
-                                <div class="plans__cards--accourdion">
-                                    <div class="price__card price__card1" id="standart">
-                                        <div class="price__card--wrapper">
-                                            <h3 class="price__card--plan">Standard</h3>
-                                            <img src="./img/svg/accordion_btn_top.svg" alt="">
-                                        </div>
-                                        <hr>
-                                        <p class="plan__dscrptn">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
-                                        <h4 class="plan__price"><span class="red__span">$</span><span class="red__big--span">25</span> / per hour</h4>
-                                        <button class="order__button">Order</button>
+                                <div class="price__card hidden" id="procare">
+                                    <div class="price__card--wrapper">
+                                        <h3 class="price__card--plan">Pro care</h3>
+                                        <img src="./img/svg/accordion_btn_top.svg" alt="">
                                     </div>
-                                    <div class="price__card price__card2" id="procare">
-                                        <div class="price__card--wrapper">
-                                            <h3 class="price__card--plan">Pro care</h3>
-                                            <img src="./img/svg/accordion_btn_top.svg" alt="">
-                                        </div>
-                                        <hr>
-                                        <p class="plan__dscrptn">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
-                                        <h4 class="plan__price"><span class="red__span">$</span><span class="red__big--span">35</span> / per hour</h4>
-                                        <button class="order__button">Order</button>
-                                    </div>
-                                    <div class="price__card price__card3" id="basics">
-                                        <div class="price__card--wrapper">
-                                            <h3 class="price__card--plan">Basics</h3>
-                                            <img src="./img/svg/accordion_btn_top.svg" alt="">
-                                        </div>
-                                        <hr>
-                                        <p class="plan__dscrptn">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
-                                        <h4 class="plan__price"><span class="red__span">$</span><span class="red__big--span">15</span> / per hour</h4>
-                                        <button class="order__button">Order</button>
-                                    </div>
+                                    <hr>
+                                    <p class="plan__dscrptn">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                    <h4 class="plan__price"><span class="red__span">$</span><span class="red__big--span">35</span> / per hour</h4>
+                                    <button class="order__button">Order</button>
                                 </div>
                             </div>
                         </div>
@@ -298,7 +296,8 @@
                 </div>
             </div>
         </footer>
-        <script src="./index.js"></script>
+        <script src="./js/index.js"></script>
+        <script src="./js/accordeon.js"></script>
     </div>
 </body>
-    </html>
+</html>
