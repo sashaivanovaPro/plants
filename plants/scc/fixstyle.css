@@ -728,6 +728,10 @@ body {
     display: none;
 }
 
+.disappear {
+    display: ;
+}
+
 .price__card--wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -781,12 +785,19 @@ hr {
 }
 
 .order__button {
-    text-align: center;
     height: 25px;
     width: 86px;
     background-color: #FFFFFF;
     border: 0px;
     border-radius: 10px;
+    text-align: center;
+}
+
+.order__link {
+
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
     font-family: 'Inter';
     font-weight: 700;
     font-size: 14px;
