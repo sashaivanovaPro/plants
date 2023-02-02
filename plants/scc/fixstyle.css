@@ -1589,26 +1589,23 @@ hr {
     }
 
     .city__card--wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 282px;
-        border: 1px solid #000000;
-        border-radius: 20px;
-        background-color: #EDF2EC;
+        justify-content: space-between;
+        width: 282px;
     }
 
     .left__city--wrapper {
-        margin: 0;
         padding-top: 23px;
-        max-width: 20px;
+        width: 14px;
     }
 
     .right__city--wrapper {
+        display: flex;
+        flex-direction: column;
         margin: 0;
         padding: 0;
         padding-top: 23px;
-        max-width: 160px;
-        padding-right: 35px;
+        max-width: 150px;
+        margin-right: 18px;
     }
 
     .city__element:last-child,
@@ -1626,7 +1623,7 @@ hr {
         font-size: 10px;
         line-height: 13px;
         margin-top: 18px;
-        margin-left: -43px;
+        margin-left: -25px;
         background-color: #EDF2EC;
     }
 
