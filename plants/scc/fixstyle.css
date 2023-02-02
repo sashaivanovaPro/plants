@@ -799,7 +799,7 @@ hr {
 .city__card2,
 .city__card3,
 .city__card4 {
-    display: none;
+    /*    display: none;*/
 }
 
 .city__card--wrapper {
@@ -859,6 +859,11 @@ hr {
     line-height: 13px;
     margin-top: 18px;
     background-color: #EDF2EC;
+}
+
+.mobile__number {
+    color: #000000;
+    text-decoration: none;
 }
 
 /* CITY CARDS styles END*/
@@ -1573,6 +1578,59 @@ hr {
         margin: 0;
         margin-right: 17px;
     }
+
+    /* CITY CARDS MOBILE styles START*/
+
+    .city__card1,
+    .city__card2,
+    .city__card3,
+    .city__card4 {
+        /*  display: none;*/
+    }
+
+    .city__card--wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 282px;
+        border: 1px solid #000000;
+        border-radius: 20px;
+        background-color: #EDF2EC;
+    }
+
+    .left__city--wrapper {
+        margin: 0;
+        padding-top: 23px;
+        max-width: 20px;
+    }
+
+    .right__city--wrapper {
+        margin: 0;
+        padding: 0;
+        padding-top: 23px;
+        max-width: 160px;
+        padding-right: 35px;
+    }
+
+    .city__element:last-child,
+    .adress__element:last-child {
+        line-height: 20px;
+    }
+
+    .city__card--button {
+        height: 26px;
+        width: 121px;
+        border: 1px solid #E06733;
+        border-radius: 5px;
+        font-family: 'Inika';
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 13px;
+        margin-top: 18px;
+        margin-left: -43px;
+        background-color: #EDF2EC;
+    }
+
+    /* CITY CARDS MOBILE styles END*/
 
     /*mobile CONTACTS style END */
 }
