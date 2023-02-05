@@ -601,7 +601,11 @@ body {
     margin-right: 70px;
 }
 
-.city__picker {
+/*.city__picker .city__picker:hover,
+.city__picker:active,
+.city__picker:focus*/
+
+.dropdown__button {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -611,11 +615,12 @@ body {
     background-color: #D6E7D2;
     box-shadow: 0 4px 4px #AEA1A1;
     margin-top: 148px;
+    position: relative;
+    border: none;
 }
 
-.city__picker:hover,
-.city__picker:active,
-.city__picker:focus {
+.dropdown__button:hover,
+.dropdown__button:focus {
     cursor: pointer;
     background-color: #C1E698;
     transition: 0.3s;
