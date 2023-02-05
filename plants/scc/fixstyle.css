@@ -1711,13 +1711,6 @@ hr {
 
     /* CITY CARDS MOBILE styles START*/
 
-    .city__card1,
-    .city__card2,
-    .city__card3,
-    .city__card4 {
-        display: none;
-    }
-
     .city__card--wrapper {
         justify-content: space-between;
         width: 282px;
