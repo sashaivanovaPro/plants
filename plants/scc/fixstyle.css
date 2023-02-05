@@ -880,11 +880,29 @@ hr {
 
 /* CITY CARDS styles START*/
 
-.city__card1,
-.city__card2,
-.city__card3,
-.city__card4 {
+
+.city__card1 {
+    margin-top: 47px;
     display: none;
+}
+
+.city__card2 {
+    margin-top: 47px;
+    display: none;
+}
+
+.city__card3 {
+    margin-top: 47px;
+    display: none;
+}
+
+.city__card4 {
+    margin-top: 47px;
+    display: none;
+}
+
+.city__card--visible {
+    display: flex;
 }
 
 .city__card--wrapper {
