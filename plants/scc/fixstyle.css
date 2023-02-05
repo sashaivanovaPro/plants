@@ -620,7 +620,7 @@ body {
 }
 
 .dropdown__button:hover,
-.dropdown__button:focus {
+.dropdown__button:active {
     cursor: pointer;
     background-color: #C1E698;
     transition: 0.3s;
@@ -643,14 +643,18 @@ body {
 }
 
 .dropdown__list {
+    display: none;
     margin: 0 auto;
     padding: 0;
     list-style-type: none;
-    display: flex;
     flex-direction: column;
     gap: 6px;
     background-color: #DCE9D9;
     padding: 27px 50px 25px 28px;
+}
+
+.dropdown__list--active {
+    display: flex;
 }
 
 .dropdown__list--item {
@@ -1033,11 +1037,12 @@ hr {
         margin-bottom: 100px;
     }
 
-    .city__picker {
+    .dropdown__button {
         margin: 0;
         padding: 0;
-        margin-bottom: 250px;
+        margin-bottom: 0px;
     }
+
 
     .contacts__image {
         max-height: 248px;
@@ -1045,6 +1050,7 @@ hr {
         margin: 0;
         padding: 0;
         margin-left: 20px;
+        margin-top: 250px;
     }
 
     /*tablet CONTACTS st END */
@@ -1352,6 +1358,15 @@ hr {
 
     /*tablet SERVICE st END */
 
+    /* tablet CONTACTS style START*/
+
+
+    .contacts__headder {
+        margin-bottom: 100px;
+    }
+
+    /* tablet CONTACTS style START*/
+
     /*tablet FOOTER st START */
 
     .footer {
@@ -1649,10 +1664,10 @@ hr {
         width: 100px;
         height: 124.125px;
         margin: 0;
-        margin-top: 133px;
+        margin-top: 40px;
     }
 
-    .city__picker {
+    .dropdown__button {
         height: 50px;
         width: 300px;
         margin: 0;
