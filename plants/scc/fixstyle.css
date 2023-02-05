@@ -363,17 +363,21 @@ body {
 
 }
 
+.grid__item1,
 .grid__item2,
 .grid__item3,
 .grid__item4,
+.grid__item5,
 .grid__item6 {
     filter: blur(0px);
+    transition: 1s;
 }
 
 /* ADD BLUR EFFECT*/
 
 .services__blur {
     filter: blur(5px);
+    transition: 1s;
 }
 
 .services__gallery--image {
