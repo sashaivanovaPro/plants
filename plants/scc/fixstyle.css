@@ -617,6 +617,13 @@ body {
     margin-top: 148px;
     position: relative;
     border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    color: #717171;
+    padding-left: 21px;
 }
 
 .dropdown__button:hover,
@@ -1040,6 +1047,7 @@ hr {
     .dropdown__button {
         margin: 0;
         padding: 0;
+        padding-left: 21px;
         margin-bottom: 0px;
     }
 
