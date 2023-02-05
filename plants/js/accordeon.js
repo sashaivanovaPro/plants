@@ -7,10 +7,10 @@ headers.forEach( function(item){
    this.nextElementSibling.classList.toggle('hidden');
     })
 })
-
+/*
 disappear.forEach(function(item){
 
     item.addEventListener('click', function(){
         this.previousElementSibling.classList.toggle('disappear');
     })
-})
+})*/
