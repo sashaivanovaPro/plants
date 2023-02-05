@@ -152,6 +152,10 @@ body {
     bottom: 0px;
 }
 
+.transparant {
+    display: none;
+}
+
 /* Header styles end*/
 
 /* Welcome styles START*/
@@ -1418,17 +1422,17 @@ hr {
 
     .header__nav {
         max-width: 680px;
-        height: 100vh;
         position: fixed;
         top: 0;
         left: 0;
         background-color: #636060;
-        z-index: 10;
+        z-index: 100;
         text-align: center;
         padding-top: 7%;
         transform: translateX(-100%);
         transition: 0.6s all linear;
         opacity: 0.9;
+        padding-bottom: 20px;
     }
 
     .header__burger:hover,
@@ -1440,6 +1444,21 @@ hr {
 
     .header__nav--active {
         transform: translateX(0);
+    }
+
+    .transparant {
+        position: absolute;
+        top: 420px;
+        left: 0;
+        background-color: #636060;
+        height: 100vh;
+        width: 100%;
+        z-index: 2;
+        opacity: 0;
+    }
+
+    .transparant__active {
+        display: block;
     }
 
     .header__nav--close {

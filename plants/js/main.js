@@ -11,8 +11,13 @@ console.log("Total score - points: 66. \n Вёрстка соответству�
     const CLoseLinkThree = document.querySelector("#header__link3");
     const CLoseLinkFour = document.querySelector("#header__link4");
     const CLoseLinkFive = document.querySelector("#header__link5");
+    const transparency = document.querySelector("#transparant");
+    const closeOutside = document.querySelector(".transparant");
     burgerItem.addEventListener('click', () => {
         menu.classList.add('header__nav--active');
+     });
+    burgerItem.addEventListener('click', () => {
+        transparency.classList.add('transparant__active');
      });
     menuCloseItem.addEventListener('click', () => {
         menu.classList.remove('header__nav--active');
@@ -32,13 +37,7 @@ console.log("Total score - points: 66. \n Вёрстка соответству�
     CLoseLinkFive.addEventListener('click', () => {
         menu.classList.remove('header__nav--active');
     });
+    closeOutside.addEventListener('click', () => {
+        menu.classList.remove('header__nav--active');
+});
 }());
-
-/* FUNCTION THAT BLUR SERVICES */
-/*(function(){
-    const blurLawnClick = document.querySelector("#lawn");
-    blurLawnClick.addEventListener("click", () => {
-        menu.classList.add('');
-    });
-})
-*/

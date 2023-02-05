@@ -12,7 +12,7 @@ document.getElementById('gardens').addEventListener('click', function (){
     const buttonClickTwo = document.getElementById("lawn");
     const buttonClickThree = document.getElementById("planting");
         buttonClickOne.addEventListener('click', () => {
-        buttonClickOne.classList.toggle('service__button--active');
+        buttonClick.classList.toggle('service__button--active');
      });
      buttonClickTwo.addEventListener('click', () => {
         buttonClickTwo.classList.toggle('service__button--active');
