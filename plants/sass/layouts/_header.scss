@@ -1,0 +1,8 @@
+.header {
+    background-color: $color-background;
+    padding: 4.2rem 0;
+}
+
+.header__wrapper {
+    @include flex-between();
+}

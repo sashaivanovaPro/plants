@@ -1,0 +1,24 @@
+.icon-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+    background-color: $color-btn-unactive;
+
+    &__light {
+        background-color: $color-acordeon-btn-unactive;
+    }
+}
+
+.icon-arrow {
+    display: block;
+    width: 6px;
+    height: 4px;
+    background-image: url("/img/svg/arrow-light.svg");
+
+    &__dark {
+        background-image: url("/img/svg/arrow-dark.svg");
+    }
+}

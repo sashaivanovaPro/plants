@@ -1,0 +1,53 @@
+.service {
+    padding: 4rem 0 12.1rem;
+    background-color: $color-background;
+}
+
+.services__wrapper {
+    display: inline-flex;
+}
+
+.service__heading {
+    color: $color-primary;
+    margin: 0 14.6rem 0 0;
+    max-width: 30rem;
+}
+
+.button__wrapper {
+    @include flex-center;
+    gap: 3.8rem;
+}
+
+.grid__wrapper {
+    flex-wrap: wrap;
+    @include grid-template-columns(3, 2, 5.5rem, 11.5rem);
+    margin: 8rem 0 0;
+}
+
+.grid__item {
+    @include flex-column(center);
+}
+
+.services__gallery--image {
+    display: block;
+    object-fit: cover;
+    width: 33rem;
+    height: 35rem;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.description__wrapper {
+    @include flex-column(center);
+    border: 1px solid $color-border;
+    width: 100%;
+    border-radius: 0 0 2rem 2rem;
+}
+
+.service__pick--name {
+    margin: 1rem 0;
+    color: $color-additional;
+}
+
+.service__pick--description {
+    margin-bottom: 3.6rem;
+}

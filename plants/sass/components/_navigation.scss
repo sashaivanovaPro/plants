@@ -1,0 +1,19 @@
+.header__list {
+    @include flex-between();
+    @include font(1.6rem, 5rem, normal);
+    gap: 4.7rem;
+    list-style: none;
+    font-family: 'Inika';
+    margin: 0;
+}
+
+.header__link {
+    color: $color-links-nav;
+    text-decoration: none;
+    @extend %transition;
+
+    &:hover {
+        color: $color-additional;
+        font-weight: bold;
+    }
+}

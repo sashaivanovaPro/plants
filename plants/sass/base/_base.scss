@@ -13,37 +13,63 @@ html {
 body {
     margin: 0 auto;
     padding: 0;
-    font-family: "Inter";
+    @extend %font-main;
+    @include font(1.6rem, 2rem, normal);
     /*overflow: hidden;*/
 }
 
+ul,
+p,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
 h1 {
-    font-weight: bold;
-    font-size: 4.5rem;
-    line-height: 5rem;
+    @include font(4.5rem, 5rem, bold);
+    color: $color-text-light;
 }
 
 h2 {
-    font-family: "Inika";
-    font-weight: normal;
-    font-size: 4rem;
-    line-height: 5.2rem;
+    @extend %font-add;
+    @include font(4rem, 5.2rem, normal);
 }
 
 h3 {
-    font-weight: bold;
-    font-size: 2rem;
-    line-height: 2rem;
+    @include font(2rem, 2rem, bold);
 }
 
 h4 {
-    font-weight: normal;
-    font-size: 2rem;
-    line-height: 4rem;
+    @include font(2rem, 4rem, normal);
 }
 
 h5 {
-    font-weight: bold;
-    font-size: 1.2rem;
-    line-height: 2rem;
+    @include font(1.2rem, 2rem, bold);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: $color-heading;
+    text-decoration: none;
+}
+
+.header__burger {
+    display: none;
+}
+
+.city__card {
+    display: none;
+}
+
+.price__card {
+    display: none;
+}
+
+.dropdown__list {
+    display: none;
 }

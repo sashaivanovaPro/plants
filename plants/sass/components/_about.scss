@@ -1,0 +1,26 @@
+.about {
+    padding: 9.4rem;
+    background-color: $color-light;
+}
+
+.about-text__wrapper {
+    flex-basis: 49%;
+}
+
+.about__heading {
+    color: $color-primary;
+    margin: 6.6rem 0 4rem;
+
+    &_colored {
+        color: $color-additional;
+    }
+}
+
+.about__paragraph {
+    @include font(2rem, 3rem, normal);
+}
+
+.about__image {
+    display: inline-block;
+    max-width: 46.4rem;
+}

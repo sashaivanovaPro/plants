@@ -1,0 +1,57 @@
+.contacts {
+    background-color: $color-background;
+    padding-top: 5.3rem;
+}
+
+.contacts__wrapper {
+    display: flex;
+    gap: 11.3rem;
+}
+
+.contacts__image {
+    display: inline-block;
+    max-width: 40rem;
+}
+
+.contacts__heading {
+    color: $color-primary;
+    font-weight: bold;
+    align-self: flex-start;
+    margin: 0.7rem 0 3.4rem;
+}
+
+.contacts__info--wrapper {
+    @include flex-column(center);
+    flex-basis: 60%;
+}
+
+.city__picker {
+    align-self: flex-end;
+}
+
+.dropdown__button {
+    @include flex-between();
+    background-color: $color-acordeon-active;
+    border: none;
+    padding: 0.5rem 3rem 0.5rem 2rem;
+    width: 45rem;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    &:active {
+        background-color: $color-dropdown-active;
+    }
+
+    &:active .icon-circle {
+        background-color: $color-btn-unactive;
+    }
+
+    &:active .icon-arrow {
+        transform: rotate(180deg);
+    }
+}
+
+.city__name {
+    @include font(2rem, 4rem, 400);
+    letter-spacing: 0.1rem;
+    color: $color-text-light;
+}

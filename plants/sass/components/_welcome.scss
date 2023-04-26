@@ -1,0 +1,23 @@
+.welcome {
+    background-color: $color-background;
+    padding: 6.2rem;
+}
+
+.welcome__image {
+    display: inline-block;
+    max-width: 44.8rem;
+    margin-left: -1rem;
+}
+
+.welcome__heading {
+    margin: 3.6rem 0 4.5rem;
+
+    &_colored {
+        color: $color-primary;
+    }
+}
+
+.welcome__paragraph {
+    @include font(2rem, 3.5rem, normal);
+    margin: 0 0 4.7rem;
+}
