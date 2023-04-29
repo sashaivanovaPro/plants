@@ -1,0 +1,53 @@
+// Burger from span and pseudo-elements
+
+// Line as placeholder
+%burger-line {
+    content: "";
+    background-color: $color-burger;
+    display: inline-block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.burger {
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 24px;
+    cursor: pointer;
+
+    @include media-mobile {
+        display: inline-block;
+    }
+
+    &::before {
+        @extend %burger-line;
+        top: 0;
+        left: 0;
+    }
+
+    &::after {
+        @extend %burger-line;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.burger__line {
+    @extend %burger-line;
+    top: calc(50% - 1px);
+}
+
+
+.transparant {
+    position: absolute;
+    top: 420px;
+    left: 0;
+    background-color: #636060;
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+    opacity: 0;
+}

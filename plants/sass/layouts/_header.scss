@@ -1,8 +1,18 @@
 .header {
     background-color: $color-background;
     padding: 4.2rem 0;
+
+    @include media-tablet {
+        padding: 3.5rem 0;
+    }
 }
 
 .header__wrapper {
     @include flex-between();
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.45rem;
 }

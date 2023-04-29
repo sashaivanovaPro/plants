@@ -1,6 +1,14 @@
 .about {
-    padding: 9.4rem;
+    padding: 9.4rem 0;
     background-color: $color-light;
+
+    @include media-tablet {
+        padding: 4rem 0 9.5rem;
+    }
+
+    @include media-mobile {
+        padding: 3rem 0;
+    }
 }
 
 .about-text__wrapper {
@@ -14,6 +22,11 @@
     &_colored {
         color: $color-additional;
     }
+
+    @include media-tablet {
+        margin: 0;
+    }
+
 }
 
 .about__paragraph {

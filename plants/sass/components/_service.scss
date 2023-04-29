@@ -1,6 +1,14 @@
 .service {
-    padding: 4rem 0 12.1rem;
+    padding: 4rem 0 12rem;
     background-color: $color-background;
+
+    @include media-tablet {
+        padding: 6rem 0 7rem;
+    }
+
+    @include media-mobile {
+        padding: 3rem 0 2.7rem;
+    }
 }
 
 .services__wrapper {

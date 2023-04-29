@@ -1,6 +1,14 @@
 .footer {
     background-color: $color-light;
     padding: 4rem 0;
+
+    @include media-tablet {
+        padding: 3.3rem 28rem 1.8rem;
+    }
+
+    @include media-mobile {
+        padding: 2.2rem 8.2rem 0.7rem;
+    }
 }
 
 .footer__wrapper {

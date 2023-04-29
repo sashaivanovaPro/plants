@@ -1,4 +1,17 @@
 .wrapper {
     max-width: $content-width;
     margin: auto;
+
+    @include media-laptop {
+        padding: 0 11rem;
+    }
+
+    @include media-tablet {
+        padding: 0 5rem;
+    }
+
+    @include media-mobile {
+        padding: 0 2.5rem;
+    }
+
 }
