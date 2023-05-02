@@ -1,0 +1,66 @@
+.welcome {
+  background-color: $color-background;
+  padding: 6.2rem 0;
+
+  @include media-laptop {
+    padding: 4rem 0 7rem;
+  }
+
+  @include media-tablet {
+    padding: 2.4rem 0;
+  }
+}
+
+.welcome__wrapper {
+  @include media-laptop {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+
+  @include media-mobile {
+    flex-direction: column;
+  }
+}
+
+.welcome__image {
+  display: inline-block;
+  max-width: 36.5%;
+
+  @include media-laptop{
+   max-width: 44%;
+   margin-top: -1rem;
+  }
+  @include media-mobile {
+    display: none;
+  }
+}
+
+.welcome__heading {
+  margin: 3.6rem 0 4.5rem;
+
+  &_colored {
+    color: $color-primary;
+  }
+
+  @include media-laptop {
+    margin: 0 0 3rem;
+  }
+
+  @include media-mobile{
+    margin: 0 0 2.1rem;
+  }
+}
+
+.welcome__paragraph {
+  @include font(2rem, 3.5rem, normal);
+  margin: 0 0 4.7rem;
+
+  @include media-laptop {
+    @include font(1.6rem, 2.5rem, normal);
+    margin: 0 0 3.2rem;
+  }
+
+  @include media-mobile {
+    margin: 0 0 2.7rem;
+  }
+}

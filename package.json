@@ -11,5 +11,8 @@
   "dependencies": {
     "normalize-scss": "^7.0.1"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.62.1"
+  }
 }

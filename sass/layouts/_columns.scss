@@ -8,4 +8,7 @@
 
 .layout-2-columns {
     @include columns($width: 45%);
+    @include media-laptop{
+        @include columns($width:52%)
+    }
 }
