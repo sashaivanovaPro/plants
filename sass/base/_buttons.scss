@@ -6,7 +6,7 @@
     @include font (2rem, 2.6rem, 400);
     background-color: $color-background;
     color: $color-additional;
-    border: $color-additional 0.1rem solid;
+    border: 1px solid $color-additional;
     border-radius: 0.5rem;
     cursor: pointer;
 

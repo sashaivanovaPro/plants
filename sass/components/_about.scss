@@ -7,7 +7,7 @@
     }
 
     @include media-mobile {
-        padding: 2.9rem 0;
+        padding: 3rem 0;
     }
 }
 
@@ -26,7 +26,7 @@
 
 .about__heading {
     color: $color-primary;
-    margin: 6.6rem 0 4.2rem;
+    margin: 6.6rem 0 4rem;
 
     &_colored {
         color: $color-additional;
@@ -60,7 +60,7 @@
 
 .about__image {
 	display: inline-block;
-	max-width: 46.4rem;
+	max-width: 38%;
 
 	@include media-laptop {
 		margin: auto;
@@ -68,6 +68,6 @@
 	}
 
 	@include media-mobile {
-		max-width: 47%;
+		max-width: 44%;
 	}
 }
