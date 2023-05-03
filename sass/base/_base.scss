@@ -55,6 +55,9 @@ h2 {
 
 h3 {
   @include font(2rem, 2rem, bold);
+  @include media-mobile {
+    @include font(1.5rem, 2rem, bold);
+  }
 }
 
 h4 {

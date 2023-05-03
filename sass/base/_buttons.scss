@@ -1,18 +1,24 @@
 .button {
-    width: 16.1rem;
-    height: 5rem;
-    @include flex-center();
-    @extend %font-main;
-    @include font (2rem, 2.6rem, 400);
-    background-color: $color-background;
-    color: $color-additional;
-    border: 1px solid $color-additional;
-    border-radius: 0.5rem;
-    cursor: pointer;
+  width: 16.1rem;
+  height: 5rem;
+  @include flex-center();
+  @extend %font-main;
+  @include font (2rem, 2.6rem, 400);
+  background-color: $color-background;
+  color: $color-additional;
+  border: 1px solid $color-additional;
+  border-radius: 0.5rem;
+  cursor: pointer;
 
-    &_service {
-        @extend %font-add;
-    }
+  &_service {
+    @extend %font-add;
+  }
+
+  @include media-mobile{
+    @include font (1.5rem, 1.9rem, 400);
+    width: 12.1rem;
+    height: 3.5rem;
+  }
 }
 
 .button:hover {
@@ -21,8 +27,14 @@
 }
 
 .contact-button {
-    background-color: $color-light;
-    font-weight: bold;
+  background-color: $color-light;
+  font-weight: bold;  
+  font-family: "Inika";
+   
+  @include media-mobile{
+      
+  }
+      
 }
 
 .button-more {
