@@ -723,6 +723,11 @@ a {
 .dropdown__button:active .icon-arrow {
   transform: rotate(180deg);
 }
+@media screen and (max-width: 414.98px) {
+  .dropdown__button {
+    padding: 0.5rem 1.3rem 0.5rem 2rem;
+  }
+}
 
 .city__name {
   font-weight: 400;
@@ -808,6 +813,11 @@ a {
 
 .footer__wrapper {
   align-items: center;
+}
+@media screen and (max-width: 1024.98px) {
+  .footer__wrapper {
+    flex-direction: column;
+  }
 }
 
 .copyright__wrapper {
@@ -1248,14 +1258,14 @@ a {
   background-color: #EDF2EC;
   padding-top: 5.3rem;
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1024.98px) {
   .contacts {
     padding-top: 4rem;
   }
 }
 @media screen and (max-width: 414.98px) {
   .contacts {
-    padding-top: 2.5rem;
+    padding: 2.5rem 1.5rem 0;
   }
 }
 
@@ -1263,10 +1273,32 @@ a {
   display: flex;
   gap: 11.3rem;
 }
+@media screen and (max-width: 1024.98px) {
+  .contacts__wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 25rem;
+  }
+}
+@media screen and (max-width: 414.98px) {
+  .contacts__wrapper {
+    gap: 13.2rem;
+  }
+}
 
 .contacts__image {
   display: inline-block;
-  max-width: 40rem;
+  width: 34.5%;
+}
+@media screen and (max-width: 1024.98px) {
+  .contacts__image {
+    width: 30.7%;
+  }
+}
+@media screen and (max-width: 414.98px) {
+  .contacts__image {
+    width: 33.4%;
+  }
 }
 
 .contacts__heading {
@@ -1274,6 +1306,25 @@ a {
   font-weight: bold;
   align-self: flex-start;
   margin: 0.7rem 0 3.4rem;
+}
+@media screen and (max-width: 1024.98px) {
+  .contacts__heading {
+    margin: 0 0 10rem;
+    align-self: center;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 5.2rem;
+    font-style: normal;
+  }
+}
+@media screen and (max-width: 414.98px) {
+  .contacts__heading {
+    margin: 0 0 8rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 3.3rem;
+    font-style: normal;
+  }
 }
 
 .contacts__info--wrapper {
@@ -1283,11 +1334,27 @@ a {
   align-items: center;
   flex-basis: 60%;
 }
+@media screen and (max-width: 1024.98px) {
+  .contacts__info--wrapper {
+    width: 67.4%;
+    max-width: 45rem;
+  }
+}
+@media screen and (max-width: 414.98px) {
+  .contacts__info--wrapper {
+    width: 100%;
+  }
+}
 
 .city__picker {
   align-self: flex-end;
   width: 100%;
   padding-left: 37%;
+}
+@media screen and (max-width: 1024.98px) {
+  .city__picker {
+    padding: 0;
+  }
 }
 
 .prices {

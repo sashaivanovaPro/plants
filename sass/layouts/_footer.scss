@@ -13,6 +13,9 @@
 
 .footer__wrapper {
     align-items: center;
+    @include media-laptop{
+        flex-direction: column;
+    }
 }
 
 .copyright__wrapper {

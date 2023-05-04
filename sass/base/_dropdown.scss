@@ -1,35 +1,38 @@
 .dropdown__button {
-    @include flex-between();
-    background-color: $color-acordeon-active;
-    border: none;
-    padding: 0.5rem 3rem 0.5rem 2rem;
-    width: 100%;
-    flex-basis: 1;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  @include flex-between();
+  background-color: $color-acordeon-active;
+  border: none;
+  padding: 0.5rem 3rem 0.5rem 2rem;
+  width: 100%;
+  flex-basis: 1;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
-    &:active {
-        background-color: $color-dropdown-active;
-    }
+  &:active {
+    background-color: $color-dropdown-active;
+  }
 
-    &:active .icon-circle {
-        background-color: $color-btn-unactive;
-    }
+  &:active .icon-circle {
+    background-color: $color-btn-unactive;
+  }
 
-    &:active .icon-arrow {
-        transform: rotate(180deg);
-    }
+  &:active .icon-arrow {
+    transform: rotate(180deg);
+  }
+  @include media-mobile{
+    padding: 0.5rem 1.3rem 0.5rem 2rem;
+  }
 }
 
 .city__name {
-    @include font(2rem, 4rem, 400);
-    letter-spacing: 0.1rem;
-    color: $color-text-light;
+  @include font(2rem, 4rem, 400);
+  letter-spacing: 0.1rem;
+  color: $color-text-light;
 }
 
 .dropdown__list {
-    display: none;
+  display: none;
 }
 
 .city__card {
-    display: none;
+  display: none;
 }
