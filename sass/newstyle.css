@@ -342,6 +342,7 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-size: 62.5%;
+  width: 100vw;
 }
 
 *,
@@ -711,8 +712,7 @@ a {
   background-color: #D6E7D2;
   border: none;
   padding: 0.5rem 3rem 0.5rem 2rem;
-  width: 100%;
-  flex-basis: 1;
+  width: 45rem;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .dropdown__button:active {
@@ -723,6 +723,11 @@ a {
 }
 .dropdown__button:active .icon-arrow {
   transform: rotate(180deg);
+}
+@media screen and (max-width: 500px) {
+  .dropdown__button {
+    width: 30rem;
+  }
 }
 @media screen and (max-width: 414.98px) {
   .dropdown__button {
@@ -1303,7 +1308,7 @@ a {
 
 .contacts__wrapper {
   display: flex;
-  gap: 11.3rem;
+  justify-content: space-between;
 }
 @media screen and (max-width: 1024.98px) {
   .contacts__wrapper {
@@ -1320,11 +1325,11 @@ a {
 
 .contacts__image {
   display: inline-block;
-  width: 34.5%;
+  width: 33.2%;
 }
 @media screen and (max-width: 1024.98px) {
   .contacts__image {
-    width: 30.7%;
+    width: 30%;
   }
 }
 @media screen and (max-width: 414.98px) {
@@ -1361,10 +1366,8 @@ a {
 
 .contacts__info--wrapper {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
-  flex-basis: 60%;
+  width: 58%;
 }
 @media screen and (max-width: 1024.98px) {
   .contacts__info--wrapper {
@@ -1380,12 +1383,15 @@ a {
 
 .city__picker {
   align-self: flex-end;
-  width: 100%;
-  padding-left: 37%;
 }
 @media screen and (max-width: 1024.98px) {
   .city__picker {
     padding: 0;
+  }
+}
+@media screen and (max-width: 1024.98px) {
+  .city__picker {
+    align-self: center;
   }
 }
 
