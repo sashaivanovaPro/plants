@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "style": "sass --watch sass/newstyle.scss sass/newstyle.css",
+    "style": "sass --watch src/sass/newstyle.scss src/sass/newstyle.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
