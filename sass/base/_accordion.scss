@@ -1,0 +1,57 @@
+.accordion {
+  max-width: 33.2rem;
+  border: 1px solid $color-border;
+  border-radius: 2rem;
+  padding: 3.4rem 4.1rem;
+  @include flex-column(center);
+  gap: 3rem;
+  @include media-mobile{
+    margin: 0 auto;
+    padding: 2.9rem 2.2rem;
+    width: 22.4rem;
+    gap: 1.2rem;
+  }
+}
+
+.accordion__item {
+  @include flex-between();
+  background-color: $color-acordeon;
+  padding: 0 4rem;
+  border-radius: 2rem;
+  width: 100%;
+
+  &:active {
+    background-color: $color-acordeon-active;
+  }
+
+  &:active .icon-circle__light {
+    background-color: $color-btn-unactive;
+  }
+
+  &:active .icon-arrow__dark {
+    background-image: url("/img/svg/arrow-light.svg");
+    transform: rotate(180deg);
+  }
+
+  @include media-mobile{
+    padding: 0 3rem;
+  }
+}
+
+.prices__name {
+  margin: 1.6rem 0;
+}
+
+.price_btn {
+  display: inline-block;
+}
+
+.price__card {
+  display: none;
+}
+
+.icon-circle {
+  @include media-mobile{
+    margin-right: 0.9rem;
+  }
+}

@@ -18,7 +18,7 @@
     height: 24px;
     cursor: pointer;
 
-    @include media-mobile {
+    @include media-tablet {
         display: inline-block;
     }
 
@@ -42,6 +42,7 @@
 
 
 .transparant {
+    display: none;
     position: absolute;
     top: 420px;
     left: 0;

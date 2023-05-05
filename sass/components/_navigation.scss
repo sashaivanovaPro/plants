@@ -1,8 +1,7 @@
 .header__list {
     @include flex-between();
     @include font(1.6rem, 5rem, normal);
-    width: 46rem;
-    // gap: 4.7rem;
+    gap: 4.723rem;
     list-style: none;
     font-family: 'Inika';
     margin: 0;
@@ -16,11 +15,5 @@
     &:hover {
         color: $color-additional;
         font-weight: bold;
-    }
-}
-
-.header__nav {
-    @include media-mobile {
-        display: none;
     }
 }
