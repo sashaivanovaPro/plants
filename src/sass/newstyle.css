@@ -543,7 +543,7 @@ a {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("../fonts/inter-v12-latin-regular.woff2") format("woff2"), url("../fonts/inter-v12-latin-regular.woff") format("woff");
+  src: local(""), url("/fonts/inter-v12-latin-regular.woff2") format("woff2"), url("/fonts/inter-v12-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* inter-700 - latin */
@@ -551,7 +551,7 @@ a {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: local(""), url("../fonts/inter-v12-latin-700.woff2") format("woff2"), url("../fonts/inter-v12-latin-700.woff") format("woff");
+  src: local(""), url("/fonts/inter-v12-latin-700.woff2") format("woff2"), url("/fonts/inter-v12-latin-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* inika-regular - latin */
@@ -559,7 +559,7 @@ a {
   font-family: "Inika";
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("../fonts/inika-v21-latin-regular.woff2") format("woff2"), url("../fonts/inika-v21-latin-regular.woff") format("woff");
+  src: local(""), url("/fonts/inika-v21-latin-regular.woff2") format("woff2"), url("/fonts/inika-v21-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* inika-700 - latin */
@@ -567,7 +567,7 @@ a {
   font-family: "Inika";
   font-style: normal;
   font-weight: 700;
-  src: local(""), url("../fonts/inika-v21-latin-700.woff2") format("woff2"), url("../fonts/inika-v21-latin-700.woff") format("woff");
+  src: local(""), url("/fonts/inika-v21-latin-700.woff2") format("woff2"), url("/fonts/inika-v21-latin-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 .icon-circle {
@@ -587,10 +587,10 @@ a {
   display: block;
   width: 6px;
   height: 4px;
-  background-image: url("/img/svg/arrow-light.svg");
+  background-image: url("/src/img/svg/arrow-light.svg");
 }
 .icon-arrow__dark {
-  background-image: url("/img/svg/arrow-dark.svg");
+  background-image: url("/src/img/svg/arrow-dark.svg");
 }
 
 .burger__line, .burger::after, .burger::before {
@@ -677,7 +677,7 @@ a {
   background-color: #AEA1A1;
 }
 .accordion__item:active .icon-arrow__dark {
-  background-image: url("/img/svg/arrow-light.svg");
+  background-image: url("/src/img/svg/arrow-light.svg");
   transform: rotate(180deg);
 }
 @media screen and (max-width: 414.98px) {
