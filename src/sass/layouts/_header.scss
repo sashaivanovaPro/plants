@@ -19,9 +19,3 @@
         margin: 0;
     }
 }
-
-.header__nav {
-    @include media-tablet {
-        display: none;
-    }
-}

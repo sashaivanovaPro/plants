@@ -11,32 +11,24 @@
 <body>
     <div class="body__wrapper">
         <header class="header">
+            <div class="header__overlay"></div>
             <div class="wrapper header__wrapper">
                 <div class="header__logo">
-                    <a href="#!" class="header__logo">
-                        <object class="logo-svg" type="image/svg+xml"  data="./src/img/svg/logo.svg"></object>
-                        <!-- <img src="./src/img/svg/logo.svg" alt="Plants logo"> -->
-                    </a>
+                  <a href="#!" class="header__logo">
+                    <object class="logo-svg" type="image/svg+xml"  data="./src/img/svg/logo.svg"></object>
+                  </a>
                 </div>
                 <nav class="header__nav" id="header__nav">
-                    <ul class="header__list">
-                        <li class="header__item"><a href="#welcome" class="header__link" id="header__link1">Home</a></li>
-                        <li class="header__item"><a href="#about" class="header__link" id="header__link2">About us</a></li>
-                        <li class="header__item"><a href="#service" class="header__link" id="header__link3">Service</a></li>
-                        <li class="header__item"><a href="#prices" class="header__link" id="header__link4">Price</a></li>
-                        <li class="header__item"><a href="#contacts" class="header__link" id="header__link5">Contacts</a></li>
-                    </ul>
-                    <div class="transparant" id="transparant"></div>
-                    <div class="header__nav--close" id="header__nav--close">
-                        <span class="header__nav--close-line"></span>
-                        <span class="header__nav--close-line"></span>
-                    </div>
+                  <ul class="header__list">
+                    <li class="header__item"><a data-goto="#welcome" class="header__link smooth__link" id="header__link1" href="#">Home</a></li>
+                    <li class="header__item"><a data-goto="#about" class="header__link smooth__link" id="header__link2" href="#">About us</a></li>
+                    <li class="header__item"><a data-goto="#service" href="#" class="header__link smooth__link" id="header__link3">Service</a></li>
+                    <li class="header__item"><a data-goto="#prices" href="#" class="header__link smooth__link" id="header__link4">Price</a></li>
+                    <li class="header__item"><a data-goto="#contacts" href="#" class="header__link smooth__link" id="header__link5">Contacts</a></li>
+                  </ul>
                 </nav>
                 <div class="header__burger burger" id="burger">
                     <span class="burger__line burger__line--one"></span>
-                    <!-- <span class="burger__line burger__line--two"></span>
-                    <span class="burger__line burger__line--three"></span>
-                    <span class="burger__line burger__line--four"></span> -->
                 </div>
             </div>
         </header>
@@ -331,6 +323,7 @@
                 </div>
             </div>
         </footer>
+        <script src="./src/js/burger.js"></script>
         <script src="./src/js/main.js"></script>
         <!-- <script src="./src/js/accordeon.js"></script>
         <script src="./src/js/blur.js"></script>
