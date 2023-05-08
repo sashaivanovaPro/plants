@@ -50,6 +50,11 @@
   padding: 1.6rem 3.8rem 1.2rem;
   background: $color-acordeon-active;
   border-radius: 2rem;
+  transition: all 0.5s ease-in-out;
+
+  @include media-mobile{
+    padding: 1.6rem 3rem 1.2rem;
+  }
 
   &__name{
     @include flex-between;

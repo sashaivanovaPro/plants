@@ -713,6 +713,12 @@ a {
   padding: 1.6rem 3.8rem 1.2rem;
   background: #D6E7D2;
   border-radius: 2rem;
+  transition: all 0.5s ease-in-out;
+}
+@media screen and (max-width: 414.98px) {
+  .price-card {
+    padding: 1.6rem 3rem 1.2rem;
+  }
 }
 .price-card__name {
   display: flex;

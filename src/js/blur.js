@@ -11,7 +11,6 @@ const serviceBlur = () => {
   })
 }
 
-
 const removeSelectedButtons = () => { 
   buttons.forEach(button =>{
     button.classList.remove('button__clicked');

@@ -15,6 +15,10 @@ window.onload = function(){
 
     serviceBlur ();
 
+    // Accordion prices
+
+    accordionSwitch();
+
 }
 
 // Плавная прокрутка -- Smooth navigation
