@@ -9,9 +9,13 @@
   cursor: pointer;
 
   &_service {
-    @extend %font-add;
+    @extend %font-add;    
   }
 
+  &:hover{
+    box-shadow: $color-text-light 0.3rem 0.3rem 0.5rem;
+  }
+  
   &__unclicked {
     background-color: $color-background;
     color: $color-additional;

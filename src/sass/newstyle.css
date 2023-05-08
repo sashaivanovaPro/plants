@@ -471,6 +471,9 @@ a {
   border-radius: 0.5rem;
   cursor: pointer;
 }
+.button:hover {
+  box-shadow: #717171 0.3rem 0.3rem 0.5rem;
+}
 .button__unclicked {
   background-color: #EDF2EC;
   color: #E06733;
@@ -1365,6 +1368,12 @@ a {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  border-radius: 2rem;
+}
+.grid__item:hover {
+  box-shadow: 0.5rem 0.5rem 1rem #717171;
+  scale: 1.01;
+  cursor: pointer;
 }
 .grid__item_blur {
   filter: blur(5px);
