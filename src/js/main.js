@@ -1,16 +1,25 @@
 
-// Burger handler
 
-// window.onload = function(){
-//     console.log("Hello RS!");
-//     // burger
-//     burgerHandler()
-// }
+window.onload = function(){
+    console.log("Hello RS!");
+
+    // burger handler
+    burgerIconClick();
+    outofIconClick();
+
+    // Smooth navigation
+
+    // navLinkClick();
+
+    //service section blur not choosed elements
+
+    serviceBlur ();
+
+}
 
 // Плавная прокрутка -- Smooth navigation
 
 const smooth = document.querySelectorAll(".smooth__link[data-goto]");
-console.log(smooth);
 
 if (smooth.length > 0) {
   smooth.forEach(smooth => {

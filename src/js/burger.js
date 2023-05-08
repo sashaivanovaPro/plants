@@ -1,5 +1,3 @@
-console.log("Hello RS!");
-
 // Burger handler
 
 const burgerItem = document.querySelector(".burger");

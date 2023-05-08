@@ -1,28 +1,32 @@
 .icon-btn{
-    display:flex;
+  display:flex;
 }
 
 .icon-circle {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 16px;
-    height: 16px;
-    border-radius: 10px;
-    background-color: $color-btn-unactive;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 10px;
+  background-color: $color-btn-unactive;
 
-    &__light {
-        background-color: $color-acordeon-btn-unactive;
-    }
+  &__light {
+    background-color: $color-acordeon-btn-unactive;
+  }
+
+  @include media-mobile{
+    margin-right: 0.9rem;
+  }
 }
 
 .icon-arrow {
-    display: block;
-    width: 6px;
-    height: 4px;
-    background-image: url("/src/img/svg/arrow-light.svg");
+  display: block;
+  width: 6px;
+  height: 4px;
+  background-image: url("/src/img/svg/arrow-light.svg");
 
-    &__dark {
-        background-image: url("/src/img/svg/arrow-dark.svg");
-    }
+  &__dark {
+    background-image: url("/src/img/svg/arrow-dark.svg");
+  }
 }

@@ -36,22 +36,74 @@
   @include media-mobile{
     padding: 0 3rem;
   }
-}
 
-.prices__name {
-  margin: 1.6rem 0;
-}
-
-.price_btn {
-  display: inline-block;
-}
-
-.price__card {
-  display: none;
-}
-
-.icon-circle {
-  @include media-mobile{
-    margin-right: 0.9rem;
+  .prices__name {
+    margin: 1.6rem 0;
   }
+
+  .price_btn {
+    display: inline-block;
+  }
+}
+
+.price-card {
+  padding: 1.6rem 3.8rem 1.2rem;
+  background: $color-acordeon-active;
+  border-radius: 2rem;
+
+  &__name{
+    @include flex-between;
+
+    &::after{
+      content: "";
+      margin: 0.8rem 0.8rem 0.6rem 0;
+      background-color: $color-btn-active;
+      height: 0.5px;
+      width:100%
+    }
+  }
+
+  &__dscrptn{
+    @include font(1rem, 1rem, 300);
+    color: $color-text-light;
+    margin-bottom: 0.6rem;
+  }
+
+  h5{
+    margin: 0 0 0.8rem;
+    font-weight: 400;
+  }
+
+  &__price_span{
+    color: $color-additional;
+    font-weight: 700;
+
+    &-big{
+      font-size: 1.6rem;
+      color: $color-additional;
+      font-weight: 700;
+    }
+  }
+
+  &__order-button{
+    display: inline-flex;
+    padding: 0.3rem 2rem;
+    background-color:$color-light;
+    border-radius: 1rem;
+    
+  }
+
+  &__order-link{
+    @include font( 1.4rem, 2rem, 700);
+    color: $color-text-light;
+  }
+
+  .icon-arrow__light{
+    transform: rotate(180deg);
+  }
+  
+}
+
+.accordion-close{
+  display:none;
 }

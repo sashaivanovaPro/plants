@@ -80,6 +80,10 @@
 .grid__item {
   @include flex-column(center);
   text-align: center;
+
+  &_blur{
+    filter: blur(5px);
+  }
 }
 
 .services__gallery--image {
