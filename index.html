@@ -11,32 +11,24 @@
 <body>
     <div class="body__wrapper">
         <header class="header">
+            <div class="header__overlay"></div>
             <div class="wrapper header__wrapper">
                 <div class="header__logo">
-                    <a href="#!" class="header__logo">
-                        <object class="logo-svg" type="image/svg+xml"  data="./src/img/svg/logo.svg"></object>
-                        <!-- <img src="./src/img/svg/logo.svg" alt="Plants logo"> -->
-                    </a>
+                  <a href="#!" class="header__logo">
+                    <object class="logo-svg" type="image/svg+xml"  data="./src/img/svg/logo.svg"></object>
+                  </a>
                 </div>
                 <nav class="header__nav" id="header__nav">
-                    <ul class="header__list">
-                        <li class="header__item"><a href="#welcome" class="header__link" id="header__link1">Home</a></li>
-                        <li class="header__item"><a href="#about" class="header__link" id="header__link2">About us</a></li>
-                        <li class="header__item"><a href="#service" class="header__link" id="header__link3">Service</a></li>
-                        <li class="header__item"><a href="#prices" class="header__link" id="header__link4">Price</a></li>
-                        <li class="header__item"><a href="#contacts" class="header__link" id="header__link5">Contacts</a></li>
-                    </ul>
-                    <div class="transparant" id="transparant"></div>
-                    <div class="header__nav--close" id="header__nav--close">
-                        <span class="header__nav--close-line"></span>
-                        <span class="header__nav--close-line"></span>
-                    </div>
+                  <ul class="header__list">
+                    <li class="header__item"><a data-goto="#welcome" class="header__link smooth__link" id="header__link1" href="#">Home</a></li>
+                    <li class="header__item"><a data-goto="#about" class="header__link smooth__link" id="header__link2" href="#">About us</a></li>
+                    <li class="header__item"><a data-goto="#service" href="#" class="header__link smooth__link" id="header__link3">Service</a></li>
+                    <li class="header__item"><a data-goto="#prices" href="#" class="header__link smooth__link" id="header__link4">Price</a></li>
+                    <li class="header__item"><a data-goto="#contacts" href="#" class="header__link smooth__link" id="header__link5">Contacts</a></li>
+                  </ul>
                 </nav>
                 <div class="header__burger burger" id="burger">
                     <span class="burger__line burger__line--one"></span>
-                    <!-- <span class="burger__line burger__line--two"></span>
-                    <span class="burger__line burger__line--three"></span>
-                    <span class="burger__line burger__line--four"></span> -->
                 </div>
             </div>
         </header>
@@ -54,151 +46,156 @@
                 </div>
             </section>
             <section class="about" id="about">
-                <div class="wrapper">
-                    <div class="about__wrapper layout-2-columns">
-                        <div class="about-text__wrapper text__wrapper">                            
-                            <h2 class="about__header about__heading">We are <span class="about__heading_colored orangetext">professional <br> experienced</span> gardeners</h2>
-                            <p class="about__paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                        </div>
-                        <!-- <div class="about__image--wrapper"> -->
-                            <img class="about__image" src="./src/img/svg/houseplant.svg" alt="houseplant">
-                        <!-- </div> -->
-                    </div>
+              <div class="wrapper">
+                <div class="about__wrapper layout-2-columns">
+                  <div class="about-text__wrapper text__wrapper">                            
+                    <h2 class="about__header about__heading">We are <span class="about__heading_colored orangetext">professional <br> experienced</span> gardeners</h2>
+                    <p class="about__paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                  </div>
+                    <img class="about__image" src="./src/img/svg/houseplant.svg" alt="houseplant">
                 </div>
+              </div>
             </section>
             <section class="service" id ="service">
-                <div class="wrapper">
-                    <div class="services__wrapper">
-                        <h2 class="service__headder service__heading">Service and our projects</h2>
-                        <div class="button__wrapper">
-                            <button class="button button_service service__button service__button1" id="gardens">Gardens</button>
-                            <button class="button button_service service__button service__button2" id="lawn">Lawn</button>
-                            <button class="button button_service service__button service__button3" id="planting">Planting</button>
-                        </div>
-                    </div>
-                    <div class="services__gallery">
-                        <div class="grid__wrapper">
-                            <div class="grid__item grid__item1 plant__blur lawn__blur">
-                                <img class="services__gallery--image services__gallery--image1" src="./src/img/jpg/1-orangegloves.jpeg" alt="gardening">
-                                <div class="description__wrapper">
-                                    <h3 class="service__pick--name">Garden care</h3>
-                                    <p class="service__pick--description">Lorem Ipsum has been the industry</p>
-                                </div>
-                            </div>
-                            <div class="grid__item grid__item2 gardens__blur lawn__blur">
-                                    <img class="services__gallery--image services__gallery--image2" src="./src/img/jpg/2-lemon.jpeg" alt="lemon growing">
-                                    <div class="description__wrapper">
-                                        <h3 class="service__pick--name">Planting</h3>
-                                        <p class="service__pick--description">Lorem Ipsum has been the industry</p>
-                                    </div>
-                            </div>
-                            <div class="grid__item grid__item3 gardens__blur plant__blur">
-                                    <img class="services__gallery--image services__gallery--image3" src="./src/img/jpg/3-watering.jpeg" alt="lawn care">
-                                    <div class="description__wrapper">
-                                        <h3 class="service__pick--name">Lawn care</h3>
-                                        <p class="service__pick--description">Lorem Ipsum has been the industry</p>
-                                    </div>
-                            </div>
-                            <div class="grid__item grid__item4 gardens__blur lawn__blur">
-                                    <img class="services__gallery--image services__gallery--image4" src="./src/img/jpg/4-roses.jpeg" alt="flower growning">
-                                    <div class="description__wrapper">
-                                        <h3 class="service__pick--name">Planting</h3>
-                                        <p class="service__pick--description">Lorem Ipsum has been the industry</p>
-                                    </div>
-                            </div>
-                            <div class="grid__item grid__item5 plant__blur lawn__blur">
-                                    <img class="services__gallery--image services__gallery--image5" src="./src/img/jpg/5-book.jpeg" alt="garden care">
-                                    <div class="description__wrapper">
-                                        <h3 class="service__pick--name">Garden care</h3>
-                                        <p class="service__pick--description">Lorem Ipsum has been the industry</p>
-                                    </div>
-                            </div>
-                            <div class="grid__item grid__item6 gardens__blur lawn__blur">
-                                    <img class="services__gallery--image services__gallery--image6" src="./src/img/jpg/6-cactus.jpeg" alt="cactus">
-                                    <div class="description__wrapper">
-                                        <h3 class="service__pick--name">Planting</h3>
-                                        <p class="service__pick--description">Lorem Ipsum has been the industry</p>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
+              <div class="wrapper">
+                <div class="services__wrapper">
+                  <h2 class="service__headder service__heading">Service and our projects</h2>
+                  <div class="button__wrapper service__button--wrapper">
+                    <button class="button button_service service__button service__button1 button__unclicked garden" id="garden">Gardens</button>
+                    <button class="button button_service service__button service__button2 button__unclicked lawn" id="lawn">Lawn</button>
+                    <button class="button button_service service__button service__button3 button__unclicked plant" id="planting">Planting</button>
+                  </div>
                 </div>
+                <div class="services__gallery">
+                  <div class="grid__wrapper">
+                    <div class="grid__item grid__item1 garden">
+                      <img class="services__gallery--image services__gallery--image1" src="./src/img/jpg/1-orangegloves.jpeg" alt="gardening">
+                      <div class="description__wrapper">
+                        <h3 class="service__pick--name">Garden care</h3>
+                        <p class="service__pick--description">Lorem Ipsum has been the industry</p>
+                      </div>
+                    </div>
+                    <div class="grid__item grid__item2 planting">
+                            <img class="services__gallery--image services__gallery--image2" src="./src/img/jpg/2-lemon.jpeg" alt="lemon growing">
+                            <div class="description__wrapper">
+                                <h3 class="service__pick--name">Planting</h3>
+                                <p class="service__pick--description">Lorem Ipsum has been the industry</p>
+                            </div>
+                    </div>
+                    <div class="grid__item grid__item3 lawn">
+                            <img class="services__gallery--image services__gallery--image3" src="./src/img/jpg/3-watering.jpeg" alt="lawn care">
+                            <div class="description__wrapper">
+                                <h3 class="service__pick--name">Lawn care</h3>
+                                <p class="service__pick--description">Lorem Ipsum has been the industry</p>
+                            </div>
+                    </div>
+                    <div class="grid__item grid__item4 planting">
+                            <img class="services__gallery--image services__gallery--image4" src="./src/img/jpg/4-roses.jpeg" alt="flower growning">
+                            <div class="description__wrapper">
+                                <h3 class="service__pick--name">Planting</h3>
+                                <p class="service__pick--description">Lorem Ipsum has been the industry</p>
+                            </div>
+                    </div>
+                    <div class="grid__item grid__item5 garden">
+                            <img class="services__gallery--image services__gallery--image5" src="./src/img/jpg/5-book.jpeg" alt="garden care">
+                            <div class="description__wrapper">
+                                <h3 class="service__pick--name">Garden care</h3>
+                                <p class="service__pick--description">Lorem Ipsum has been the industry</p>
+                            </div>
+                    </div>
+                    <div class="grid__item grid__item6 planting">
+                            <img class="services__gallery--image services__gallery--image6" src="./src/img/jpg/6-cactus.jpeg" alt="cactus">
+                            <div class="description__wrapper">
+                                <h3 class="service__pick--name">Planting</h3>
+                                <p class="service__pick--description">Lorem Ipsum has been the industry</p>
+                            </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </section>
             <section class="prices" id="prices">
-                <div class="wrapper">
-                    <div class="prices__wrapper layout-2-columns">
-                        <div class="plans__wrapper">
-                            <h2 class="prices__headder--left prices__heading">Prices</h2>
-                            <div class="prices__options accordion">
-                                <!--<div class="basics__wrapper"></div>-->
-                                    <div class="prices__options--item prices__options--item1 accordion__item" data-name="accordeon-title">
-                                        <h3 class="prices__name prices__name1">Basics</h3>
-                                        <div class="icon-btn">
-                                            <span class="icon-circle icon-circle__light">
-                                                <span class="icon-arrow icon-arrow__dark"></span>
-                                            </span>
-                                        </div>
-                                        <!-- <img class="prices__button prices__button1" src="./src/img/svg/accordion_btn.svg" alt="btn"> -->
-                                    </div>
-                                    <div class="price__card price__card1" id="basics">
-                                        <div class="price__card--wrapper">
-                                            <h3 class="price__card--plan">Basics</h3>
-                                            <img src="./src/img/svg/accordion_btn_top.svg" alt="">
-                                        </div>
-                                        <hr>
-                                        <p class="plan__dscrptn">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
-                                        <h5 class="plan__price"><span class="red__span">&#36;</span><span class="red__big--span">15</span> / per hour</h5>
-                                        <button class="order__button"><a href="#contacts" class="order__link"">Order</a></button>
-                                    </div>
-                                <div class="accordion__item prices__options--item prices__options--item2" data-name="accordeon-title">
-                                    <h3 class="prices__name prices__name2">Standard</h3>
-                                    <div class="icon-btn">
-                                        <span class="icon-circle icon-circle__light">
-                                            <span class="icon-arrow icon-arrow__dark"></span>
-                                        </span>
-                                    </div>
-                                    <!-- <img class="prices__button prices__button2" src="./src/img/svg/accordion_btn.svg" alt="btn"> -->
-                                </div>
-                                <div class="price__card price__card2" id="standart">
-                                    <div class="price__card--wrapper">
-                                        <h3 class="price__card--plan">Standard</h3>
-                                        <img src="./src/img/svg/accordion_btn_top.svg" alt="">
-                                    </div>
-                                    <hr>
-                                    <p class="plan__dscrptn">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
-                                    <h5 class="plan__price"><span class="red__span">&#36;</span><span class="red__big--span">25</span> / per hour</h5>
-                                    <button class="order__button"><a href="#contacts" class="order__link"">Order</a></button>
-                                </div>
-                                <div class="accordion__item prices__options--item prices__options--item3" data-name="accordeon-title">
-                                    <h3 class="prices__name prices__name3">Pro care</h3>
-                                    <div class="icon-btn">
-                                        <span class="icon-circle icon-circle__light">
-                                            <span class="icon-arrow icon-arrow__dark"></span>
-                                        </span>
-                                    </div>
-                                    <!-- <img class="prices__button prices__button3" src="./src/img/svg/accordion_btn.svg" alt="btn"> -->
-                                </div>
-                                <div class="price__card price__card3" id="procare">
-                                    <div class="price__card--wrapper">
-                                        <h3 class="price__card--plan">Pro care</h3>
-                                        <img class="price__btn" src="./src/img/svg/accordion_btn_top.svg" alt="to top">
-                                    </div>
-                                    <hr>
-                                    <p class="plan__dscrptn">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
-                                    <h5 class="plan__price"><span class="red__span">&#36;</span><span class="red__big--span">35</span> / per hour</h5>
-                                    <button class="order__button"><a href="#contacts" class="order__link"">Order</a></button>
-                                </div>
-                            </div>
+              <div class="wrapper">
+                <div class="prices__wrapper layout-2-columns">
+                  <div class="plans__wrapper">
+                    <h2 class="prices__headder--left prices__heading">Prices</h2>
+                    <div class="prices__options accordion">
+                      <div class="accordion__item prices__options--item prices__options--item1" data-name="accordeon-title">
+                        <h3 class="prices__name prices__name1">Basics</h3>
+                        <div class="icon-btn">
+                          <span class="icon-circle icon-circle__light">
+                            <span class="icon-arrow icon-arrow__dark"></span>
+                          </span>
                         </div>
-                        <div class="rightside__wrapper">
-                            <h3 class="prices__headder--right prices__subheading">Our best <span class="prices__subheading_colored greentext"> gardeners</span> are ready to help you</h3>
-                            <div class="contact__button--block">
-                                <button class="button contact-button">Contact us</button>
-                            </div>
-                            <img class="prices__image" src="./src/img/svg/small-leafs.svg" alt="leaves">
-                        </div>
+                      </div>
+                      <div class="price-card price-card1 accordion-close" id="basics">
+                          <div class="price-card__name">
+                              <h3 class="price-card__plan">Basics</h3>
+                              <div class="icon-btn">
+                                <span class="icon-circle icon-circle__dark">
+                                  <span class="icon-arrow icon-arrow__light"></span>
+                                </span>
+                              </div>
+                          </div>
+                          <p class="price-card__dscrptn">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                          <h5 class="price-card__price"><span class="price-card__price_span">&#36;</span><span class="price-card__price_span-big">15</span> / per hour</h5>
+                          <div class="price-card__order-button"><a href="#contacts" class="price-card__order-link">Order&nbsp&nbsp</a></div>
+                      </div>
+                      <div class="accordion__item prices__options--item prices__options--item2" data-name="accordeon-title">
+                          <h3 class="prices__name prices__name2">Standard</h3>
+                          <div class="icon-btn">
+                              <span class="icon-circle icon-circle__light">
+                                  <span class="icon-arrow icon-arrow__dark"></span>
+                              </span>
+                          </div>
+                          <!-- <img class="prices__button prices__button2" src="./src/img/svg/accordion_btn.svg" alt="btn"> -->
+                      </div>
+                      <div class="price-card price-card2 accordion-close" id="standart">
+                          <div class="price-card__name">
+                              <h3 class="price-card__plan">Standard</h3>
+                              <div class="icon-btn">
+                                <span class="icon-circle icon-circle__dark">
+                                  <span class="icon-arrow icon-arrow__light"></span>
+                                </span>
+                              </div>
+                          </div>
+                          <p class=" price-card__dscrptn">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                          <h5 class="price-card__price"><span class="price-card__price_span">&#36;</span><span class="price-card__price_span-big">25</span> / per hour</h5>
+                          <div class="price-card__order-button"><a href="#contacts" class="price-card__order-link">Order</a></div>
+                      </div>
+                      <div class="accordion__item prices__options--item prices__options--item3" data-name="accordeon-title">
+                          <h3 class="prices__name prices__name3">Pro care</h3>
+                          <div class="icon-btn">
+                              <span class="icon-circle icon-circle__light">
+                                  <span class="icon-arrow icon-arrow__dark"></span>
+                              </span>
+                          </div>
+                          <!-- <img class="prices__button prices__button3" src="./src/img/svg/accordion_btn.svg" alt="btn"> -->
+                      </div>
+                      <div class="price-card price-card3 accordion-close" id="procare">
+                          <div class="price-card__name">
+                              <h3 class="price-card__plan">Pro care</h3>
+                              <div class="icon-btn">
+                                <span class="icon-circle icon-circle__dark">
+                                  <span class="icon-arrow icon-arrow__light"></span>
+                                </span>
+                              </div>
+                          </div>                           
+                          <p class=" price-card__dscrptn">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                          <h5 class="price-card__price"><span class="price-card__price_span">&#36;</span><span class="price-card__price_span-big">35</span> / per hour</h5>
+                          <div class="price-card__order-button"><a href="#contacts" class="price-card__order-link">Order</a></div>
+                      </div>
                     </div>
+                  </div>
+                  <div class="rightside__wrapper">
+                    <h3 class="prices__headder--right prices__subheading">Our best <span class="prices__subheading_colored greentext"> gardeners</span> are ready to help you</h3>
+                    <div class="contact__button--block">
+                      <button class="button contact-button">Contact us</button>
+                    </div>
+                    <img class="prices__image" src="./src/img/svg/small-leafs.svg" alt="leaves">
+                  </div>
                 </div>
+              </div>
             </section>
             <section class="contacts" id="contacts">
                 <div class="wrapper">
@@ -331,10 +328,10 @@
                 </div>
             </div>
         </footer>
+        <script src="./src/js/burger.js"></script>
         <script src="./src/js/main.js"></script>
-        <!-- <script src="./src/js/accordeon.js"></script>
         <script src="./src/js/blur.js"></script>
-        <script src="./src/js/dropdown.js"></script> -->
+        <script src="./src/js/accordion.js"></script>
     </div>
 </body>
 </html>

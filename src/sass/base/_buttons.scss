@@ -3,15 +3,27 @@
   height: 5rem;
   @include flex-center();
   @extend %font-main;
-  @include font (2rem, 2.6rem, 400);
-  background-color: $color-background;
-  color: $color-additional;
+  @include font (2rem, 2.6rem, 400);  
   border: 1px solid $color-additional;
   border-radius: 0.5rem;
   cursor: pointer;
 
   &_service {
-    @extend %font-add;
+    @extend %font-add;    
+  }
+
+  &:hover{
+    box-shadow: $color-text-light 0.3rem 0.3rem 0.5rem;
+  }
+  
+  &__unclicked {
+    background-color: $color-background;
+    color: $color-additional;
+  }
+
+  &__clicked {
+      color: $color-light;
+      background-color: $color-additional;
   }
 
   @include media-mobile{
@@ -19,11 +31,6 @@
     width: 12.1rem;
     height: 3.5rem;
   }
-}
-
-.button:hover {
-    color: $color-light;
-    background-color: $color-additional;
 }
 
 .contact-button {
