@@ -542,37 +542,26 @@ a {
   fill: #499A18;
 }
 
-/* inter-regular - latin */
+/* inter-regular - variable */
 @font-face {
   font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  src: local(""), url("/fonts/inter-v12-latin-regular.woff2") format("woff2"), url("/fonts/inter-v12-latin-regular.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* inter-700 - latin */
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  src: local(""), url("/fonts/inter-v12-latin-700.woff2") format("woff2"), url("/fonts/inter-v12-latin-700.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("/src/fonts/Inter.var.woff2") format("woff2-variations");
+  font-weight: 100 9 0;
+  font-display: swap;
 }
 /* inika-regular - latin */
 @font-face {
   font-family: "Inika";
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("/fonts/inika-v21-latin-regular.woff2") format("woff2"), url("/fonts/inika-v21-latin-regular.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("/src/fonts/inika-v21-latin-regular.woff2") format("woff2");
 }
 /* inika-700 - latin */
 @font-face {
   font-family: "Inika";
   font-style: normal;
   font-weight: 700;
-  src: local(""), url("/fonts/inika-v21-latin-700.woff2") format("woff2"), url("/fonts/inika-v21-latin-700.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url("/src/fonts/inika-v21-latin-700.woff2") format("woff2");
 }
 .icon-btn {
   display: flex;
