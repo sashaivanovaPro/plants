@@ -1,4 +1,6 @@
-@import "./base/normalize";
+// Vendors
+
+@import "./vendors/normalize";
 
 // Abstracts
 
@@ -30,3 +32,4 @@
 @import "./components/service";
 @import "./components/contacts";
 @import "./components/prices";
+

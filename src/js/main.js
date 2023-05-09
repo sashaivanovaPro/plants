@@ -1,26 +1,4 @@
 
-
-window.onload = function(){
-    console.log("Hello RS!");
-
-    // burger handler
-    burgerIconClick();
-    outofIconClick();
-
-    // Smooth navigation
-
-    // navLinkClick();
-
-    //service section blur not choosed elements
-
-    serviceBlur ();
-
-    // Accordion prices
-
-    accordionSwitch();
-
-}
-
 // Плавная прокрутка -- Smooth navigation
 
 const smooth = document.querySelectorAll(".smooth__link[data-goto]");
