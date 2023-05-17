@@ -6,14 +6,14 @@ const overlay = document.querySelector('.header__overlay');
 const body = document.querySelector('body');
 const link = document.querySelector(".header__item");
 
-function burgerIconClick() {
+export const burgerIconClick = () => {
   menu.classList.toggle('header__nav--active');
   burgerItem.classList.toggle('burger__move');
   overlay.classList.toggle('header__overlay--active');
   body.classList.toggle('hidden');
 };
 
-function outofIconClick() {
+export const outofIconClick = () => {
   menu.classList.remove('header__nav--active');
   burgerItem.classList.remove('burger__move');
   overlay.classList.remove('header__overlay--active');

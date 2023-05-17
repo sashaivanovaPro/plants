@@ -1,6 +1,6 @@
 let buttons = document.querySelectorAll('.service__button');
 
-const serviceBlur = () => {
+export const serviceBlur = () => {
   document.querySelector('.service__button--wrapper').addEventListener('click', (e) => {
     if (e.target.classList.contains('service__button')){
       let clickedButton = e.target;
@@ -11,19 +11,19 @@ const serviceBlur = () => {
   })
 }
 
-const removeSelectedButtons = () => { 
+export const removeSelectedButtons = () => { 
   buttons.forEach(button =>{
     button.classList.remove('button__clicked');
     button.classList.add('button__unclicked');    
   })
 }
 
-const selectClickedButton = (clickedButton) => {
+export const selectClickedButton = (clickedButton) => {
   clickedButton.classList.add('button__clicked');
   clickedButton.classList.remove('button__unclicked');
 }
 
-const filterSelectedServices = (e) => {
+export const filterSelectedServices = (e) => {
   let services = document.querySelectorAll('.grid__wrapper .grid__item');
   let buttonName = e.target.id;
   services.forEach( grid => {    

@@ -1,3 +1,7 @@
+.dropdown{
+  position: relative;
+}
+
 .dropdown__button {
   @include flex-between();
   background-color: $color-acordeon-active;
@@ -5,9 +9,25 @@
   padding: 0.5rem 3rem 0.5rem 2rem;
   width: 45rem;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all ease-in-out 0.3s;
 
-  &:active {
+  // &:active,
+  // &:focus {
+  //   background-color: $color-dropdown-active;
+  //   box-shadow: none;
+  // }
+
+  &--active {
     background-color: $color-dropdown-active;
+    box-shadow: none;
+
+    .icon-circle{
+      background-color: $color-btn-unactive;
+    }
+
+    .icon-arrow{
+      transform: rotate(180deg);
+    }
   }
 
   &:active .icon-circle {
@@ -23,6 +43,7 @@
 
   @include media-mobile{
     padding: 0.5rem 1.3rem 0.5rem 2rem;
+    margin: 0 auto;
   }
 }
 
@@ -34,8 +55,101 @@
 
 .dropdown__list {
   display: none;
+  width: 100%;
+  position: absolute;
+  margin: 0 auto;
+  list-style-type: none;
+  flex-direction: column;
+  gap: 0.6rem;
+  background-color: $color-dropdown;
+  padding: 2.7rem 5rem 2.5rem 2.8rem;
+
+  &--active{
+    display: flex;
+  }
+
+  &--item {
+    @include font(1.6rem, 4rem, 400);
+    color: $color-primary;
+    border-bottom: 1px solid $color-acordeon-btn-unactive;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-text-light;    
+      border-bottom: 1px solid $color-text-light;
+   }
+ }
+}
+
+.dropdown__list--visible{
+  display: block;
+}
+
+.city__card--wrapper {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;  
+  background-color: $color-acordeon;  
+
+  &-left{
+    margin-right: 1rem;
+
+    @include media-tablet{
+      margin-right: 0;
+      flex-basis: 30%;
+    }
+  }
+
+  &-right{
+    color:$color-text-light;
+  }  
 }
 
 .city__card {
+  display: block;
+  list-style-type: none;
+  @include font(1.6rem, 4rem, 400);
+  letter-spacing: 1px;
+  color: $color-heading;
+  background-color: $color-background;
+  padding: 1.7rem 3rem 3.2rem 3.2rem;
+  border: 1px solid $color-heading;
+  border-radius: 2rem;
+  margin-top: 4.7rem;
+
+  &--button {
+    display: block;
+    padding: 0.5rem 4.5rem;
+    margin: 0 auto;
+    border: 1px solid $color-additional;
+    border-radius: 0.5rem;
+    @include font(1rem, 1.3rem, 700);
+    @extend %font-add;
+    margin-top: 1.8rem;
+    background-color: $color-background;
+  }
+  &--list li:last-child{
+    @include media-tablet{
+     line-height: 2rem;
+     letter-spacing: 0;
+    }
+  }
+
+  @include media-tablet{
+    padding: 2.3rem 3.6rem;
+    margin-top: 4.9rem;
+  }  
+
+  @include media-mobile{
+    width:30rem;
+  }
+
+  &--visible {
+    display: block;
+  }
+}
+
+.hidden{
   display: none;
 }

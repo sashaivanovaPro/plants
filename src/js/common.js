@@ -1,7 +1,7 @@
 
 // Плавная прокрутка -- Smooth navigation
 
-const smooth = document.querySelectorAll(".smooth__link[data-goto]");
+export const smooth = document.querySelectorAll(".smooth__link[data-goto]");
 
 if (smooth.length > 0) {
   smooth.forEach(smooth => {

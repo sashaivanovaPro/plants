@@ -14,11 +14,13 @@
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
+  
   @include media-laptop{
     flex-direction: column-reverse;
     align-items: center;
     gap: 25rem;
   }
+ 
   @include media-mobile{
     gap: 13.2rem;
   }
@@ -46,7 +48,7 @@
     @include font(4rem, 5.2rem, bold);
   }
   @include media-mobile{
-    margin: 0 0 8rem;
+    margin: 0 0 4rem;
     @include font(2.5rem, 3.3rem, bold);
   }
 }

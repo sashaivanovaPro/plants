@@ -1,5 +1,5 @@
 .accordion {
-  max-width: 33.2rem;
+  width: 33.2rem;
   border: 1px solid $color-border;
   border-radius: 2rem;
   padding: 3.4rem 4.1rem;
@@ -19,7 +19,7 @@
   padding: 0 4rem;
   border-radius: 2rem;
   width: 100%;
-
+ 
   &:active {
     background-color: $color-acordeon-active;
   }
@@ -50,7 +50,6 @@
   padding: 1.6rem 3.8rem 1.2rem;
   background: $color-acordeon-active;
   border-radius: 2rem;
-  transition: all 0.5s ease-in-out;
 
   @include media-mobile{
     padding: 1.6rem 3rem 1.2rem;
@@ -105,10 +104,9 @@
 
   .icon-arrow__light{
     transform: rotate(180deg);
-  }
-  
+  }  
 }
 
 .accordion-close{
-  display:none;
+  display: none;
 }
