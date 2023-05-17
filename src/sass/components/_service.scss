@@ -89,9 +89,16 @@
   }
 
   &_blur{
-    filter: blur(5px);
+    filter: blur(4px);
   }
+}
 
+picture>img{
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 35rem;
+  border-radius: 2rem 2rem 0 0;
 }
 
 .services__gallery--image {

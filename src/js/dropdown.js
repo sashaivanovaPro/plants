@@ -22,7 +22,7 @@ export const dropdownCitySwitch = () =>{
      rotation.style.setProperty('transform','rotate(180deg)');
     } 
     if(dropdownBtn.firstElementChild.innerText !== 'City' && !dropdownList.classList.contains('dropdown__list--visible')){
-      // console.log('move'); 
+      
       rotation.style.setProperty('transform','initial');
     }   
 
@@ -50,7 +50,7 @@ export const dropdownCitySwitch = () =>{
 export const closeDropdown = () => {
   document.addEventListener('click', (e) => {
     if(e.target !== dropdownBtn){
-      console.log('outside click'); 
+      // console.log('outside click'); 
       // dropdownList.classList.remove('dropdown__list--visible');
       // rotation.style.setProperty('transform','initial');
       // dropdownBtn.classList.remove('dropdown__button--active');
@@ -63,20 +63,20 @@ export const closeDropdown = () => {
 export const makeCardsVisible = () => {
   const adressLinks = document.querySelectorAll('[data-value]');  
   const adressCards = document.querySelectorAll('[data-value-content]');
-  console.log(adressCards);
+  
   adressLinks.forEach(adress =>{
     adress.addEventListener('click', () => {
 
       // make all cards invisible
       
       adressCards.forEach(item => {
-        item.classList.add('hidden');
+        item.classList.add('card-hidden');
       })
 
       // make visible selected card 
 
       const showAdress = document.querySelector('#'+adress.dataset.value);
-      showAdress.classList.remove('hidden');
+      showAdress.classList.remove('card-hidden');
 
       // change space between dropdown and image of contacts section due to its initial value 
 
