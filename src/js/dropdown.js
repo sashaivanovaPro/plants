@@ -1,4 +1,4 @@
-// Dropdown from contacts section 
+// Dropdown (DD) from contacts section 
 
 const dropdownBtn = document.querySelector('.dropdown__button');
 // const cityCard = document.querySelectorAll('.city__card');
@@ -16,13 +16,29 @@ export const dropdownCitySwitch = () =>{
     // toggle visibility of City List
     dropdownList.classList.toggle('dropdown__list--visible');
 
+    // make contact block image disappeared after opening city list for mobile devices 
+    const screenWidth = window.innerWidth;
+    const contactsImage = document.querySelector('.contacts__image');
+    const contactsWrapper = document.querySelector('.contacts__wrapper');
+    console.log(screenWidth); 
+    // for first click img disappears and when list is open add a padding bottom for section to save the section height same size
+    if (screenWidth < 425.98 && dropdownBtn.firstElementChild.innerText === 'City') {
+    contactsImage.style.display = "none";
+    contactsWrapper.style.paddingBottom = "27.4rem"; // add more space than in Figma not to change elemebts position and margins between elements
+    }
+    // when we click to DD button without chosing city - img come back and section padding bottom returns to zero 
+    if (screenWidth < 425.98 && dropdownBtn.firstElementChild.innerText === 'City' && !dropdownList.classList.contains('dropdown__list--visible')){
+      contactsImage.style.display = "block";
+      contactsWrapper.style.paddingBottom = "0rem";
+    }
+ 
     // when the city is selected color stay active + arrow rotation when click City button
     if(dropdownBtn.firstElementChild.innerText != 'City') {
      dropdownBtn.classList.add('dropdown__button--active');
-     rotation.style.setProperty('transform','rotate(180deg)');
+     rotation.style.setProperty('transform','rotate(180deg)');     
     } 
+    // moving back the arrow icon
     if(dropdownBtn.firstElementChild.innerText !== 'City' && !dropdownList.classList.contains('dropdown__list--visible')){
-      
       rotation.style.setProperty('transform','initial');
     }   
 
@@ -39,7 +55,10 @@ export const dropdownCitySwitch = () =>{
         // after clicking city name from city list
         if(dropdownBtn.firstElementChild.innerText !== 'City') {          
           rotation.style.setProperty('transform','initial');
-        }             
+          if (screenWidth < 425.98){
+          contactsWrapper.style.paddingBottom = "3.3rem"; // add padding bottom to section to have a space under a card for mobile devices
+          }   
+        }          
       })
     })
 })
