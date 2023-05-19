@@ -50,8 +50,8 @@
             <div class="about-text__wrapper text__wrapper">                            
               <h2 class="about__header about__heading">We are <span class="about__heading_colored orangetext">professional <br> experienced</span> gardeners</h2>
               <p class="about__paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-            </div>
-              <img class="about__image" src="./src/img/svg/houseplant.svg" alt="houseplant">
+            </div>            
+            <img class="about__image" src="./src/img/svg/houseplant.svg" alt="houseplant" loading="lazy" width = "464px" height="479px">
           </div>
         </div>
       </section>
@@ -60,85 +60,85 @@
           <div class="services__wrapper">
             <h2 class="service__headder service__heading">Service and our projects</h2>
             <div class="button__wrapper service__button--wrapper">
-              <button class="button button_service service__button service__button1 button__unclicked garden" id="garden">Gardens</button>
-              <button class="button button_service service__button service__button2 button__unclicked lawn" id="lawn">Lawn</button>
-              <button class="button button_service service__button service__button3 button__unclicked plant" id="planting">Planting</button>
+              <button class="button button__service service__button service__button1 garden" id="garden">Gardens</button>
+              <button class="button button__service service__button service__button2 lawn" id="lawn">Lawn</button>
+              <button class="button button__service service__button service__button3 plant" id="planting">Planting</button>
             </div>
           </div>
           <div class="services__gallery">
             <div class="grid__wrapper">
-              <div class="grid__item grid__item1 garden">
+              <div class="grid__item grid__item1 grid__item--no-blur garden" data-service="garden">
                 <!-- <img class="services__gallery--image services__gallery--image1" src="./src/img/jpg/1-orangegloves.jpeg" alt="gardening"> -->
                 <picture class="services__gallery--image">
                   <source type="image/webp" media="(min-width: 768px)" srcset="./src/img/webp/orangegloves-1600.webp">
                   <source type="image/jpg" media="(max-width: 768px)" srcset="./src/img/jpg/orangegloves-800.jpg">
                   <source type="image/jpg" media="(min-width: 768px)" srcset="./src/img/jpg/orangegloves-1600.jpg">
-                  <img src="./src/img/jpg/orangegloves-1600.jpg" alt="gardening">
+                  <img src="./src/img/jpg/orangegloves-1600.jpg" loading="lazy" alt="gardening">
                 </picture>
                 <div class="description__wrapper">
                   <h3 class="service__pick--name">Garden care</h3>
                   <p class="service__pick--description">Lorem Ipsum has been the industry</p>
                 </div>
               </div>
-              <div class="grid__item grid__item2 planting">
+              <div class="grid__item grid__item2 grid__item--no-blur planting" data-service="planting">
                       <!-- <img class="services__gallery--image services__gallery--image2" src="./src/img/jpg/2-lemon.jpeg" alt="lemon growing"> -->
                       <picture class="services__gallery--image">
                         <source type="image/webp" media="(min-width: 768px)" srcset="./src/img/webp/lemon-1600.webp">
                         <source type="image/jpg" media="(max-width: 768px)" srcset="./src/img/jpg/lemon-800.jpg">
                         <source type="image/jpg" media="(min-width: 768px)" srcset="./src/img/jpg/lemon-1600.jpg">
-                        <img src="./src/img/jpg/lemon-1600.jpg" alt="lemon growing">
+                        <img src="./src/img/jpg/lemon-1600.jpg" loading="lazy" alt="lemon growing">
                       </picture>
                       <div class="description__wrapper">
                           <h3 class="service__pick--name">Planting</h3>
                           <p class="service__pick--description">Lorem Ipsum has been the industry</p>
                       </div>
               </div>
-              <div class="grid__item grid__item3 lawn">
+              <div class="grid__item grid__item3 grid__item--no-blur lawn" data-service="lawn">
                       <!-- <img class="services__gallery--image services__gallery--image3" src="./src/img/jpg/3-watering.jpeg" alt="lawn care"> -->
                       <picture class="services__gallery--image">
                         <source type="image/webp" media="(min-width: 768px)" srcset="./src/img/webp/watering-1600.webp">
                         <source type="image/jpg" media="(max-width: 768px)" srcset="./src/img/jpg/watering-800.jpg">
                         <source type="image/jpg" media="(min-width: 768px)" srcset="./src/img/jpg/watering-1600.jpg">
-                        <img src="./src/img/jpg/watering-1600.jpg" alt="lawn care">
+                        <img src="./src/img/jpg/watering-1600.jpg" loading="lazy" alt="lawn care">
                       </picture>
                       <div class="description__wrapper">
                           <h3 class="service__pick--name">Lawn care</h3>
                           <p class="service__pick--description">Lorem Ipsum has been the industry</p>
                       </div>
               </div>
-              <div class="grid__item grid__item4 planting">
+              <div class="grid__item grid__item4 grid__item--no-blur planting" data-service="planting">
                       <!-- <img class="services__gallery--image services__gallery--image4" src="./src/img/jpg/4-roses.jpeg" alt="flower growning"> -->
                       <picture class="services__gallery--image">
                         <source type="image/webp" media="(min-width: 768px)" srcset="./src/img/webp/roses-1600.webp">
                         <source type="image/jpg" media="(max-width: 768px)" srcset="./src/img/jpg/roses-800.jpg">
                         <source type="image/jpg" media="(min-width: 768px)" srcset="./src/img/jpg/roses-1600.jpg">
-                        <img src="./src/img/jpg/roses-1600.jpg" alt="flower growning">
+                        <img src="./src/img/jpg/roses-1600.jpg" loading="lazy" alt="flower growning">
                       </picture>
                       <div class="description__wrapper">
                           <h3 class="service__pick--name">Planting</h3>
                           <p class="service__pick--description">Lorem Ipsum has been the industry</p>
                       </div>
               </div>
-              <div class="grid__item grid__item5 garden">
+              <div class="grid__item grid__item5 grid__item--no-blur garden" data-service="garden">
                       <!-- <img class="services__gallery--image services__gallery--image5" src="./src/img/jpg/5-book.jpeg" alt="garden care"> -->
                       <picture class="services__gallery--image">
                         <source type="image/webp" media="(min-width: 768px)" srcset="./src/img/webp/book-1600.webp">
                         <source type="image/jpg" media="(max-width: 768px)" srcset="./src/img/jpg/book-800.jpg">
                         <source type="image/jpg" media="(min-width: 768px)" srcset="./src/img/jpg/book-1600.jpg">
-                        <img src="./src/img/jpg/book-1600.jpg" alt="garden care">
+                        <img src="./src/img/jpg/book-1600.jpg" loading="lazy" alt="garden care">
                       </picture>
                       <div class="description__wrapper">
                           <h3 class="service__pick--name">Garden care</h3>
                           <p class="service__pick--description">Lorem Ipsum has been the industry</p>
                       </div>
               </div>
-              <div class="grid__item grid__item6 planting">
+              <div class="grid__item grid__item6 grid__item--no-blur planting" data-service="planting">
                       <!-- <img class="services__gallery--image services__gallery--image6" src="./src/img/jpg/6-cactus.jpeg" alt="cactus"> -->
                       <picture class="services__gallery--image">
                         <source type="image/webp" media="(min-width: 768px)" srcset="./src/img/webp/cactus-1600.webp">
                         <source type="image/jpg" media="(max-width: 768px)" srcset="./src/img/jpg/cactus-800.jpg">
                         <source type="image/jpg" media="(min-width: 768px)" srcset="./src/img/jpg/cactus-1600.jpg">
-                        <img src="./src/img/jpg/cactus-1600.jpg" alt="cactus cultivation">
+                        <img src="./src/img/jpg/cactus-1600.jpg" loading="lazy" alt="cactus cultivation">
                       </picture>
                       <div class="description__wrapper">
                           <h3 class="service__pick--name">Planting</h3>
@@ -163,7 +163,7 @@
                     </span>
                   </div>
                 </div>
-                <div class="price-card price-card1 accordion-close" id="basics">
+                <div class="price-card price-card1 accordion-description-close" id="basics">
                     <div class="price-card__name">
                         <h3 class="price-card__plan">Basics</h3>
                         <div class="icon-btn">
@@ -185,7 +185,7 @@
                     </div>
                     <!-- <img class="prices__button prices__button2" src="./src/img/svg/accordion_btn.svg" alt="btn"> -->
                 </div>
-                <div class="price-card price-card2 accordion-close" id="standart">
+                <div class="price-card price-card2 accordion-description-close" id="standart">
                     <div class="price-card__name">
                         <h3 class="price-card__plan">Standard</h3>
                         <div class="icon-btn">
@@ -206,7 +206,7 @@
                     </span>
                   </div>
                 </div>
-                <div class="price-card price-card3 accordion-close" id="procare">
+                <div class="price-card price-card3 accordion-description-close" id="procare">
                   <div class="price-card__name">
                       <h3 class="price-card__plan">Pro care</h3>
                       <div class="icon-btn">
@@ -234,7 +234,7 @@
       <section class="contacts" id="contacts">
         <div class="wrapper">
           <div class="contacts__wrapper">
-            <img class="contacts__image contacts__block--one" src="./src/img/svg/contact_woman.svg" alt="gardening woman">
+            <img class="contacts__image contacts__block--one" src="./src/img/svg/contact_woman.svg" loading="lazy" alt="gardening woman">
             <div class="contacts__info--wrapper">
               <h2 class="contacts__headder contacts__heading contacts__block--two">Contact us</h2>
               <div class="dropdown city__picker contacts__block--three">

@@ -334,7 +334,7 @@ template {
   font-family: "Inter", Verdana, sans-serif;
 }
 
-.city__card--button, .button_service, h2 {
+.city__card--button, .button__service, h2 {
   font-family: "Inika", "Bitstream Vera Serif", serif;
 }
 
@@ -472,16 +472,16 @@ a {
   border-radius: 0.5rem;
   cursor: pointer;
 }
-.button:hover {
-  box-shadow: #717171 0.3rem 0.3rem 0.5rem;
-}
-.button__unclicked {
+.button__service {
   background-color: #EDF2EC;
   color: #E06733;
 }
-.button__clicked {
+.button__service-clicked {
   color: #fff;
   background-color: #E06733;
+}
+.button:hover {
+  box-shadow: #717171 0.3rem 0.3rem 0.5rem;
 }
 @media screen and (max-width: 425.98px) {
   .button {
@@ -499,6 +499,7 @@ a {
   font-weight: bold;
   font-family: "Inika";
 }
+
 .button-more {
   width: 15.8rem;
   height: 4.4rem;
@@ -679,6 +680,7 @@ a {
   padding: 0 4rem;
   border-radius: 2rem;
   width: 100%;
+  cursor: pointer;
 }
 .accordion__item:active {
   background-color: #D6E7D2;
@@ -717,6 +719,7 @@ a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 }
 .price-card__name::after {
   content: "";
@@ -763,7 +766,11 @@ a {
   transform: rotate(180deg);
 }
 
-.accordion-close {
+.accordion-button-close {
+  display: none;
+}
+
+.accordion-description-close {
   display: none;
 }
 
@@ -782,6 +789,7 @@ a {
   width: 45rem;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   transition: all ease-in-out 0.3s;
+  cursor: pointer;
 }
 .dropdown__button--active {
   background-color: #C1E698;
@@ -1468,24 +1476,18 @@ a {
   align-items: center;
   text-align: center;
   border-radius: 2rem;
+  filter: blur(4px);
 }
 .grid__item:hover {
   box-shadow: 0.5rem 0.5rem 1rem #717171;
   scale: 1.01;
   cursor: pointer;
 }
-.grid__item_blur {
-  filter: blur(4px);
+.grid__item--no-blur {
+  filter: blur(0);
 }
 
-picture > img {
-  display: block;
-  object-fit: cover;
-  width: 100%;
-  height: 35rem;
-  border-radius: 2rem 2rem 0 0;
-}
-
+picture > img,
 .services__gallery--image {
   display: block;
   object-fit: cover;

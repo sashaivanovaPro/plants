@@ -2,18 +2,31 @@
 
 export const accordionSwitch = () => {
     const priceItems = document.querySelectorAll('.accordion__item');
+    const priceCards = document.querySelectorAll('.price-card');
+    // console.log(priceItems);
     priceItems.forEach(item =>{
       item.addEventListener('click', () => {
-        item.nextElementSibling.classList.remove('accordion-close');
-        item.classList.add('accordion-close');
-      })
+        
+        // initialy close all description window and shows all tarif buttons 
+        
+        priceCards.forEach(element =>{
+          element.classList.add('accordion-description-close');
+        })
+        priceItems.forEach(variant =>{
+          variant.classList.remove('accordion-button-close');
+        })
+        // Dropdown cklicking - makes button disappeared and shows description
+        item.nextElementSibling.classList.remove('accordion-description-close');
+        item.classList.add('accordion-button-close');
+        })
     });
-    const priceCards = document.querySelectorAll('.price-card');
-    // console.log(priceCards);
+    
+    // // console.log(priceCards);
     priceCards.forEach(card =>{
-      card.addEventListener('click', () => {
-        card.previousElementSibling.classList.remove('accordion-close');
-        card.classList.add('accordion-close');
+      card.addEventListener('click', () => {      
+        // Dropup, cklicking - makes description disappeared and shows button
+        card.previousElementSibling.classList.remove('accordion-button-close');
+        card.classList.add('accordion-description-close');
       })
     })
   }

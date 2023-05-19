@@ -7,25 +7,25 @@
   border: 1px solid $color-additional;
   border-radius: 0.5rem;
   cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out;
 
-  &_service {
-    @extend %font-add;    
+  &__service {
+    @extend %font-add;
+    background-color: $color-background;
+    color: $color-additional;
+    transition: background-color 0.5s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out;
+
+    &-clicked {
+      color: $color-light;
+      background-color: $color-additional;
+    }
   }
 
   &:hover{
     box-shadow: $color-text-light 0.3rem 0.3rem 0.5rem;
   }
   
-  &__unclicked {
-    background-color: $color-background;
-    color: $color-additional;
-  }
-
-  &__clicked {
-      color: $color-light;
-      background-color: $color-additional;
-  }
-
   @include media-mobile{
     @include font (1.5rem, 1.9rem, 400);
     width: 12.1rem;
@@ -36,12 +36,7 @@
 .contact-button {
   background-color: $color-light;
   font-weight: bold;  
-  font-family: "Inika";
-   
-  @include media-mobile{
-      
-  }
-      
+  font-family: "Inika";         
 }
 
 .button-more {
@@ -54,6 +49,7 @@
     color: $color-heading;
     text-transform: uppercase;
     border-radius: 1rem;
+    transition: background-color 0.5s ease-in-out;
     cursor: pointer;
 
     @include media-mobile{
