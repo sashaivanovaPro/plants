@@ -20,18 +20,19 @@
   border-radius: 2rem;
   width: 100%;
   cursor: pointer;
- 
-  &:active {
-    background-color: $color-acordeon-active;
-  }
-
-  &:active .icon-circle__light {
+  transition: background-color, box-shadow 0.2s ease-in-out;
+  
+  &:hover .icon-circle__light {
     background-color: $color-btn-unactive;
   }
 
-  &:active .icon-arrow__dark {
+  &:hover .icon-arrow__dark {
     background-image: url("/src/img/svg/arrow-light.svg");
-    transform: rotate(180deg);
+  }
+
+  &:hover{
+    box-shadow: $color-text-light 0.3rem 0.3rem 10px;
+    background-color: $color-acordeon-active;
   }
 
   @include media-mobile{
@@ -51,6 +52,11 @@
   padding: 1.6rem 3.8rem 1.2rem;
   background: $color-acordeon-active;
   border-radius: 2rem;
+  transition: box-shadow 0.2s ease-in-out;
+
+  &:hover{
+    box-shadow: $color-text-light 0.3rem 0.3rem 10px;
+  }
 
   @include media-mobile{
     padding: 1.6rem 3rem 1.2rem;

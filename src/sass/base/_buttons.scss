@@ -23,7 +23,7 @@
   }
 
   &:hover{
-    box-shadow: $color-text-light 0.3rem 0.3rem 0.5rem;
+    box-shadow: $color-text-light 0.3rem 0.3rem 1rem;
   }
   
   @include media-mobile{

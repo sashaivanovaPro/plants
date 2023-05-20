@@ -131,7 +131,7 @@
     transition: background-color, box-shadow 0.2s ease-in-out;
 
     &:hover{
-      box-shadow: $color-text-light 0.3rem 0.3rem 0.5rem;
+      box-shadow: $color-text-light 0.1rem 0.1rem 0.5rem;
       background-color: $color-acordeon-active;
     }
   }

@@ -15,6 +15,7 @@
   color: $color-links-nav;
   text-decoration: none;
   @extend %transition;
+  transition: color 0.2s ease-in-out;
 
   &:hover {
     color: $color-additional;
