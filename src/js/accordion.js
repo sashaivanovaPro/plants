@@ -1,6 +1,6 @@
 // Accordion from prices section
 
-export const accordionSwitch = () => {
+const accordionSwitch = () => {
     const priceItems = document.querySelectorAll('.accordion__item');
     const priceCards = document.querySelectorAll('.price-card');
     // console.log(priceItems);
@@ -30,6 +30,8 @@ export const accordionSwitch = () => {
       })
     })
   }
+
+export {accordionSwitch}
 
 
 

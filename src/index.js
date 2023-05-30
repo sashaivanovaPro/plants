@@ -1,7 +1,7 @@
-import {accordionSwitch} from './js/accordion';
+import './sass/newstyle.scss';
 import {burgerIconClick,outofIconClick} from './js/burger';
 import {serviceBlur} from './js/blur';
-import './sass/newstyle.scss';
+import {accordionSwitch} from './js/accordion';
 import {dropdownCitySwitch,closeDropdown, makeCardsVisible} from './js/dropdown';
 
 window.onload = function(){
@@ -18,10 +18,6 @@ window.onload = function(){
   // Accordion prices
 
   accordionSwitch();
-
-  // Smooth links
-
-  // navLinkClick();
 
   // Dropdown from contacts section 
 

@@ -343,7 +343,6 @@ html {
   scroll-behavior: smooth;
   font-size: 62.5%;
   width: 100vw;
-  overflow-x: hidden;
 }
 
 *,
@@ -359,7 +358,6 @@ body {
   font-size: 1.6rem;
   line-height: 2rem;
   font-style: normal;
-  /*overflow: hidden;*/
 }
 
 ul,
@@ -471,17 +469,20 @@ a {
   border: 1px solid #E06733;
   border-radius: 0.5rem;
   cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out;
 }
 .button__service {
   background-color: #EDF2EC;
   color: #E06733;
+  transition: background-color 0.5s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
 }
 .button__service-clicked {
   color: #fff;
   background-color: #E06733;
 }
 .button:hover {
-  box-shadow: #717171 0.3rem 0.3rem 0.5rem;
+  box-shadow: #717171 0.3rem 0.3rem 1rem;
 }
 @media screen and (max-width: 425.98px) {
   .button {
@@ -516,6 +517,7 @@ a {
   color: #000000;
   text-transform: uppercase;
   border-radius: 1rem;
+  transition: background-color 0.5s ease-in-out;
   cursor: pointer;
 }
 @media screen and (max-width: 425.98px) {
@@ -681,16 +683,17 @@ a {
   border-radius: 2rem;
   width: 100%;
   cursor: pointer;
+  transition: background-color, box-shadow 0.2s ease-in-out;
 }
-.accordion__item:active {
-  background-color: #D6E7D2;
-}
-.accordion__item:active .icon-circle__light {
+.accordion__item:hover .icon-circle__light {
   background-color: #AEA1A1;
 }
-.accordion__item:active .icon-arrow__dark {
+.accordion__item:hover .icon-arrow__dark {
   background-image: url("/src/img/svg/arrow-light.svg");
-  transform: rotate(180deg);
+}
+.accordion__item:hover {
+  box-shadow: #717171 0.3rem 0.3rem 10px;
+  background-color: #D6E7D2;
 }
 @media screen and (max-width: 425.98px) {
   .accordion__item {
@@ -708,6 +711,10 @@ a {
   padding: 1.6rem 3.8rem 1.2rem;
   background: #D6E7D2;
   border-radius: 2rem;
+  transition: box-shadow 0.2s ease-in-out;
+}
+.price-card:hover {
+  box-shadow: #717171 0.3rem 0.3rem 10px;
 }
 @media screen and (max-width: 425.98px) {
   .price-card {
@@ -790,6 +797,9 @@ a {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   transition: all ease-in-out 0.3s;
   cursor: pointer;
+}
+.dropdown__button:hover {
+  background-color: #C1E698;
 }
 .dropdown__button--active {
   background-color: #C1E698;
@@ -907,6 +917,11 @@ a {
   font-style: normal;
   margin-top: 1.8rem;
   background-color: #EDF2EC;
+  transition: background-color, box-shadow 0.2s ease-in-out;
+}
+.city__card--button:hover {
+  box-shadow: #717171 0.1rem 0.1rem 0.5rem;
+  background-color: #D6E7D2;
 }
 @media screen and (max-width: 767.98px) {
   .city__card--list li:last-child {
@@ -1119,6 +1134,7 @@ a {
 .header__link {
   color: #010201;
   text-decoration: none;
+  transition: color 0.2s ease-in-out;
 }
 .header__link:hover {
   color: #E06733;
@@ -1477,6 +1493,8 @@ a {
   text-align: center;
   border-radius: 2rem;
   filter: blur(4px);
+  transition: filter 0.5s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
 }
 .grid__item:hover {
   box-shadow: 0.5rem 0.5rem 1rem #717171;

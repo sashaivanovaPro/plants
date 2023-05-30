@@ -5,9 +5,29 @@ const dropdownBtn = document.querySelector('.dropdown__button');
 const dropdownList = document.querySelector('.dropdown__list');
 const cityList = document.querySelectorAll('.dropdown__list--item');
 const rotation = document.querySelector('#rotate');
+const cityPicker = document.querySelector('.dropdown');
+console.log(cityPicker); 
+
+// make Dropdown closed when clicking outside it 
+
+const closeDropdown = () => {
+  document.addEventListener('click', (e) => {
+    const btnTarget = e.target;
+    // console.log(btnTarget); 
+    if(dropdownBtn.firstElementChild.innerText === 'City'&& e.target !== dropdownBtn && !dropdownBtn.contains(btnTarget) && dropdownList.classList.contains('dropdown__list--visible')){
+      dropdownList.classList.remove('dropdown__list--visible');
+      dropdownBtn.classList.remove('dropdown__button--active');
+    }
+    if(e.target !== dropdownBtn && !dropdownBtn.contains(btnTarget) && dropdownList.classList.contains('dropdown__list--visible')){
+      // console.log('outside click'); 
+      dropdownList.classList.remove('dropdown__list--visible');
+      rotation.style.setProperty('transform','initial');      
+    }
+  })
+}
   
 
-export const dropdownCitySwitch = () =>{  
+const dropdownCitySwitch = () =>{  
 
   dropdownBtn.addEventListener('click', () =>{
     // toggling active class to initial City choice (color change + arrow rotation)
@@ -20,7 +40,7 @@ export const dropdownCitySwitch = () =>{
     const screenWidth = window.innerWidth;
     const contactsImage = document.querySelector('.contacts__image');
     const contactsWrapper = document.querySelector('.contacts__wrapper');
-    console.log(screenWidth); 
+    // console.log(screenWidth); 
     // for first click img disappears and when list is open add a padding bottom for section to save the section height same size
     if (screenWidth < 425.98 && dropdownBtn.firstElementChild.innerText === 'City') {
     contactsImage.style.display = "none";
@@ -64,22 +84,11 @@ export const dropdownCitySwitch = () =>{
 })
 }
 
-// make Dropdown closed when clicking outside it 
 
-export const closeDropdown = () => {
-  document.addEventListener('click', (e) => {
-    if(e.target !== dropdownBtn){
-      // console.log('outside click'); 
-      // dropdownList.classList.remove('dropdown__list--visible');
-      // rotation.style.setProperty('transform','initial');
-      // dropdownBtn.classList.remove('dropdown__button--active');
-    }
-  })
-}
 
 // make adress Cards visible
 
-export const makeCardsVisible = () => {
+const makeCardsVisible = () => {
   const adressLinks = document.querySelectorAll('[data-value]');  
   const adressCards = document.querySelectorAll('[data-value-content]');
   
@@ -105,7 +114,8 @@ export const makeCardsVisible = () => {
         wrapper.style.setProperty('gap','1.5rem');
       }       
     })
-  })
-  
+  })  
 }
+
+export {dropdownCitySwitch,closeDropdown, makeCardsVisible}
 

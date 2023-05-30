@@ -1,8 +1,10 @@
+// Blur of unactive service cards after choosing category
+
 let buttons = document.querySelectorAll('.service__button');
 let services = document.querySelectorAll('.grid__wrapper .grid__item'); 
 let buttonNameSet = [];
 
-export const serviceBlur = () => {
+const serviceBlur = () => {
   document.querySelector('.service__button--wrapper').addEventListener('click', (e) => {
         if (e.target.classList.contains('service__button')){
           
@@ -81,14 +83,19 @@ export const serviceBlur = () => {
       })
 }
 
+// change the button color to active state
 
 const addFocus = (clickedButton) =>{
   clickedButton.classList.add('button__service-clicked');
 }
 
+// change back the button color to default state
+
 const removeFocus = (clickedButton) =>{//   
     clickedButton.classList.remove('button__service-clicked');
 }
+
+// blur service card according to cklicked button
 
 const filterSelectedServices = (e, clickedButton) => { 
   let buttonName = e.target.id;
@@ -100,89 +107,8 @@ const filterSelectedServices = (e, clickedButton) => {
     }
   })
 }
-  
-  
-  
-      
- 
 
-
-// let buttons = document.querySelectorAll('.service__button');
-// let buttonNameSet = [];
-
-// export const serviceBlur = () => {
-//   document.querySelector('.service__button--wrapper').addEventListener('click', (e) => {
-//     if (e.target.classList.contains('service__button')){
-//       let clickedButton = e.target;
-//       selectClickedButton(clickedButton);
-//       filterSelectedServices(e,clickedButton);      
-//     }
-//   })
-// }
-
-// const selectClickedButton = (clickedButton) => {
-//   clickedButton.classList.toggle('button__service-clicked');
-//   }
-
-// const filterSelectedServices = (e, clickedButton) => {
-//   let services = document.querySelectorAll('.grid__wrapper .grid__item');  
-//   let buttonName = e.target.id;
-//   console.log(clickedButton);
-//   console.log(buttonName);
-
-//   //set with all clicked buttons names
-//   buttonNameSet.push(buttonName);
-//   console.log(buttonNameSet);  
-
-//   // find all clicked buttons
-//   let clickedBtnSet = document.querySelectorAll('.button__service-clicked');
-//   console.log(clickedBtnSet);
-
-//   // remove class reseting blur from elements without id corresponded to button name
-//   services.forEach( grid => {    
-    
-//     // grid.classList.remove('grid__item--no-blur');
-//     if (clickedBtnSet.length === 1 && !grid.classList.contains(buttonName) && clickedButton.classList.contains('button__service-clicked') ){
-//       grid.classList.remove('grid__item--no-blur');
-//     }
-
-//   // scenario for simultaneous clicking of two buttons
-//     if (clickedBtnSet.length === 2){   
-//       services.forEach( service =>{
-//         if (!service.classList.contains(buttonName)){
-//           service.classList.remove('grid__item--no-blur'); 
-//         }
-//       })   
-//       // console.log(buttonNameSet);
-//     }
-
-
-//     if (!clickedButton.classList.contains('button__service-clicked') ){
-//       // const removeName = (buttonNameSet,clickedButton) =>{
-//       //   return buttonNameSet.filter(el => el !== clickedButton);
-//       // }
-//       // removeName (buttonNameSet,clickedButton);
-//       // console.log(buttonNameSet);
-
-
-//     // remove blur from all services by clicking active button
-//       services.forEach(service => {
-//         if(!service.classList.contains.buttonName){
-//           service.classList.add('grid__item--no-blur');
-//         }
-//       })
-//     }
-
-//     // while all three buttons are clicked - reset button click state amd remove blur effect from all services 
-//     if (!clickedButton.classList.contains('button__service-clicked') || clickedBtnSet.length === 3 ){
-//       buttons.forEach(button =>{
-//             button.classList.remove('button__service-clicked');
-//           })
-//     }
-
-//   })
-// }
-
+export {serviceBlur}
 
 
 
