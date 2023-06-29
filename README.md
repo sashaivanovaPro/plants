@@ -1,4 +1,4 @@
-The **Plants project** was set up within *Stage* 0 of **Rolling Scopes school** *Front-end learning course 2022* and was refactored using SASS preprocessor three month later.  
+The **Plants project** was set up within *Stage* 0 of **Rolling Scopes school** *Front-end learning course 2022* and was refactored using SASS and Webpack preprocessor three month later. Responsive layout and JS features are implemented.  
 ___
 #### Project datails:  
 [Task](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/plants/plants.md) - RS school gitHub page;  
