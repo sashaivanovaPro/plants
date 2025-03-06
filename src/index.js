@@ -1,5 +1,5 @@
 // import './index.html';
-import "./sass/newstyle.scss";
+import "./sass/main.scss";
 import { burgerIconClick, outOfIconClick } from "./modules/burger";
 import { serviceBlur } from "./modules/blur";
 import { accordionSwitch } from "./modules/accordion";

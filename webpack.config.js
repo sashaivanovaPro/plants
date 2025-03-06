@@ -13,7 +13,7 @@ const devtool = devMode ? "source-map" : undefined;
 module.exports = {
   mode,
   target,
-  devtool,
+  devtool: "source-map",
   devServer: {
     static: "./dist",
     port: 3000,

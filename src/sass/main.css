@@ -455,6 +455,21 @@ a {
   text-decoration: none;
 }
 
+button {
+  border: 1px solid transparent;
+}
+
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+[role=button]:focus,
+[tabindex]:focus {
+  outline: 2px solid rgba(139, 160, 126, 0.4);
+  outline-offset: 2px;
+}
+
 .button {
   width: 16.1rem;
   height: 5rem;
@@ -466,20 +481,20 @@ a {
   font-size: 2rem;
   line-height: 2.6rem;
   font-style: normal;
-  border: 1px solid #E06733;
+  border: 1px solid #e06733;
   border-radius: 0.5rem;
   cursor: pointer;
   transition: box-shadow 0.2s ease-in-out;
 }
 .button__service {
-  background-color: #EDF2EC;
-  color: #E06733;
+  background-color: #edf2ec;
+  color: #e06733;
   transition: background-color 0.5s ease-in-out;
   transition: box-shadow 0.2s ease-in-out;
 }
 .button__service-clicked {
   color: #fff;
-  background-color: #E06733;
+  background-color: #e06733;
 }
 .button:hover {
   box-shadow: #717171 0.3rem 0.3rem 1rem;
@@ -512,8 +527,8 @@ a {
   font-size: 1.6rem;
   line-height: 2rem;
   font-style: normal;
-  background-color: #EDF2EC;
-  border: #E06733 0.2rem solid;
+  background-color: #edf2ec;
+  border: #e06733 0.2rem solid;
   color: #000000;
   text-transform: uppercase;
   border-radius: 1rem;
@@ -533,17 +548,17 @@ a {
 
 .button-more:hover {
   color: #fff;
-  background-color: #E06733;
+  background-color: #e06733;
 }
 
 .logo-svg {
   cursor: pointer;
 }
 .logo-svg:hover .logo-path {
-  fill: #E06733;
+  fill: #e06733;
 }
 .logo-svg:hover .leaf-path {
-  fill: #499A18;
+  fill: #499a18;
 }
 
 /* inter-regular - variable */
@@ -578,10 +593,10 @@ a {
   width: 16px;
   height: 16px;
   border-radius: 10px;
-  background-color: #AEA1A1;
+  background-color: #aea1a1;
 }
 .icon-circle__light {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 @media screen and (max-width: 425.98px) {
   .icon-circle {
@@ -655,7 +670,7 @@ a {
 
 .accordion {
   width: 33.2rem;
-  border: 1px solid #E3E1D5;
+  border: 1px solid #e3e1d5;
   border-radius: 2rem;
   padding: 3.4rem 4.1rem;
   display: flex;
@@ -678,7 +693,7 @@ a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  background-color: #EDF2EC;
+  background-color: #edf2ec;
   padding: 0 4rem;
   border-radius: 2rem;
   width: 100%;
@@ -686,14 +701,14 @@ a {
   transition: background-color, box-shadow 0.2s ease-in-out;
 }
 .accordion__item:hover .icon-circle__light {
-  background-color: #AEA1A1;
+  background-color: #aea1a1;
 }
 .accordion__item:hover .icon-arrow__dark {
   background-image: url("/src/img/svg/arrow-light.svg");
 }
 .accordion__item:hover {
   box-shadow: #717171 0.3rem 0.3rem 10px;
-  background-color: #D6E7D2;
+  background-color: #d6e7d2;
 }
 @media screen and (max-width: 425.98px) {
   .accordion__item {
@@ -709,7 +724,7 @@ a {
 
 .price-card {
   padding: 1.6rem 3.8rem 1.2rem;
-  background: #D6E7D2;
+  background: #d6e7d2;
   border-radius: 2rem;
   transition: box-shadow 0.2s ease-in-out;
 }
@@ -731,7 +746,7 @@ a {
 .price-card__name::after {
   content: "";
   margin: 0.8rem 0.8rem 0.6rem 0;
-  background-color: #8BA07E;
+  background-color: #8ba07e;
   height: 0.5px;
   width: 100%;
 }
@@ -748,12 +763,12 @@ a {
   font-weight: 400;
 }
 .price-card__price_span {
-  color: #E06733;
+  color: #e06733;
   font-weight: 700;
 }
 .price-card__price_span-big {
   font-size: 1.6rem;
-  color: #E06733;
+  color: #e06733;
   font-weight: 700;
 }
 .price-card__order-button {
@@ -790,7 +805,7 @@ a {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  background-color: #D6E7D2;
+  background-color: #d6e7d2;
   border: none;
   padding: 0.5rem 3rem 0.5rem 2rem;
   width: 45rem;
@@ -799,20 +814,20 @@ a {
   cursor: pointer;
 }
 .dropdown__button:hover {
-  background-color: #C1E698;
+  background-color: #c1e698;
 }
 .dropdown__button--active {
-  background-color: #C1E698;
+  background-color: #c1e698;
   box-shadow: none;
 }
 .dropdown__button--active .icon-circle {
-  background-color: #AEA1A1;
+  background-color: #aea1a1;
 }
 .dropdown__button--active .icon-arrow {
   transform: rotate(180deg);
 }
 .dropdown__button:active .icon-circle {
-  background-color: #AEA1A1;
+  background-color: #aea1a1;
 }
 .dropdown__button:active .icon-arrow {
   transform: rotate(180deg);
@@ -846,7 +861,7 @@ a {
   list-style-type: none;
   flex-direction: column;
   gap: 0.6rem;
-  background-color: #DCE9D9;
+  background-color: #dce9d9;
   padding: 2.7rem 5rem 2.5rem 2.8rem;
 }
 .dropdown__list--active {
@@ -857,8 +872,8 @@ a {
   font-size: 1.6rem;
   line-height: 4rem;
   font-style: normal;
-  color: #499A18;
-  border-bottom: 1px solid #D9D9D9;
+  color: #499a18;
+  border-bottom: 1px solid #d9d9d9;
   letter-spacing: 1px;
   cursor: pointer;
 }
@@ -875,7 +890,7 @@ a {
   display: flex;
   align-items: flex-start;
   width: 100%;
-  background-color: #EDF2EC;
+  background-color: #edf2ec;
 }
 .city__card--wrapper-left {
   margin-right: 1rem;
@@ -899,7 +914,7 @@ a {
   font-style: normal;
   letter-spacing: 1px;
   color: #000000;
-  background-color: #EDF2EC;
+  background-color: #edf2ec;
   padding: 1.7rem 3rem 3.2rem 3.2rem;
   border: 1px solid #000000;
   border-radius: 2rem;
@@ -909,19 +924,19 @@ a {
   display: block;
   padding: 0.5rem 4.5rem;
   margin: 0 auto;
-  border: 1px solid #E06733;
+  border: 1px solid #e06733;
   border-radius: 0.5rem;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.3rem;
   font-style: normal;
   margin-top: 1.8rem;
-  background-color: #EDF2EC;
+  background-color: #edf2ec;
   transition: background-color, box-shadow 0.2s ease-in-out;
 }
 .city__card--button:hover {
   box-shadow: #717171 0.1rem 0.1rem 0.5rem;
-  background-color: #D6E7D2;
+  background-color: #d6e7d2;
 }
 @media screen and (max-width: 767.98px) {
   .city__card--list li:last-child {
@@ -965,7 +980,7 @@ a {
 }
 
 .header {
-  background-color: #EDF2EC;
+  background-color: #edf2ec;
   padding: 4.2rem 0;
 }
 @media screen and (max-width: 1024.98px) {
@@ -1025,14 +1040,11 @@ a {
   gap: 2rem;
 }
 
-.RSS {
-  display: inline-flex;
-  justify-content: center;
-  margin: 0;
-  font-weight: normal;
-  font-size: 2rem;
-  line-height: 5rem;
-  font-style: normal;
+.copyright__icon {
+  height: 32px;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 5px;
 }
 
 .links__wrapper {
@@ -1137,7 +1149,7 @@ a {
   transition: color 0.2s ease-in-out;
 }
 .header__link:hover {
-  color: #E06733;
+  color: #e06733;
   font-weight: bold;
 }
 @media screen and (max-width: 767.98px) {
@@ -1189,7 +1201,7 @@ a {
 }
 
 .welcome {
-  background-color: #EDF2EC;
+  background-color: #edf2ec;
   padding: 6.2rem 0;
 }
 @media screen and (max-width: 1024.98px) {
@@ -1235,7 +1247,7 @@ a {
   margin: 3.6rem 0 4.5rem;
 }
 .welcome__heading_colored {
-  color: #499A18;
+  color: #499a18;
 }
 @media screen and (max-width: 1024.98px) {
   .welcome__heading {
@@ -1301,11 +1313,11 @@ a {
 }
 
 .about__heading {
-  color: #499A18;
+  color: #499a18;
   margin: 6.6rem 0 4rem;
 }
 .about__heading_colored {
-  color: #E06733;
+  color: #e06733;
 }
 @media screen and (max-width: 1024.98px) {
   .about__heading {
@@ -1359,7 +1371,7 @@ a {
 
 .service {
   padding: 4rem 0 12rem;
-  background-color: #EDF2EC;
+  background-color: #edf2ec;
 }
 @media screen and (max-width: 1024.98px) {
   .service {
@@ -1389,7 +1401,7 @@ a {
 }
 
 .service__heading {
-  color: #499A18;
+  color: #499a18;
   max-width: 30rem;
 }
 @media screen and (max-width: 1200px) {
@@ -1519,7 +1531,7 @@ picture > img,
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #E3E1D5;
+  border: 1px solid #e3e1d5;
   width: 100%;
   border-radius: 0 0 2rem 2rem;
 }
@@ -1531,7 +1543,7 @@ picture > img,
 
 .service__pick--name {
   margin: 1rem 0;
-  color: #E06733;
+  color: #e06733;
 }
 @media screen and (max-width: 425.98px) {
   .service__pick--name {
@@ -1552,7 +1564,7 @@ picture > img,
 }
 
 .contacts {
-  background-color: #EDF2EC;
+  background-color: #edf2ec;
   padding-top: 5.3rem;
 }
 @media screen and (max-width: 1024.98px) {
@@ -1599,7 +1611,7 @@ picture > img,
 }
 
 .contacts__heading {
-  color: #499A18;
+  color: #499a18;
   font-weight: bold;
   align-self: flex-start;
   margin: 0.7rem 0 3.4rem;
@@ -1736,7 +1748,7 @@ picture > img,
   text-align: right;
 }
 .prices__subheading_colored {
-  color: #499A18;
+  color: #499a18;
 }
 @media screen and (max-width: 1024.98px) {
   .prices__subheading {
@@ -1784,4 +1796,4 @@ picture > img,
   }
 }
 
-/*# sourceMappingURL=newstyle.css.map */
+/*# sourceMappingURL=main.css.map */
