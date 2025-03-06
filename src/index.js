@@ -1,51 +1,52 @@
-import './sass/newstyle.scss';
-import {burgerIconClick,outofIconClick} from './js/burger';
-import {serviceBlur} from './js/blur';
-import {accordionSwitch} from './js/accordion';
-import {dropdownCitySwitch,closeDropdown, makeCardsVisible} from './js/dropdown';
+// import './index.html';
+import "./sass/newstyle.scss";
+import { burgerIconClick, outOfIconClick } from "./modules/burger";
+import { serviceBlur } from "./modules/blur";
+import { accordionSwitch } from "./modules/accordion";
+import {
+  dropdownCitySwitch,
+  closeDropdown,
+  makeCardsVisible,
+} from "./modules/dropdown";
 
-window.onload = function(){
-  console.log("Hello RS!");
-
+window.onload = function () {
   // burger handler
   burgerIconClick();
-  outofIconClick();
+  outOfIconClick();
 
-  //service section blur not choosed elements
+  //service section blur not chosen elements
 
-  serviceBlur ();
+  serviceBlur();
 
   // Accordion prices
 
   accordionSwitch();
 
-  // Dropdown from contacts section 
+  // Dropdown from contacts section
 
   dropdownCitySwitch();
   closeDropdown();
   makeCardsVisible();
-}
+};
 
-
-
-// Плавная прокрутка -- Smooth navigation
+//  Smooth navigation
 
 const smooth = document.querySelectorAll(".smooth__link[data-goto]");
 
 if (smooth.length > 0) {
-  smooth.forEach(smooth => {
-      smooth.addEventListener('click', navLinkClick);
+  smooth.forEach((smooth) => {
+    smooth.addEventListener("click", navLinkClick);
   });
   function navLinkClick(e) {
-      const navLink = e.target;
-      if (navLink.dataset.goto && document.querySelector(navLink.dataset.goto)) {
-          const gotoSection = document.querySelector(navLink.dataset.goto);
-          const gotoSectionPosition = gotoSection.getBoundingClientRect().top;
-          window.scrollTo({
-              top: gotoSectionPosition,
-              behavior: "smooth"
-          });
-          e.preventDefault();
-      }
+    const navLink = e.target;
+    if (navLink.dataset.goto && document.querySelector(navLink.dataset.goto)) {
+      const gotoSection = document.querySelector(navLink.dataset.goto);
+      const gotoSectionPosition = gotoSection.getBoundingClientRect().top;
+      window.scrollTo({
+        top: gotoSectionPosition,
+        behavior: "smooth",
+      });
+      e.preventDefault();
+    }
   }
 }
