@@ -1,72 +1,82 @@
-const webpack = require('webpack');
-const path = require('path');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const mode = process.env.NODE_ENV || "development";
 
-module.exports = (env,options) => {
+const devMode = mode === "development";
 
-  const isProduction = options.mode === 'production';
-  const config = {
-    mode: isProduction ? 'production' : 'development',
-    watch: isProduction,
-    devtool: isProduction ? 'none' : 'source-map',
-    entry: ['./src/index.js', './src/sass/newstyle.scss'],
-    output: {    
-      path: path.resolve(__dirname, 'dist'),
-      filename: 'bundle.js',
-    },
-    module: {
-      rules: [
-        {
-          test: /\.js$/,
-          exclude: /node_modules/,
-          use: {
-            loader: 'babel-loader',
+const target = devMode ? "web" : "browserslist";
+
+const devtool = devMode ? "source-map" : undefined;
+
+module.exports = {
+  mode,
+  target,
+  devtool,
+  devServer: {
+    static: "./dist",
+    port: 3000,
+    open: true,
+    hot: true,
+  },
+  entry: ["@babel/polyfill", path.resolve(__dirname, "src", "index.js")],
+  output: {
+    path: path.resolve(__dirname, "dist"),
+    clean: true,
+    filename: "[name].[contenthash].js",
+    assetModuleFilename: "assets/img/[name][ext]",
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "index.html",
+    }),
+    new MiniCssExtractPlugin({
+      filename: "style.[contenthash].css",
+    }),
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
+      },
+      {
+        test: /\.(c|sc|sa)ss$/i,
+        use: [
+          // devMode ? 'style-loader' :
+          MiniCssExtractPlugin.loader,
+          // MiniCssExtractPlugin.loader,
+          // Translates CSS into CommonJS
+          "css-loader",
+          {
+            loader: "postcss-loader",
             options: {
-              presets: [
-                ['@babel/preset-env', { targets: "defaults" }]
-              ]
-            }
-          }
+              postcssOptions: {
+                plugins: [require("postcss-preset-env")],
+              },
+            },
+          },
+          // Compiles Sass to CSS
+          "sass-loader",
+        ],
+      },
+      {
+        test: /\.(woff?2)$/i,
+        generator: {
+          filename: "assets/font/[name][ext]",
         },
-        {
-          test: /\.s[ac]ss$/i,
-          use: [
-            MiniCssExtractPlugin.loader,
-            // Translates CSS into CommonJS
-            'css-loader',
-            // Compiles Sass to CSS
-            'sass-loader',
-          ],
+      },
+      {
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: [["@babel/preset-env", { targets: "defaults" }]],
+          },
         },
-        {
-          test: /\.(png|svg|jpe?g|gif|webp)$/i,
-          type: 'asset/resource',
-          generator: {
-            filename: 'assets/img/[hash][ext][query]'
-          }
-        },
-        {
-          test: /\.(woff?2)$/i,          
-          generator: {
-            filename: 'assets/font/[hash][ext][query]'
-          }
-        },
-        {
-          test: /\.html$/i,
-          loader: "html-loader",
-        }
-      ]
-    },
-    plugins: [
-      new HtmlWebpackPlugin({
-        template: 'index.html'
-      }),
-      new MiniCssExtractPlugin({
-        filename: 'style.css'
-      }),
+      },
     ],
-    }
-  return config;
-}
+  },
+};
