@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "style": "sass --watch src/sass/main.scss src/sass/main.css",
     "start": "webpack serve",
     "dev": "webpack --mode development --watch",
     "prod": "webpack --mode production",
@@ -12,9 +11,10 @@
   "author": "Aleksandra Ivanova",
   "license": "ISC",
   "dependencies": {
-    "@babel/polyfill": "^7.12.1",
+    "core-js": "^3.41.0",
     "gh-pages": "^5.0.0",
-    "normalize-scss": "^7.0.1"
+    "normalize-scss": "^7.0.1",
+    "regenerator-runtime": "^0.14.1"
   },
   "description": "",
   "devDependencies": {

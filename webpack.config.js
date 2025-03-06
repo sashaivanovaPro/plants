@@ -2,30 +2,24 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-const mode = process.env.NODE_ENV || "development";
-
-const devMode = mode === "development";
-
-const target = devMode ? "web" : "browserslist";
-
-const devtool = devMode ? "source-map" : undefined;
+const isProduction = process.env.NODE_ENV === "production";
 
 module.exports = {
-  mode,
-  target,
-  devtool: "source-map",
+  mode: isProduction ? "production" : "development",
+  target: isProduction ? "browserslist" : "web",
+  devtool: isProduction ? false : "source-map",
   devServer: {
     static: "./dist",
     port: 3000,
     open: true,
     hot: true,
   },
-  entry: ["@babel/polyfill", path.resolve(__dirname, "src", "index.js")],
+  entry: path.resolve(__dirname, "src", "index.js"),
   output: {
     path: path.resolve(__dirname, "dist"),
     clean: true,
-    filename: "[name].[contenthash].js",
-    assetModuleFilename: "assets/img/[name][ext]",
+    filename: isProduction ? "[name].[contenthash].js" : "[name].js",
+    assetModuleFilename: "assets/[name][ext]",
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -44,10 +38,7 @@ module.exports = {
       {
         test: /\.(c|sc|sa)ss$/i,
         use: [
-          // devMode ? 'style-loader' :
-          MiniCssExtractPlugin.loader,
-          // MiniCssExtractPlugin.loader,
-          // Translates CSS into CommonJS
+          isProduction ? MiniCssExtractPlugin.loader : "style-loader",
           "css-loader",
           {
             loader: "postcss-loader",
@@ -62,7 +53,15 @@ module.exports = {
         ],
       },
       {
-        test: /\.(woff?2)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "assets/img/[name][ext]",
+        },
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: "asset/resource",
         generator: {
           filename: "assets/font/[name][ext]",
         },
@@ -72,9 +71,6 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
-          options: {
-            presets: [["@babel/preset-env", { targets: "defaults" }]],
-          },
         },
       },
     ],

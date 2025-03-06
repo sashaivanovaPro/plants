@@ -1,4 +1,5 @@
-// import './index.html';
+import "core-js/stable";
+import "regenerator-runtime/runtime";
 import "./sass/main.scss";
 import { burgerIconClick, outOfIconClick } from "./modules/burger";
 import { serviceBlur } from "./modules/blur";
