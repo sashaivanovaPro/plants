@@ -3,7 +3,7 @@
   height: 5rem;
   @include flex-center();
   @extend %font-main;
-  @include font (2rem, 2.6rem, 400);  
+  @include font(2rem, 2.6rem, 400);
   border: 1px solid $color-additional;
   border-radius: 0.5rem;
   cursor: pointer;
@@ -22,12 +22,12 @@
     }
   }
 
-  &:hover{
+  &:hover {
     box-shadow: $color-text-light 0.3rem 0.3rem 1rem;
   }
-  
-  @include media-mobile{
-    @include font (1.5rem, 1.9rem, 400);
+
+  @include media-mobile {
+    @include font(1.5rem, 1.9rem, 400);
     width: 12.1rem;
     height: 3.5rem;
   }
@@ -35,31 +35,31 @@
 
 .contact-button {
   background-color: $color-light;
-  font-weight: bold;  
-  font-family: "Inika";         
+  font-weight: bold;
+  font-family: "Inika";
 }
 
 .button-more {
-    width: 15.8rem;
-    height: 4.4rem;
-    @include flex-center();
-    @include font( 1.6rem, 2rem, 400);
-    background-color: $color-background;
-    border: $color-additional 0.2rem solid;
-    color: $color-heading;
-    text-transform: uppercase;
-    border-radius: 1rem;
-    transition: background-color 0.5s ease-in-out;
-    cursor: pointer;
+  width: 15.8rem;
+  height: 4.4rem;
+  @include flex-center();
+  @include font(1.6rem, 2rem, 400);
+  background-color: $color-background;
+  border: $color-additional 0.2rem solid;
+  color: $color-heading;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  transition: background-color 0.5s ease-in-out;
+  cursor: pointer;
 
-    @include media-mobile{
-        width: 10rem ;
-        height: 3.4rem;
-        @include font( 1rem, 2rem, 400);
-    }
+  @include media-mobile {
+    width: 10rem;
+    height: 3.4rem;
+    @include font(1rem, 2rem, 400);
+  }
 }
 
 .button-more:hover {
-    color: $color-light;
-    background-color: $color-additional;
+  color: $color-light;
+  background-color: $color-additional;
 }

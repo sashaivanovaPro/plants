@@ -77,3 +77,18 @@ a {
   color: $color-heading;
   text-decoration: none;
 }
+
+button {
+  border: 1px solid transparent;
+}
+
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+[role="button"]:focus,
+[tabindex]:focus {
+  outline: $outline-width solid rgba($outline-color-rgb, $outline-opacity);
+  outline-offset: $outline-offset;
+}

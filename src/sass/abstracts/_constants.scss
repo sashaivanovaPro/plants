@@ -1,29 +1,36 @@
 // Text
-$color-primary: #499A18;
-$color-additional: #E06733;
+$color-primary: #499a18;
+$color-additional: #e06733;
 $color-text-dark: #636060;
 $color-text-light: #717171;
-$color-border: #E3E1D5;
+$color-border: #e3e1d5;
 $color-heading: #000000;
 $color-links-nav: #010201;
 
 // Background
-$color-background: #EDF2EC;
+$color-background: #edf2ec;
 $color-light: #fff;
 
 // Buttons
-$color-acordeon-btn-active: #8BA07E;
-$color-acordeon-btn-unactive: #D9D9D9;
-$color-btn-unactive: #AEA1A1;
-$color-btn-active: #8BA07E;
+$color-accordion-btn-active: #8ba07e;
+$color-accordion-btn-inactive: #d9d9d9;
+$color-btn-inactive: #aea1a1;
+$color-btn-active: #8ba07e;
+
+// Outline
+$outline-color: #8ba07e;
+$outline-color-rgb: rgb(139, 160, 126);
+$outline-opacity: 0.4;
+$outline-width: 2px;
+$outline-offset: 2px;
 
 // Accordeon
-$color-acordeon: #EDF2EC;
-$color-acordeon-active: #D6E7D2;
+$color-accordion: #edf2ec;
+$color-accordion-active: #d6e7d2;
 
 // Dropdown
-$color-dropdown: #DCE9D9;
-$color-dropdown-active: #C1E698;
+$color-dropdown: #dce9d9;
+$color-dropdown-active: #c1e698;
 
 // Burger
 $color-burger: #717171;

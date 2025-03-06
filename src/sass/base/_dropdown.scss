@@ -1,10 +1,10 @@
-.dropdown{
+.dropdown {
   position: relative;
 }
 
 .dropdown__button {
   @include flex-between();
-  background-color: $color-acordeon-active;
+  background-color: $color-accordion-active;
   border: none;
   padding: 0.5rem 3rem 0.5rem 2rem;
   width: 45rem;
@@ -21,27 +21,27 @@
     background-color: $color-dropdown-active;
     box-shadow: none;
 
-    .icon-circle{
-      background-color: $color-btn-unactive;
+    .icon-circle {
+      background-color: $color-btn-inactive;
     }
 
-    .icon-arrow{
+    .icon-arrow {
       transform: rotate(180deg);
     }
   }
 
   &:active .icon-circle {
-    background-color: $color-btn-unactive;
+    background-color: $color-btn-inactive;
   }
 
   &:active .icon-arrow {
     transform: rotate(180deg);
   }
-  @media screen and (max-width:500px){
+  @media screen and (max-width: 500px) {
     width: 30rem;
   }
 
-  @include media-mobile{
+  @include media-mobile {
     padding: 0.5rem 1.3rem 0.5rem 2rem;
     margin: 0 auto;
   }
@@ -64,46 +64,46 @@
   background-color: $color-dropdown;
   padding: 2.7rem 5rem 2.5rem 2.8rem;
 
-  &--active{
+  &--active {
     display: flex;
   }
 
   &--item {
     @include font(1.6rem, 4rem, 400);
     color: $color-primary;
-    border-bottom: 1px solid $color-acordeon-btn-unactive;
+    border-bottom: 1px solid $color-accordion-btn-inactive;
     letter-spacing: 1px;
     cursor: pointer;
 
     &:hover {
-      color: $color-text-light;    
+      color: $color-text-light;
       border-bottom: 1px solid $color-text-light;
-   }
- }
+    }
+  }
 }
 
-.dropdown__list--visible{
+.dropdown__list--visible {
   display: block;
 }
 
 .city__card--wrapper {
   display: flex;
   align-items: flex-start;
-  width: 100%;  
-  background-color: $color-acordeon;  
+  width: 100%;
+  background-color: $color-accordion;
 
-  &-left{
+  &-left {
     margin-right: 1rem;
 
-    @include media-tablet{
+    @include media-tablet {
       margin-right: 0;
       flex-basis: 30%;
     }
   }
 
-  &-right{
-    color:$color-text-light;
-  }  
+  &-right {
+    color: $color-text-light;
+  }
 }
 
 .city__card {
@@ -130,25 +130,25 @@
     background-color: $color-background;
     transition: background-color, box-shadow 0.2s ease-in-out;
 
-    &:hover{
+    &:hover {
       box-shadow: $color-text-light 0.1rem 0.1rem 0.5rem;
-      background-color: $color-acordeon-active;
+      background-color: $color-accordion-active;
     }
   }
-  &--list li:last-child{
-    @include media-tablet{
-     line-height: 2rem;
-     letter-spacing: 0;
+  &--list li:last-child {
+    @include media-tablet {
+      line-height: 2rem;
+      letter-spacing: 0;
     }
   }
 
-  @include media-tablet{
+  @include media-tablet {
     padding: 2.3rem 3.6rem;
     margin-top: 4.9rem;
-  }  
+  }
 
-  @include media-mobile{
-    width:30rem;
+  @include media-mobile {
+    width: 30rem;
   }
 
   &--visible {
@@ -156,6 +156,6 @@
   }
 }
 
-.card-hidden{
+.card-hidden {
   display: none;
 }

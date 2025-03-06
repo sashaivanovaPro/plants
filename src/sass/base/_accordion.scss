@@ -5,7 +5,7 @@
   padding: 3.4rem 4.1rem;
   @include flex-column(center);
   gap: 3rem;
-  @include media-mobile{
+  @include media-mobile {
     margin: 0 auto;
     padding: 2.9rem 2.2rem;
     width: 22.4rem;
@@ -15,27 +15,27 @@
 
 .accordion__item {
   @include flex-between();
-  background-color: $color-acordeon;
+  background-color: $color-accordion;
   padding: 0 4rem;
   border-radius: 2rem;
   width: 100%;
   cursor: pointer;
   transition: background-color, box-shadow 0.2s ease-in-out;
-  
+
   &:hover .icon-circle__light {
-    background-color: $color-btn-unactive;
+    background-color: $color-btn-inactive;
   }
 
   &:hover .icon-arrow__dark {
     background-image: url("/src/img/svg/arrow-light.svg");
   }
 
-  &:hover{
+  &:hover {
     box-shadow: $color-text-light 0.3rem 0.3rem 10px;
-    background-color: $color-acordeon-active;
+    background-color: $color-accordion-active;
   }
 
-  @include media-mobile{
+  @include media-mobile {
     padding: 0 3rem;
   }
 
@@ -50,76 +50,74 @@
 
 .price-card {
   padding: 1.6rem 3.8rem 1.2rem;
-  background: $color-acordeon-active;
+  background: $color-accordion-active;
   border-radius: 2rem;
   transition: box-shadow 0.2s ease-in-out;
 
-  &:hover{
+  &:hover {
     box-shadow: $color-text-light 0.3rem 0.3rem 10px;
   }
 
-  @include media-mobile{
+  @include media-mobile {
     padding: 1.6rem 3rem 1.2rem;
   }
 
-  &__name{
+  &__name {
     @include flex-between;
     cursor: pointer;
 
-    &::after{
+    &::after {
       content: "";
       margin: 0.8rem 0.8rem 0.6rem 0;
       background-color: $color-btn-active;
       height: 0.5px;
-      width:100%
+      width: 100%;
     }
   }
 
-  &__dscrptn{
+  &__dscrptn {
     @include font(1rem, 1rem, 300);
     color: $color-text-light;
     margin-bottom: 0.6rem;
   }
 
-  h5{
+  h5 {
     margin: 0 0 0.8rem;
     font-weight: 400;
   }
 
-  &__price_span{
+  &__price_span {
     color: $color-additional;
     font-weight: 700;
 
-    &-big{
+    &-big {
       font-size: 1.6rem;
       color: $color-additional;
       font-weight: 700;
     }
   }
 
-  &__order-button{
+  &__order-button {
     display: inline-flex;
     padding: 0.3rem 2rem;
-    background-color:$color-light;
+    background-color: $color-light;
     border-radius: 1rem;
-    
   }
 
-  &__order-link{
-    @include font( 1.4rem, 2rem, 700);
+  &__order-link {
+    @include font(1.4rem, 2rem, 700);
     color: $color-text-light;
   }
 
-  .icon-arrow__light{
+  .icon-arrow__light {
     transform: rotate(180deg);
-  }  
+  }
 }
 
-.accordion-button-close{
+.accordion-button-close {
   display: none;
 }
 
-.accordion-description-close{
+.accordion-description-close {
   display: none;
 }
-

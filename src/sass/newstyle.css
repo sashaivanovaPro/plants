@@ -550,7 +550,7 @@ a {
 @font-face {
   font-family: "Inter";
   src: url("/src/fonts/Inter.var.woff2") format("woff2-variations");
-  font-weight: 100 9 0;
+  font-weight: 100 900;
   font-display: swap;
 }
 /* inika-regular - latin */
