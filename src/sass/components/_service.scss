@@ -130,6 +130,7 @@ picture > img,
   border: 1px solid $color-off-white;
   width: 100%;
   border-radius: $service-image-border-radius-bottom;
+  padding: $description-padding-desktop;
   @include media-laptop {
     padding: $description-padding-laptop;
   }
