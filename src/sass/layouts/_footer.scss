@@ -1,52 +1,71 @@
 .footer {
   background-color: $color-light;
-  padding: 4rem 0;
+  padding: $footer-desktop-padding;
 
   @include media-laptop {
-    padding: 3.3rem 0 2rem;
+    padding: $footer-laptop-padding;
   }
 
   @include media-mobile {
-    padding: 2.2rem 0 1rem;
+    padding: $footer-mobile-padding;
   }
 }
 
 .footer__wrapper {
-  align-items: center;
-  @media screen and (max-width: 900px) {
-    flex-direction: column;
-  }
+  @include flex-between();
+  flex-wrap: nowrap;
 }
 
 .copyright__wrapper {
-  @include flex-between();
-  justify-content: flex-start;
-  gap: 2rem;
+  display: flex;
+  align-items: center;
+  gap: $copyright-gap-desktop;
+  flex-wrap: nowrap;
 }
 
 .copyright__icon {
-  height: 32px;
+  height: $copyright-icon-height-desktop;
   width: auto;
   vertical-align: middle;
-  margin-right: 5px;
+  margin-right: $copyright-icon-margin;
 }
 
 .links__wrapper {
   @include flex-between();
   justify-content: flex-end;
-  gap: 2.4rem;
-  @media screen and (max-width: 900px) {
-    margin-top: 1.6rem;
-    gap: 2.7rem;
+  gap: $links-gap-desktop;
+  @media screen and (max-width: $footer-tablet-breakpoint) {
+    gap: $links-gap-tablet;
   }
   @include media-mobile {
     margin-top: 0;
+    gap: $links-gap-mobile;
+  }
+  &--item img {
+    @include media-mobile {
+      width: auto;
+      height: $copyright-icon-height-mobile;
+    }
   }
 }
 
 .copyright__font {
   @include font(2rem, 5rem, normal);
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: $footer-tablet-breakpoint) {
     @include font(2rem, 2.6rem, normal);
+  }
+
+  &--link {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+
+    @media screen and (max-width: $tablet-width) {
+      font-size: 0;
+
+      .copyright__icon {
+        margin-right: 0;
+      }
+    }
   }
 }

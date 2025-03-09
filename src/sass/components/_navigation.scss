@@ -1,29 +1,35 @@
+// Desktop menu styles
 .header__list {
   @include flex-between();
-  @include font(1.6rem, 5rem, normal);
-  gap: 4.723rem;
+  @include font($font-size-base, $line-height-nav, $font-weight-normal);
+  gap: $nav-link-gap;
   list-style: none;
-  font-family: 'Inika';
+  font-family: "Inika";
   margin: 0;
-  @include media-tablet{
+  @include media-tablet {
     @include flex-column(center);
-    gap: 1rem;
+    gap: $nav-link-gap-tablet;
   }
 }
 
+// Navigation links
 .header__link {
-  color: $color-links-nav;
+  color: $color-dark-green;
   text-decoration: none;
   @extend %transition;
   transition: color 0.2s ease-in-out;
 
   &:hover {
-    color: $color-additional;
-    font-weight: bold;
+    color: $color-orange-accent;
+    font-weight: $font-weight-bold;
   }
 
-  @include media-tablet{
-    @include font(2.5rem, 3rem, normal);
+  @include media-tablet {
+    @include font(
+      $font-size-nav-tablet,
+      $line-height-nav-tablet,
+      $font-weight-normal
+    );
   }
 }
 
@@ -32,20 +38,21 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 32rem;
+    width: $nav-tablet-width;
     height: 100%;
     background-color: $color-light;
     z-index: 5;
-    padding-top: 15rem;    
+    padding-top: $nav-padding-top;
     transform: translateX(100%);
     transition: all 0.8s;
   }
 
-  &--active{
+  &--active {
     transform: translateX(0);
   }
 }
 
+// Overlay for mobile menu
 .header__overlay {
   visibility: hidden;
   position: fixed;
@@ -53,19 +60,17 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: $color-text-light;
-  opacity: 0;
-  transition: visibility 0s 0.3s, opacity 0.3s;
+  background-color: $color-gray-medium;
 
-  &--active{
-    visibility:visible;
-    opacity: 0.3;
-    transition-delay: 0s;  
+  &--active {
+    visibility: visible;
+    opacity: $overlay-opacity;
+    transition-delay: 0s;
   }
 }
 
-.hidden{
+// Class for body to prevent scrolling when mobile menu is open
+.hidden {
   overflow: hidden;
+  position: fixed;
 }
-
-

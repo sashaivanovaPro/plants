@@ -6,9 +6,9 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 16px;
-  height: 16px;
-  border-radius: 10px;
+  width: $icon-circle-size;
+  height: $icon-circle-size;
+  border-radius: $icon-circle-radius;
   background-color: $color-btn-inactive;
 
   &__light {
@@ -16,14 +16,14 @@
   }
 
   @include media-mobile {
-    margin-right: 0.9rem;
+    margin-right: $icon-mobile-margin;
   }
 }
 
 .icon-arrow {
   display: block;
-  width: 6px;
-  height: 4px;
+  width: $icon-arrow-width;
+  height: $icon-arrow-height;
   background-image: url("../img/svg/arrow-light.svg");
 
   &__dark {

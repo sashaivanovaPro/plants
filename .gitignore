@@ -106,6 +106,7 @@ dist
 # sass
 
 .sass-cache/
+src/sass/main.css
 *.css.map
 *.sass.map
 *.scss.map

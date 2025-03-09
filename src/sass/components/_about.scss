@@ -1,73 +1,71 @@
 .about {
-    padding: 9.4rem 0;
-    background-color: $color-light;
+  padding: $about-desktop-padding;
+  background-color: $color-light;
 
-    @include media-laptop {
-        padding: 4rem 0 9.5rem;
-    }
+  @include media-laptop {
+    padding: $about-laptop-padding;
+  }
 
-    @include media-mobile {
-        padding: 3rem 0;
-    }
+  @include media-mobile {
+    padding: $about-mobile-padding;
+  }
 }
 
-.about__wrapper{
-	@include media-laptop{
-		flex-direction: column;
-	}
+.about__wrapper {
+  @include media-laptop {
+    flex-direction: column;
+  }
 }
 
 .about-text__wrapper {
-    flex-basis: 49%;
-    @include media-laptop{
-     text-align: center;
-    }
+  flex-basis: 49%;
+  @include media-laptop {
+    text-align: center;
+  }
 }
 
 .about__heading {
-    color: $color-primary;
-    margin: 6.6rem 0 4rem;
+  color: $color-green-primary;
+  margin: $about-heading-margin-desktop;
 
-    &_colored {
-        color: $color-additional;
-    }
+  &_colored {
+    color: $color-orange-accent;
+  }
 
-    @include media-laptop {
-        margin: 0 0 5.2rem;
-    }
+  @include media-laptop {
+    margin: $about-heading-margin-laptop;
+  }
 
-		@include media-mobile {
-			margin: 0 0 1.6rem;
-	}
-
+  @include media-mobile {
+    margin: $about-heading-margin-mobile;
+  }
 }
 
 .about__paragraph {
-	@include font(2rem, 3rem, normal);
-	color: $color-text-dark;
+  @include font(2rem, 3rem, normal);
+  color: $color-gray-dark;
 
-	@include media-laptop {
-		margin: 0 0 7rem;
-		text-align: start;
-	}
-
-	@include media-mobile {
-		margin: 0;
-		@include font(1.5rem, 2.5rem, normal);
+  @include media-laptop {
+    margin: $about-paragraph-margin-laptop;
+    text-align: start;
   }
 
+  @include media-mobile {
+    margin: 0;
+    @include font(1.5rem, 2.5rem, normal);
+  }
 }
 
 .about__image {
-	display: inline-block;
-	max-width: 38%;
+  display: inline-block;
+  max-width: $about-image-max-width;
 
-	@include media-laptop {
-		margin: auto;
-		max-width: 37%;
-	}
+  @include media-laptop {
+    margin: auto;
+    max-width: $about-image-max-width-laptop;
+  }
 
-	@include media-mobile {
-		max-width: 44%;
-	}
+  @include media-mobile {
+    max-width: $about-image-max-width-mobile;
+  }
 }

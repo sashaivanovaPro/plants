@@ -1,54 +1,54 @@
 .contacts {
-  background-color: $color-background;
-  padding-top: 5.3rem;
+  background-color: $color-background-light;
+  padding-top: $contacts-desktop-padding-top;
 
   @include media-laptop {
-    padding-top: 4rem;
+    padding-top: $contacts-laptop-padding-top;
   }
 
   @include media-mobile {
-    padding:2.5rem 1.5rem 0;
+    padding: $contacts-mobile-padding;
   }
 }
 
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
-  
-  @include media-laptop{
+
+  @include media-laptop {
     flex-direction: column-reverse;
     align-items: center;
-    gap: 25rem;
+    gap: $contacts-laptop-gap;
   }
- 
-  @include media-mobile{
-    gap: 13.2rem;
+
+  @include media-mobile {
+    gap: $contacts-mobile-gap;
   }
 }
 
 .contacts__image {
   display: inline-block;
-  width: 33.2%;
-  @include media-laptop{
-    width: 30%;
+  width: $contacts-image-width;
+  @include media-laptop {
+    width: $contacts-image-width-laptop;
   }
-  @include media-mobile{
-    width: 33.4%;
+  @include media-mobile {
+    width: $contacts-image-width-mobile;
   }
 }
 
 .contacts__heading {
-  color: $color-primary;
+  color: $color-green-primary;
   font-weight: bold;
   align-self: flex-start;
-  margin: 0.7rem 0 3.4rem;
-  @include media-laptop{
-    margin: 0 0 10rem;
-    align-self:center;
+  margin: $contacts-heading-margin;
+  @include media-laptop {
+    margin: $contacts-heading-margin-laptop;
+    align-self: center;
     @include font(4rem, 5.2rem, bold);
   }
-  @include media-mobile{
-    margin: 0 0 4rem;
+  @include media-mobile {
+    margin: $contacts-heading-margin-mobile;
     @include font(2.5rem, 3.3rem, bold);
   }
 }
@@ -56,24 +56,23 @@
 .contacts__info--wrapper {
   display: flex;
   flex-direction: column;
-  width:58%;
-  @include media-laptop{
-    width: 67.4%;
+  width: $contacts-wrapper-width-desktop;
+  @include media-laptop {
+    width: $contacts-wrapper-width-laptop;
     max-width: 45rem;
   }
-  @include media-mobile{
-    width: 100%;
+  @include media-mobile {
+    width: $contacts-wrapper-width-mobile;
   }
 }
 
 .city__picker {
   align-self: flex-end;
-  @include media-laptop{
+  @include media-laptop {
     padding: 0;
   }
 
   @include media-laptop {
     align-self: center;
   }
-
 }

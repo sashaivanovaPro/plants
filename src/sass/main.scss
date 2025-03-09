@@ -3,8 +3,11 @@
 @import "./vendors/normalize";
 
 // Abstracts
-
-@import "./abstracts/constants";
+@import "./abstracts/colors";
+@import "./abstracts/typography";
+@import "./abstracts/layouts";
+@import "./abstracts/components";
+@import "./abstracts/sections";
 @import "./abstracts/mixins";
 @import "./abstracts/placeholders";
 
@@ -17,7 +20,6 @@
 @import "./base/burger";
 @import "./base/accordion";
 @import "./base/dropdown";
-
 
 // Layouts
 @import "./layouts/wrapper";
@@ -32,4 +34,3 @@
 @import "./components/service";
 @import "./components/contacts";
 @import "./components/prices";
-

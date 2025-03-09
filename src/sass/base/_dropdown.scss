@@ -6,15 +6,14 @@
   @include flex-between();
   background-color: $color-accordion-active;
   border: none;
-  padding: 0.5rem 3rem 0.5rem 2rem;
-  width: 45rem;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding: $dropdown-button-padding;
+  width: $dropdown-button-width;
+  box-shadow: $dropdown-box-shadow;
   transition: all ease-in-out 0.3s;
   cursor: pointer;
 
   &:hover {
     background-color: $color-dropdown-active;
-    // box-shadow: none;
   }
 
   &--active {
@@ -37,12 +36,12 @@
   &:active .icon-arrow {
     transform: rotate(180deg);
   }
-  @media screen and (max-width: 500px) {
-    width: 30rem;
+  @media screen and (max-width: $dropdown-tablet-breakpoint) {
+    width: $dropdown-button-mobile-width;
   }
 
   @include media-mobile {
-    padding: 0.5rem 1.3rem 0.5rem 2rem;
+    padding: $dropdown-button-mobile-padding;
     margin: 0 auto;
   }
 }
@@ -50,7 +49,7 @@
 .city__name {
   @include font(2rem, 4rem, 400);
   letter-spacing: 0.1rem;
-  color: $color-text-light;
+  color: $color-gray-medium;
 }
 
 .dropdown__list {
@@ -60,9 +59,9 @@
   margin: 0 auto;
   list-style-type: none;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: $dropdown-list-gap;
   background-color: $color-dropdown;
-  padding: 2.7rem 5rem 2.5rem 2.8rem;
+  padding: $dropdown-list-padding;
 
   &--active {
     display: flex;
@@ -70,14 +69,14 @@
 
   &--item {
     @include font(1.6rem, 4rem, 400);
-    color: $color-primary;
+    color: $color-green-primary;
     border-bottom: 1px solid $color-accordion-btn-inactive;
     letter-spacing: 1px;
     cursor: pointer;
 
     &:hover {
-      color: $color-text-light;
-      border-bottom: 1px solid $color-text-light;
+      color: $color-gray-medium;
+      border-bottom: 1px solid $color-gray-medium;
     }
   }
 }
@@ -102,7 +101,7 @@
   }
 
   &-right {
-    color: $color-text-light;
+    color: $color-gray-medium;
   }
 }
 
@@ -111,27 +110,28 @@
   list-style-type: none;
   @include font(1.6rem, 4rem, 400);
   letter-spacing: 1px;
-  color: $color-heading;
-  background-color: $color-background;
-  padding: 1.7rem 3rem 3.2rem 3.2rem;
-  border: 1px solid $color-heading;
-  border-radius: 2rem;
-  margin-top: 4.7rem;
+  color: $color-black;
+  background-color: $color-background-light;
+  padding: $city-card-padding;
+  border: 1px solid $color-black;
+  border-radius: $city-card-border-radius;
+  margin-top: $city-card-margin-top;
 
   &--button {
     display: block;
-    padding: 0.5rem 4.5rem;
+    padding: $city-card-button-padding;
     margin: 0 auto;
-    border: 1px solid $color-additional;
-    border-radius: 0.5rem;
+    border: 1px solid $color-orange-accent;
+    border-radius: $city-card-button-border-radius;
+    font-family: $font-family-secondary;
     @include font(1rem, 1.3rem, 700);
-    @extend %font-add;
-    margin-top: 1.8rem;
-    background-color: $color-background;
+
+    margin-top: $city-card-button-margin-top;
+    background-color: $color-background-light;
     transition: background-color, box-shadow 0.2s ease-in-out;
 
     &:hover {
-      box-shadow: $color-text-light 0.1rem 0.1rem 0.5rem;
+      box-shadow: $color-gray-medium 0.1rem 0.1rem 0.5rem;
       background-color: $color-accordion-active;
     }
   }
@@ -143,8 +143,8 @@
   }
 
   @include media-tablet {
-    padding: 2.3rem 3.6rem;
-    margin-top: 4.9rem;
+    padding: $city-card-tablet-padding;
+    margin-top: $city-card-tablet-margin-top;
   }
 
   @include media-mobile {

@@ -1,26 +1,27 @@
 /* inter-regular - variable */
+$font-path: "/src/fonts/";
 
 @font-face {
-    font-family: 'Inter';    
-    src: url('/src/fonts/Inter.var.woff2') format('woff2-variations');
-    font-weight: 100 900;
-    font-display: swap;
+  font-family: "Inter";
+  src: url("#{$font-path}Inter.var.woff2") format("woff2-variations");
+  font-weight: 100 900;
+  font-display: swap;
 }
 
 /* inika-regular - latin */
 @font-face {
-    font-family: 'Inika';
-    font-style: normal;
-    font-weight: 400;
-    src: url('/src/fonts/inika-v21-latin-regular.woff2') format('woff2'),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 400;
+  src: url("#{$font-path}inika-v21-latin-regular.woff2") format("woff2");
+  font-display: swap;
 }
 
 /* inika-700 - latin */
 @font-face {
-    font-family: 'Inika';
-    font-style: normal;
-    font-weight: 700;
-    src: url('/src/fonts/inika-v21-latin-700.woff2') format('woff2'),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 700;
+  src: url("#{$font-path}inika-v21-latin-700.woff2") format("woff2");
+  font-display: swap;
 }

@@ -1,18 +1,18 @@
 .logo-svg {
-    cursor: pointer;
+  cursor: pointer;
 
-    &:hover {
-        .logo-path {
-            fill: $color-additional;
-        }
-
-        .leaf-path {
-            fill: $color-primary;
-        }
+  &:hover {
+    .logo-path {
+      fill: $color-orange-accent;
     }
+
+    .leaf-path {
+      fill: $color-green-primary;
+    }
+  }
 }
 
 .logo-path,
 .leaf-path {
-    @extend %transition;
+  @extend %transition;
 }
