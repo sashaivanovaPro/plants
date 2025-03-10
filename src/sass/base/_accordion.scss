@@ -48,6 +48,22 @@
   }
 }
 
+.icon-btn {
+  background: transparent;
+}
+
+.icon-btn .accordion__item[aria-expanded="true"] .icon-arrow {
+  transform: rotate(180deg);
+}
+
+.price-card .icon-arrow {
+  transform: rotate(180deg);
+}
+
+.accordion__item[hidden] {
+  display: none;
+}
+
 .price-card {
   padding: $price-card-padding;
   background: $color-accordion-active;
@@ -101,23 +117,16 @@
     display: inline-flex;
     padding: $price-card-button-padding;
     background-color: $color-light;
-    $price-card-button-border-radius: 1rem;
+    border-radius: $price-card-button-border-radius;
   }
 
   &__order-link {
     @include font(1.4rem, 2rem, 700);
     color: $color-gray-medium;
   }
-
-  .icon-arrow__light {
-    transform: rotate(180deg);
-  }
 }
 
-.accordion-button-close {
+.price-card[hidden] {
   display: none;
-}
-
-.accordion-description-close {
-  display: none;
+  opacity: 0;
 }

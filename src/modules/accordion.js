@@ -1,59 +1,53 @@
-// Accordion from prices section
+// Accordion functionality for pricing section
 
-const accordionSwitch = () => {
-  const priceItems = document.querySelectorAll(".accordion__item");
+export const accordionSwitch = () => {
+  const priceButtons = document.querySelectorAll(".accordion__item");
   const priceCards = document.querySelectorAll(".price-card");
-  // console.log(priceItems);
-  priceItems.forEach((item) => {
-    item.addEventListener("click", () => {
-      // initially closes all description windows and shows all tariff buttons
 
-      priceCards.forEach((element) => {
-        element.classList.add("accordion-description-close");
-      });
-      priceItems.forEach((variant) => {
-        variant.classList.remove("accordion-button-close");
-      });
-      // Dropdown clicking - makes button disappeared and shows description
-      item.nextElementSibling.classList.remove("accordion-description-close");
-      item.classList.add("accordion-button-close");
+  // Reset accordion to initial state: all buttons visible, all panels hidden
+  const resetAccordionState = () => {
+    priceButtons.forEach((button) => button.removeAttribute("hidden"));
+    priceButtons.forEach((button) =>
+      button.setAttribute("aria-expanded", "false")
+    );
+    priceCards.forEach((card) => card.setAttribute("hidden", ""));
+  };
+
+  // Hide the button that was clicked
+  const hideClickedButton = (button) => {
+    button.setAttribute("hidden", "");
+  };
+
+  // Show specific panel (price card)
+  const showPanel = (panel) => {
+    panel.removeAttribute("hidden");
+  };
+
+  // Mark button as expanded for accessibility
+  const setClickedButtonAsExpanded = (button) => {
+    button.setAttribute("aria-expanded", "true");
+  };
+
+  // Handle clicks on price buttons (open respective panels)
+  priceButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      resetAccordionState();
+
+      hideClickedButton(button);
+      const panel = button.nextElementSibling;
+      showPanel(panel);
+      setClickedButtonAsExpanded(button);
     });
   });
 
-  // // console.log(priceCards);
+  // Handle clicks on price cards (close them)
   priceCards.forEach((card) => {
     card.addEventListener("click", () => {
-      // Drop up, clicking - makes description disappeared and shows button
-      card.previousElementSibling.classList.remove("accordion-button-close");
-      card.classList.add("accordion-description-close");
+      //Tab is button previous to card
+      const tab = card.previousElementSibling;
+      card.setAttribute("hidden", "");
+      tab.removeAttribute("hidden");
+      tab.setAttribute("aria-expanded", "false");
     });
   });
 };
-
-export { accordionSwitch };
-
-// Slow working version
-
-// export const accordionSwitch = () => {
-//   document.querySelector('.accordion').addEventListener('click', (e) =>{
-//     if (e.target.classList.contains('accordion__item')){
-//       let clickedOption = e.target;
-//       let card = clickedOption.nextElementSibling;
-//       hideOption (clickedOption,card);
-//     } if (e.target.classList.contains('price-card')){
-//       let clickedCard = e.target;
-//       let option = clickedCard.previousElementSibling;
-//       hideDescription (clickedCard, option);
-//     }
-//   })
-// }
-
-// export const hideOption = (clickedOption,card) => {
-//     clickedOption.classList.add('accordion-close');
-//     card.classList.remove('accordion-close');
-// }
-
-// export const hideDescription = (clickedCard, option) => {
-//     option.classList.remove('accordion-close');
-//     clickedCard.classList.add('accordion-close');
-// }

@@ -5,7 +5,6 @@ const menu = document.querySelector(".header__nav");
 const overlay = document.querySelector(".header__overlay");
 const body = document.querySelector("body");
 const menuLinks = document.querySelectorAll(".header__link");
-console.log(menuLinks);
 
 // Initial state
 let isExpanded = false;

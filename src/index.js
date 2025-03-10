@@ -12,9 +12,6 @@ import { toggleBurgerMenu } from "./modules/burger";
 
 document.addEventListener("DOMContentLoaded", function () {
   serviceBlur();
-
-  // Accordion prices
-
   accordionSwitch();
 
   // Dropdown from contacts section
