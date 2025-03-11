@@ -16,6 +16,7 @@
     background-color: $color-dropdown-active;
   }
 
+  &[aria-expanded="true"],
   &--active {
     background-color: $color-dropdown-active;
     box-shadow: none;
@@ -63,7 +64,7 @@
   background-color: $color-dropdown;
   padding: $dropdown-list-padding;
 
-  &--active {
+  &:not([hidden]) {
     display: flex;
   }
 
@@ -79,10 +80,6 @@
       border-bottom: 1px solid $color-gray-medium;
     }
   }
-}
-
-.dropdown__list--visible {
-  display: block;
 }
 
 .city__card--wrapper {
@@ -117,16 +114,22 @@
   border-radius: $city-card-border-radius;
   margin-top: $city-card-margin-top;
 
+  &:not([hidden]) {
+    display: block;
+  }
+
   &--button {
     display: block;
-    padding: $city-card-button-padding;
-    margin: 0 auto;
+    width: $contacts-button-width;
+    height: $contacts-button-height;
+    padding: $contacts-button-padding;
+    color: $color-gray-medium;
+    margin: $city-card-button-margin-top auto 0;
+    text-align: center;
     border: 1px solid $color-orange-accent;
     border-radius: $city-card-button-border-radius;
     font-family: $font-family-secondary;
     @include font(1rem, 1.3rem, 700);
-
-    margin-top: $city-card-button-margin-top;
     background-color: $color-background-light;
     transition: background-color, box-shadow 0.2s ease-in-out;
 
@@ -156,6 +159,6 @@
   }
 }
 
-.card-hidden {
+[hidden] {
   display: none;
 }
