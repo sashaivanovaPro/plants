@@ -74,7 +74,7 @@
     margin-bottom: $prices-subheading-margin-bottom-mobile;
   }
 }
-.contact-button {
+.button--contact {
   @include media-laptop {
     margin-bottom: $prices-button-margin-bottom-laptop;
   }

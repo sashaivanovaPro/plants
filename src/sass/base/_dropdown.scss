@@ -1,5 +1,13 @@
 .dropdown {
   position: relative;
+  align-self: flex-end;
+  @include media-laptop {
+    padding: 0;
+  }
+
+  @include media-laptop {
+    align-self: center;
+  }
 }
 
 .dropdown__button {
@@ -9,7 +17,7 @@
   padding: $dropdown-button-padding;
   width: $dropdown-button-width;
   box-shadow: $dropdown-box-shadow;
-  transition: all ease-in-out 0.3s;
+  @extend %transition;
   cursor: pointer;
 
   &:hover {
@@ -47,7 +55,7 @@
   }
 }
 
-.city__name {
+.dropdown__city-name {
   @include font(2rem, 4rem, 400);
   letter-spacing: 0.1rem;
   color: $color-gray-medium;
@@ -131,7 +139,7 @@
     font-family: $font-family-secondary;
     @include font(1rem, 1.3rem, 700);
     background-color: $color-background-light;
-    transition: background-color, box-shadow 0.2s ease-in-out;
+    @extend %transition;
 
     &:hover {
       box-shadow: $color-gray-medium 0.1rem 0.1rem 0.5rem;

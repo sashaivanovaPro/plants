@@ -2,7 +2,7 @@
 
 export const accordionSwitch = () => {
   const priceButtons = document.querySelectorAll(".accordion__item");
-  const priceCards = document.querySelectorAll(".price-card");
+  const priceCards = document.querySelectorAll(".prices__card");
 
   // Reset accordion to initial state: all buttons visible, all panels hidden
   const resetAccordionState = () => {

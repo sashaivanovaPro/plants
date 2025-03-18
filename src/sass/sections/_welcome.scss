@@ -1,0 +1,71 @@
+.welcome {
+  background-color: $color-background-light;
+  padding: 6.2rem 0;
+
+  @include media-laptop {
+    padding: 4rem 0 7rem;
+  }
+
+  @include media-tablet {
+    padding: 2.4rem 0;
+  }
+
+  // Container
+  &__container {
+    @include media-laptop {
+      flex-direction: row-reverse;
+      align-items: flex-start;
+    }
+
+    @include media-tablet {
+      flex-direction: column;
+    }
+  }
+
+  // Image
+  &__image {
+    display: inline-block;
+    max-width: 36.5%;
+
+    @include media-laptop {
+      max-width: 44%;
+      margin-top: -1rem;
+    }
+
+    @include media-tablet {
+      display: none;
+    }
+  }
+
+  // Heading
+  &__heading {
+    margin: 3.6rem 0 4.5rem;
+
+    &--colored {
+      color: $color-green-primary;
+    }
+
+    @include media-laptop {
+      margin: 0 0 3rem;
+    }
+
+    @include media-tablet {
+      margin: 0 0 2.1rem;
+    }
+  }
+
+  // Text content
+  &__paragraph {
+    @include font(2rem, 3.5rem, normal);
+    margin: 0 0 4.7rem;
+
+    @include media-laptop {
+      @include font(1.6rem, 2.5rem, normal);
+      margin: 0 0 3.2rem;
+    }
+
+    @include media-tablet {
+      margin: 0 0 2.7rem;
+    }
+  }
+}

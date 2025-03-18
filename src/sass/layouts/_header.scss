@@ -6,18 +6,49 @@
   @include media-laptop {
     padding: $header-padding-laptop 0;
   }
-}
 
-.header__wrapper {
-  @include flex-between();
-}
+  &__overlay {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $color-gray-medium;
 
-.header__logo {
-  display: flex;
-  align-items: center;
-  margin-bottom: $header-logo-margin-bottom;
-
-  @include media-mobile {
-    margin: 0;
+    &--active {
+      visibility: visible;
+      opacity: $overlay-opacity;
+      transition-delay: 0s;
+    }
   }
+
+  &__container {
+    @include flex-between();
+  }
+
+  &__nav {
+    @include media-tablet {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: $nav-tablet-width;
+      height: 100%;
+      background-color: $color-light;
+      z-index: 5;
+      padding-top: $nav-padding-top;
+      transform: translateX(100%);
+      transition: all 0.8s;
+    }
+
+    &--active {
+      transform: translateX(0);
+    }
+  }
+}
+
+// Class for body to prevent scrolling when mobile menu is open
+.hidden {
+  overflow: hidden;
+  position: fixed;
 }

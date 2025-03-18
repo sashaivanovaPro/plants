@@ -20,7 +20,7 @@
   border-radius: $accordion-border-radius;
   width: 100%;
   cursor: pointer;
-  transition: background-color, box-shadow 0.2s ease-in-out;
+  @extend %transition;
 
   &:hover .icon-circle__light {
     background-color: $color-btn-inactive;
@@ -56,7 +56,7 @@
   transform: rotate(180deg);
 }
 
-.price-card .icon-arrow {
+.prices__card .icon-arrow {
   transform: rotate(180deg);
 }
 
@@ -64,41 +64,41 @@
   display: none;
 }
 
-.price-card {
-  padding: $price-card-padding;
+.prices__card {
+  padding: $prices__card-padding;
   background: $color-accordion-active;
-  border-radius: $price-card-border-radius;
-  transition: box-shadow 0.2s ease-in-out;
+  border-radius: $prices__card-border-radius;
+  @extend %transition;
 
   &:hover {
     box-shadow: $color-gray-medium 0.3rem 0.3rem 10px;
   }
 
   @include media-mobile {
-    padding: $price-card-mobile-padding;
+    padding: $prices__card-mobile-padding;
   }
 
-  &__name {
+  &-name {
     @include flex-between;
     cursor: pointer;
 
     &::after {
       content: "";
-      margin: $price-card-name-margin;
+      margin: $prices__card-name-margin;
       background-color: $color-btn-active;
-      height: $price-card-line-height;
+      height: $prices__card-line-height;
       width: 100%;
     }
   }
 
-  &__dscrptn {
+  &-dscrptn {
     @include font(1rem, 1rem, 300);
     color: $color-gray-medium;
-    margin-bottom: $price-card-dscrptn-margin;
+    margin-bottom: $prices__card-dscrptn-margin;
   }
 
   h5 {
-    margin: $price-card-h5-margin;
+    margin: $prices__card-h5-margin;
     font-weight: 400;
   }
 
@@ -115,9 +115,9 @@
 
   &__order-button {
     display: inline-flex;
-    padding: $price-card-button-padding;
+    padding: $prices__card-button-padding;
     background-color: $color-light;
-    border-radius: $price-card-button-border-radius;
+    border-radius: $prices__card-button-border-radius;
   }
 
   &__order-link {
@@ -126,7 +126,7 @@
   }
 }
 
-.price-card[hidden] {
+.prices__card[hidden] {
   display: none;
   opacity: 0;
 }

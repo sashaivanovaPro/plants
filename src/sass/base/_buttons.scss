@@ -7,20 +7,7 @@
   @include font(2rem, 2.6rem, 400);
   border: 1px solid $color-orange-accent;
   border-radius: $button-border-radius;
-  transition: box-shadow 0.2s ease-in-out;
-
-  &__service {
-    font-family: $font-family-secondary;
-    background-color: $color-background-light;
-    color: $color-orange-accent;
-    transition: background-color 0.5s ease-in-out;
-    transition: box-shadow 0.2s ease-in-out;
-
-    &-clicked {
-      color: $color-light;
-      background-color: $color-orange-accent;
-    }
-  }
+  @extend %transition;
 
   &:hover {
     box-shadow: $color-gray-medium 0.3rem 0.3rem 1rem;
@@ -31,34 +18,40 @@
     width: $button-mobile-width;
     height: $button-mobile-height;
   }
-}
 
-.contact-button {
-  background-color: $color-light;
-  font-weight: bold;
-  font-family: "Inika";
-}
+  // Learn more modification
+  &--more {
+    width: $button-more-width;
+    height: $button-more-height;
+    @include font(1.6rem, 2rem, 400);
+    background-color: $color-background-light;
+    border: $color-orange-accent 0.2rem solid;
+    color: $color-black;
+    text-transform: uppercase;
+    border-radius: $button--more-border-radius;
 
-.button-more {
-  width: $button-more-width;
-  height: $button-more-height;
-  @include flex-center();
-  @include font(1.6rem, 2rem, 400);
-  background-color: $color-background-light;
-  border: $color-orange-accent 0.2rem solid;
-  color: $color-black;
-  text-transform: uppercase;
-  border-radius: $button-more-border-radius;
-  transition: background-color 0.5s ease-in-out;
+    @include media-mobile {
+      width: $button-more-mobile-width;
+      height: $button-more-mobile-height;
+      @include font(1rem, 2rem, 400);
+    }
 
-  @include media-mobile {
-    width: $button-more-mobile-width;
-    height: $button-more-mobile-height;
-    @include font(1rem, 2rem, 400);
+    &:hover {
+      color: $color-light;
+      background-color: $color-orange-accent;
+    }
   }
-}
 
-.button-more:hover {
-  color: $color-light;
-  background-color: $color-orange-accent;
+  // Contact us modification
+  &--contact {
+    background-color: $color-light;
+    color: $color-orange-accent;
+    font-weight: bold;
+    font-family: "Inika";
+
+    &:hover {
+      color: $color-light;
+      background-color: $color-orange-accent;
+    }
+  }
 }

@@ -1,0 +1,69 @@
+.burger {
+  display: none;
+  position: relative;
+  width: $burger-width;
+  height: $burger-height;
+  cursor: pointer;
+  z-index: 10;
+
+  @include media-tablet {
+    display: block;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    background-color: $color-burger;
+    display: block;
+    position: absolute;
+    left: 0;
+    height: $burger-line-height;
+    width: 100%;
+    border-radius: $burger-line-radius;
+    transition: transform $burger-transition-time ease,
+      opacity $burger-transition-time ease;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  &__line {
+    background-color: $color-burger;
+    display: block;
+    position: absolute;
+    left: 0;
+    height: $burger-line-height;
+    width: 100%;
+    border-radius: $burger-line-radius;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform $burger-transition-time ease,
+      opacity $burger-transition-time ease;
+  }
+
+  &__move {
+    position: fixed;
+    top: 3.6rem;
+    right: 2.5rem;
+    background-color: transparent;
+
+    .burger__line {
+      opacity: 0;
+    }
+
+    &::after {
+      transform: rotate(45deg);
+      bottom: calc($burger-height / 2.4);
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+      top: calc($burger-height / 2.4);
+    }
+  }
+}

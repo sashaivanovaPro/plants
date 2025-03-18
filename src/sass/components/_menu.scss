@@ -1,0 +1,33 @@
+// Menu styles
+.menu {
+  @include flex-between();
+  @include font($font-size-base, $line-height-nav, $font-weight-normal);
+  gap: $nav-link-gap;
+  list-style: none;
+  font-family: "Inika";
+  margin: 0;
+  @include media-tablet {
+    @include flex-column(center);
+    gap: $nav-link-gap-tablet;
+  }
+
+  &__link {
+    color: $color-dark-green;
+    text-decoration: none;
+    @extend %transition;
+    @extend %transition;
+
+    &:hover {
+      color: $color-orange-accent;
+      font-weight: $font-weight-bold;
+    }
+
+    @include media-tablet {
+      @include font(
+        $font-size-nav-tablet,
+        $line-height-nav-tablet,
+        $font-weight-normal
+      );
+    }
+  }
+}

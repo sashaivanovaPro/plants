@@ -1,0 +1,28 @@
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: $logo-margin-bottom;
+
+  @include media-mobile {
+    margin: 0;
+  }
+
+  &__image {
+    cursor: pointer;
+
+    &:hover {
+      .logo__path {
+        fill: $color-orange-accent;
+      }
+
+      .logo__leaf {
+        fill: $color-green-primary;
+      }
+    }
+  }
+
+  &__path,
+  &__leaf {
+    @extend %transition;
+  }
+}

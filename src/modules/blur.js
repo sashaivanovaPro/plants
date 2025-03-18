@@ -1,7 +1,9 @@
 // Service card visibility management based on category selection
 
 let buttons = document.querySelectorAll(".service__button");
-let services = document.querySelectorAll(".grid__wrapper .grid__item");
+let services = document.querySelectorAll(
+  ".service__gallery-container .service__gallery-item"
+);
 
 const serviceBlur = () => {
   let buttonNameSet = [];
@@ -9,13 +11,13 @@ const serviceBlur = () => {
   // Helper functions for card blur management
   const removeBlurFromAll = () => {
     services.forEach((service) => {
-      service.classList.add("grid__item--no-blur");
+      service.classList.add("service__gallery-item--no-blur");
     });
   };
 
   const addBlurToAll = () => {
     services.forEach((service) => {
-      service.classList.remove("grid__item--no-blur");
+      service.classList.remove("service__gallery-item--no-blur");
     });
   };
 
@@ -27,9 +29,9 @@ const serviceBlur = () => {
         : service.classList.contains(categoryName);
 
       if (shouldHaveBlur) {
-        service.classList.remove("grid__item--no-blur");
+        service.classList.remove("service__gallery-item--no-blur");
       } else {
-        service.classList.add("grid__item--no-blur");
+        service.classList.add("service__gallery-item--no-blur");
       }
     });
   };
@@ -58,21 +60,21 @@ const serviceBlur = () => {
 
   // Category button click handler
   document
-    .querySelector(".service__button--wrapper")
+    .querySelector(".service__buttons-wrapper")
     .addEventListener("click", (e) => {
       if (e.target.classList.contains("service__button")) {
         let clickedButton = e.target;
         let buttonName = e.target.id;
-        let buttonSet = document.querySelectorAll(".button__service-clicked");
+        let buttonSet = document.querySelectorAll(".service__button--clicked");
 
         // Scenario 1: Selecting third category resets all filters
         if (
-          !clickedButton.classList.contains("button__service-clicked") &&
+          !clickedButton.classList.contains("service__button--clicked") &&
           buttonSet.length === 2
         ) {
           addFocus(clickedButton);
           buttons.forEach((button) => {
-            button.classList.remove("button__service-clicked");
+            button.classList.remove("service__button--clicked");
             buttonNameSet.pop(buttonName);
           });
           buttonNameSet = []; // Reset active categories array
@@ -81,7 +83,7 @@ const serviceBlur = () => {
 
         // Scenario 2: Selecting second category - show both selected categories
         else if (
-          !clickedButton.classList.contains("button__service-clicked") &&
+          !clickedButton.classList.contains("service__button--clicked") &&
           buttonSet.length === 1
         ) {
           addFocus(clickedButton);
@@ -95,7 +97,7 @@ const serviceBlur = () => {
 
         // Scenario 3: Canceling one of two active categories
         else if (
-          clickedButton.classList.contains("button__service-clicked") &&
+          clickedButton.classList.contains("service__button--clicked") &&
           buttonSet.length === 2
         ) {
           removeFocus(clickedButton);
@@ -109,7 +111,7 @@ const serviceBlur = () => {
 
         // Scenario 4: Selecting first category - show only this one
         else if (
-          !clickedButton.classList.contains("button__service-clicked") &&
+          !clickedButton.classList.contains("service__button--clicked") &&
           buttonSet.length === 0
         ) {
           addFocus(clickedButton);
@@ -119,7 +121,7 @@ const serviceBlur = () => {
 
         // Scenario 5: Canceling the only active category
         else if (
-          clickedButton.classList.contains("button__service-clicked") &&
+          clickedButton.classList.contains("service__button--clicked") &&
           buttonSet.length === 1
         ) {
           removeFocus(clickedButton);
@@ -132,14 +134,14 @@ const serviceBlur = () => {
 
 // Set button active state
 const addFocus = (clickedButton) => {
-  clickedButton.classList.add("button__service-clicked");
+  clickedButton.classList.add("service__button--clicked");
   clickedButton.setAttribute("aria-pressed", true);
 };
 
 // Remove button active state
 const removeFocus = (clickedButton) => {
   //
-  clickedButton.classList.remove("button__service-clicked");
+  clickedButton.classList.remove("service__button--clicked");
   clickedButton.setAttribute("aria-pressed", false);
 };
 

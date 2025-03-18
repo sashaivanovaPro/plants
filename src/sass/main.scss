@@ -6,6 +6,11 @@
 @import "./abstracts/colors";
 @import "./abstracts/typography";
 @import "./abstracts/layouts";
+@import "./abstracts/buttons-vars";
+@import "./abstracts/cards-vars";
+@import "./abstracts/icons-vars";
+@import "./abstracts/accordions-vars";
+@import "./abstracts/dropdown-vars.scss";
 @import "./abstracts/components";
 @import "./abstracts/sections";
 @import "./abstracts/mixins";
@@ -14,10 +19,8 @@
 // Base
 @import "./base/base";
 @import "./base/buttons";
-@import "./base/logo";
 @import "./base/fonts";
 @import "./base/icons";
-@import "./base/burger";
 @import "./base/accordion";
 @import "./base/dropdown";
 
@@ -28,9 +31,13 @@
 @import "./layouts/columns";
 
 // Components
-@import "./components/navigation";
-@import "./components/welcome";
-@import "./components/about";
-@import "./components/service";
-@import "./components/contacts";
-@import "./components/prices";
+@import "./components/logo";
+@import "./components/menu";
+@import "./components/burger";
+
+// Sections
+@import "./sections/welcome";
+@import "./sections/about";
+@import "./sections/service";
+@import "./sections/prices";
+@import "./sections/contacts";
