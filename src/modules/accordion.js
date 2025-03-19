@@ -1,8 +1,8 @@
 // Accordion functionality for pricing section
 
 export const accordionSwitch = () => {
-  const priceButtons = document.querySelectorAll(".accordion__item");
-  const priceCards = document.querySelectorAll(".prices__card");
+  const priceButtons = document.querySelectorAll(".accordion__plan-button");
+  const priceCards = document.querySelectorAll(".accordion__card");
 
   // Reset accordion to initial state: all buttons visible, all panels hidden
   const resetAccordionState = () => {

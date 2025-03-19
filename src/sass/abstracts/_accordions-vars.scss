@@ -9,8 +9,19 @@ $accordion-border-radius: 2rem;
 $accordion-mobile-width: 22.4rem;
 $accordion-mobile-padding: 2.9rem 2.2rem;
 $accordion-mobile-gap: 1.2rem;
-$accordion-item-name-margin: 1.6rem 0;
+$accordion-plan-name-margin: 1.6rem 0;
 
 // Accordion item
 $accordion-item-padding: 0 4rem;
 $accordion-item-mobile-padding: 0 3rem;
+
+// Accordion card
+$accordion-card-padding: 1.6rem 3.8rem 1.2rem;
+$accordion-card-mobile-padding: 1.6rem 3rem 1.2rem;
+$accordion-card-border-radius: 2rem;
+$accordion-card-plan-margin: 0.8rem 0.8rem 0.6rem 0;
+$accordion-card-line-height: 0.5px;
+$accordion-card-description-margin: 0.6rem;
+$accordion-card-h5-margin: 0 0 0.8rem;
+$accordion-card-button-padding: 0.3rem 2.3rem;
+$accordion-card-button-border-radius: 1rem;

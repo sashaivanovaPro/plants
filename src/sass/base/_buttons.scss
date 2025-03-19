@@ -28,7 +28,7 @@
     border: $color-orange-accent 0.2rem solid;
     color: $color-black;
     text-transform: uppercase;
-    border-radius: $button--more-border-radius;
+    border-radius: $button-more-border-radius;
 
     @include media-mobile {
       width: $button-more-mobile-width;
@@ -52,6 +52,14 @@
     &:hover {
       color: $color-light;
       background-color: $color-orange-accent;
+    }
+
+    @include media-laptop {
+      margin-bottom: $prices-button-margin-bottom-laptop;
+    }
+
+    @include media-mobile {
+      margin-bottom: 0rem;
     }
   }
 }

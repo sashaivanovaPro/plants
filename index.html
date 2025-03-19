@@ -413,161 +413,185 @@
       </section>
       <section class="prices" id="prices" aria-labelledby="prices-heading">
         <div class="wrapper">
-          <div class="prices__wrapper layout-2-columns">
-            <div class="prices__plans-wrapper">
+          <div class="prices__container layout-2-columns">
+            <div class="prices__plans">
               <h2 class="prices__heading" id="prices-heading">Prices</h2>
-              <div class="prices__options accordion" role="tablist">
+              <div class="accordion" role="tablist">
                 <button
-                  class="accordion__item prices__options--item"
-                  data-name="accordeon-title"
+                  class="accordion__plan-button prices__options--item"
+                  data-name="accordion-title"
                   id="tab-basics"
                   aria-controls="basics"
                   aria-expanded="false"
                   role="tab"
                 >
-                  <h3 class="prices__name">Basics</h3>
-                  <div class="icon-btn" aria-hidden="true">
-                    <span class="icon-circle icon-circle__light">
-                      <span class="icon-arrow icon-arrow__dark"></span>
+                  <h3 class="accordion__plan-name">Basics</h3>
+                  <div class="icon" aria-hidden="true">
+                    <span
+                      class="icon__circle icon__circle--light"
+                    >
+                      <span
+                        class="icon__arrow icon__arrow--dark"
+                      ></span>
                     </span>
                   </div>
                 </button>
                 <div
-                  class="prices__card"
+                  class="accordion__card"
                   id="basics"
                   role="tabpanel"
                   aria-labelledby="tab-basics"
                   hidden
                 >
-                  <div class="prices__card-name">
-                    <h3 class="prices__card-plan">Basics</h3>
+                  <div class="accordion__card-plan">
+                    <h3 class="accordion__card-name">Basics</h3>
                     <button
-                      class="icon-btn"
+                      class="accordion__button-close"
                       aria-label="Close panel"
                       aria-hidden="true"
                     >
-                      <span class="icon-circle icon-circle__dark">
-                        <span class="icon-arrow icon-arrow__light"></span>
+                      <span
+                        class="icon__circle icon__circle--dark"
+                      >
+                        <span
+                          class="icon__arrow icon__arrow--light"
+                        ></span>
                       </span>
                     </button>
                   </div>
-                  <p class="prices__card-dscrptn">
+                  <p class="accordion__card-description">
                     Release of Letraset sheets containing Lorem Ipsum passages,
                     and more recently
                   </p>
-                  <h5 class="prices__card__price">
-                    <span class="prices__card__price_span">&#36;</span
-                    ><span class="prices__card__price_span-big">15</span> / per
-                    hour
+                  <h5 class="accordion__card-price">
+                    <span class="accordion__card-price-value">&#36;</span
+                    ><span class="accordion__card-price-value--bold">15</span>
+                    / per hour
                   </h5>
-                  <div class="prices__card__order-button">
+                  <div class="accordion__card-order-button">
                     <a
                       href="#contacts"
-                      class="prices__card__order-link"
+                      class="accordion__card-order-link"
                       aria-label="Select basic plan"
                       >Order</a
                     >
                   </div>
                 </div>
                 <button
-                  class="accordion__item prices__options--item"
-                  data-name="accordeon-title"
+                  class="accordion__plan-button prices__options--item"
+                  data-name="accordion-title"
                   id="tab-standart"
                   aria-controls="standart"
                   aria-expanded="false"
                   role="tab"
                 >
-                  <h3 class="prices__name">Standard</h3>
-                  <div class="icon-btn" aria-hidden="true">
-                    <span class="icon-circle icon-circle__light">
-                      <span class="icon-arrow icon-arrow__dark"></span>
+                  <h3 class="accordion__plan-name">Standard</h3>
+                  <div class="icon aria-hidden="true">
+                    <span
+                      class="icon__circle icon__circle--light"
+                    >
+                      <span
+                        class="icon__arrow icon__arrow--dark"
+                      ></span>
                     </span>
                   </div>
                 </button>
                 <div
-                  class="prices__card"
+                  class="accordion__card"
                   id="standart"
                   role="tabpanel"
                   aria-labelledby="tab-standart"
                   hidden
                 >
-                  <div class="prices__card-name">
-                    <h3 class="prices__card-plan">Standard</h3>
+                  <div class="accordion__card-plan">
+                    <h3 class="accordion__card-name">Standard</h3>
                     <button
-                      class="icon-btn"
+                      class="accordion__button-close"
                       aria-label="Close panel"
                       aria-hidden="true"
                     >
-                      <span class="icon-circle icon-circle__dark">
-                        <span class="icon-arrow icon-arrow__light"></span>
+                      <span
+                        class="icon__circle icon__circle--dark"
+                      >
+                        <span
+                          class="icon__arrow icon__arrow--light"
+                        ></span>
                       </span>
                     </button>
                   </div>
-                  <p class="prices__card-dscrptn">
+                  <p class="accordion__card-description">
                     Release of Letraset sheets containing Lorem Ipsum passages,
                     and more recently
                   </p>
-                  <h5 class="prices__card__price">
-                    <span class="prices__card__price_span">&#36;</span
-                    ><span class="prices__card__price_span-big">25</span> / per
-                    hour
+                  <h5 class="accordion__card-price">
+                    <span class="accordion__card-price-value">&#36;</span
+                    ><span class="accordion__card-price-value--bold">25</span>
+                    / per hour
                   </h5>
-                  <div class="prices__card__order-button">
+                  <div class="accordion__card-order-button">
                     <a
                       href="#contacts"
-                      class="prices__card__order-link"
+                      class="accordion__card-order-link"
                       aria-label="Select standart plan"
                       >Order</a
                     >
                   </div>
                 </div>
                 <button
-                  class="accordion__item prices__options--item"
-                  data-name="accordeon-title"
+                  class="accordion__plan-button prices__options--item"
+                  data-name="accordion-title"
                   id="tab-procare"
                   aria-controls="procare"
                   aria-expanded="false"
                   role="tab"
                 >
-                  <h3 class="prices__name">Pro care</h3>
-                  <div class="icon-btn" aria-hidden="true">
-                    <span class="icon-circle icon-circle__light">
-                      <span class="icon-arrow icon-arrow__dark"></span>
+                  <h3 class="accordion__plan-name">Pro care</h3>
+                  <div class="icon aria-hidden="true">
+                    <span
+                      class="icon__circle icon__circle--light"
+                    >
+                      <span
+                        class="icon__arrow icon__arrow--dark"
+                      ></span>
                     </span>
                   </div>
                 </button>
                 <div
-                  class="prices__card"
+                  class="accordion__card"
                   id="procare"
                   role="tabpanel"
                   aria-labelledby="tab-procare"
                   hidden
                 >
-                  <div class="prices__card-name">
-                    <h3 class="prices__card-plan">Pro care</h3>
+                  <div class="accordion__card-plan">
+                    <h3 class="accordion__card-name">Pro care</h3>
                     <button
-                      class="icon-btn"
+                      class="accordion__button-close"
                       aria-label="Close panel"
                       aria-hidden="true"
                     >
-                      <span class="icon-circle icon-circle__dark">
-                        <span class="icon-arrow icon-arrow__light"></span>
+                      <span
+                        class="icon__circle icon__circle--dark"
+                      >
+                        <span
+                          class="icon__arrow icon__arrow--light"
+                        ></span>
                       </span>
                     </button>
                   </div>
-                  <p class="prices__card-dscrptn">
+                  <p class="accordion__card-description">
                     Release of Letraset sheets containing Lorem Ipsum passages,
                     and more recently
                   </p>
-                  <h5 class="prices__card__price">
-                    <span class="prices__card__price_span">&#36;</span
-                    ><span class="prices__card__price_span-big">35</span> / per
-                    hour
+                  <h5 class="accordion__card-price">
+                    <span class="accordion__card-price-value">&#36;</span
+                    ><span class="accordion__card-price-value--bold">35</span>
+                    / per hour
                   </h5>
-                  <div class="prices__card__order-button">
+                  <div class="accordion__card-order-button">
                     <a
                       href="#contacts"
-                      class="prices__card__order-link"
+                      class="accordion__card-order-link"
                       aria-label="Select professional care plan"
                       >Order</a
                     >
@@ -575,10 +599,10 @@
                 </div>
               </div>
             </div>
-            <div class="rightside__wrapper">
-              <h3 class="prices__subheading">
+            <div class="prices__info">
+              <h3 class="prices__info-heading">
                 Our best
-                <span class="prices__subheading_colored greentext">
+                <span class="prices__info-heading--colored greentext">
                   gardeners</span
                 >
                 are ready to help you
@@ -627,9 +651,9 @@
                   aria-controls="city-list"
                 >
                   <h4 class="dropdown__city-name">City</h4>
-                  <div class="icon-btn" aria-hidden="true">
-                    <span class="icon-circle">
-                      <span class="icon-arrow" id="rotate"></span>
+                  <div class="icon aria-hidden="true">
+                    <span class="icon__circle">
+                      <span class="icon__arrow" id="rotate"></span>
                     </span>
                   </div>
                 </button>

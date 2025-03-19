@@ -1,0 +1,139 @@
+.accordion {
+  width: $accordion-width;
+  border: 1px solid $color-off-white;
+  border-radius: $accordion-border-radius;
+  padding: $accordion-padding;
+  @include flex-column(center);
+  gap: $accordion-gap;
+  @include media-mobile {
+    margin: 0 auto;
+    padding: $accordion-mobile-padding;
+    width: $accordion-mobile-width;
+    gap: $accordion-mobile-gap;
+  }
+
+  //
+  &__plan {
+    &-button {
+      @include flex-between();
+      background-color: $color-accordion;
+      padding: $accordion-item-padding;
+      border-radius: $accordion-border-radius;
+      width: 100%;
+      cursor: pointer;
+      @extend %transition;
+
+      &[hidden] {
+        display: none;
+      }
+
+      &[aria-expanded="true"] {
+        .icon__arrow {
+          transform: rotate(180deg);
+        }
+      }
+
+      &:hover .icon__circle--light {
+        background-color: $color-btn-inactive;
+      }
+
+      &:hover .icon__arrow--dark {
+        background-image: url("/src/img/svg/arrow-light.svg");
+      }
+
+      &:hover {
+        box-shadow: $color-gray-medium 0.3rem 0.3rem 10px;
+        background-color: $color-accordion-active;
+      }
+
+      @include media-mobile {
+        padding: $accordion-item-mobile-padding;
+      }
+    }
+
+    &-name {
+      margin: $accordion-plan-name-margin;
+    }
+  }
+
+  &__card {
+    padding: $accordion-card-padding;
+    background: $color-accordion-active;
+    border-radius: $accordion-card-border-radius;
+    @extend %transition;
+
+    .icon__arrow {
+      transform: rotate(180deg);
+    }
+    &[hidden] {
+      display: none;
+      opacity: 0;
+    }
+
+    &:hover {
+      box-shadow: $color-gray-medium 0.3rem 0.3rem 10px;
+    }
+
+    @include media-mobile {
+      padding: $accordion-card-mobile-padding;
+    }
+
+    &-plan {
+      @include flex-between();
+      position: relative;
+
+      &::after {
+        content: "";
+        margin: $accordion-card-plan-margin;
+        background-color: $color-btn-active;
+        height: $accordion-card-line-height;
+        width: 100%;
+      }
+    }
+
+    &-name {
+      @include flex-between;
+      cursor: pointer;
+    }
+
+    &-description {
+      @include font(1rem, 1rem, 300);
+      color: $color-gray-medium;
+      margin-bottom: $accordion-card-description-margin;
+    }
+
+    h5 {
+      margin: $accordion-card-h5-margin;
+      font-weight: 400;
+    }
+
+    &-price-value {
+      color: $color-orange-accent;
+      font-weight: 700;
+
+      &--bold {
+        font-size: 1.6rem;
+        color: $color-orange-accent;
+        font-weight: 700;
+      }
+    }
+
+    &-order-button {
+      // display: inline-block;
+      display: inline-flex;
+      padding: $accordion-card-button-padding;
+      background-color: $color-light;
+      border-radius: $accordion-card-button-border-radius;
+    }
+
+    &-order-link {
+      @include font(1.4rem, 2rem, 700);
+      color: $color-gray-medium;
+    }
+  }
+
+  &__button-close {
+    display: flex;
+    background: transparent;
+  }
+}

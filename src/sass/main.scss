@@ -20,9 +20,6 @@
 @import "./base/base";
 @import "./base/buttons";
 @import "./base/fonts";
-@import "./base/icons";
-@import "./base/accordion";
-@import "./base/dropdown";
 
 // Layouts
 @import "./layouts/wrapper";
@@ -34,6 +31,9 @@
 @import "./components/logo";
 @import "./components/menu";
 @import "./components/burger";
+@import "./components/icons";
+@import "./components/accordion";
+@import "./components/dropdown";
 
 // Sections
 @import "./sections/welcome";

@@ -1,0 +1,31 @@
+.icon {
+  background: transparent;
+  &__circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: $icon-circle-size;
+    height: $icon-circle-size;
+    border-radius: $icon-circle-radius;
+    background-color: $color-btn-inactive;
+
+    &--light {
+      background-color: $color-accordion-btn-inactive;
+    }
+
+    @include media-mobile {
+      margin-right: $icon-mobile-margin;
+    }
+  }
+
+  &__arrow {
+    display: block;
+    width: $icon-arrow-width;
+    height: $icon-arrow-height;
+    background-image: url("../img/svg/arrow-light.svg");
+
+    &--dark {
+      background-image: url("../img/svg/arrow-dark.svg");
+    }
+  }
+}

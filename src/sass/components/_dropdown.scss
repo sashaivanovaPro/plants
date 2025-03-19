@@ -29,20 +29,20 @@
     background-color: $color-dropdown-active;
     box-shadow: none;
 
-    .icon-circle {
+    .icon__circle {
       background-color: $color-btn-inactive;
     }
 
-    .icon-arrow {
+    .icon__arrow {
       transform: rotate(180deg);
     }
   }
 
-  &:active .icon-circle {
+  &:active .icon__circle {
     background-color: $color-btn-inactive;
   }
 
-  &:active .icon-arrow {
+  &:active .icon__arrow {
     transform: rotate(180deg);
   }
   @media screen and (max-width: $dropdown-tablet-breakpoint) {
