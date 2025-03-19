@@ -607,14 +607,12 @@
                 >
                 are ready to help you
               </h3>
-              <!-- <div class="contact__button--block"> -->
               <a
                 href="#contacts"
                 class="button button--contact"
                 aria-label="Contact our gardeners"
                 >Contact us</a
               >
-              <!-- </div> -->
               <img
                 class="prices__image"
                 src="./src/img/svg/small-leafs.svg"
@@ -631,14 +629,14 @@
         aria-labelledby="contacts-heading"
       >
         <div class="wrapper">
-          <div class="contacts__wrapper">
+          <div class="contacts__container">
             <img
               class="contacts__image"
               src="./src/img/svg/contact_woman.svg"
               loading="lazy"
               alt="Woman with a plant"
             />
-            <div class="contacts__info-wrapper">
+            <div class="contacts__information">
               <h2 class="contacts__heading" id="contacts-heading">
                 Contact us
               </h2>
@@ -650,7 +648,7 @@
                   aria-expanded="false"
                   aria-controls="city-list"
                 >
-                  <h4 class="dropdown__city-name">City</h4>
+                  <h4 class="dropdown__button-city">City</h4>
                   <div class="icon aria-hidden="true">
                     <span class="icon__circle">
                       <span class="icon__arrow" id="rotate"></span>
@@ -665,7 +663,7 @@
                   hidden
                 >
                   <li
-                    class="dropdown__list--item"
+                    class="dropdown__list-item"
                     data-value="canandaigua"
                     role="option"
                     tabindex="-1"
@@ -673,7 +671,7 @@
                     Canandaigua, NY
                   </li>
                   <li
-                    class="dropdown__list--item"
+                    class="dropdown__list-item"
                     data-value="newyork"
                     role="option"
                     tabindex="-1"
@@ -681,7 +679,7 @@
                     New York City
                   </li>
                   <li
-                    class="dropdown__list--item"
+                    class="dropdown__list-item"
                     data-value="yonkers"
                     role="option"
                     tabindex="-1"
@@ -689,7 +687,7 @@
                     Yonkers, NY
                   </li>
                   <li
-                    class="dropdown__list--item"
+                    class="dropdown__list-item"
                     data-value="sherrill"
                     role="option"
                     tabindex="-1"
@@ -698,134 +696,117 @@
                   </li>
                 </ul>
                 <div
-                  class="city__card"
+                  class="dropdown__city-card"
                   data-value-content
                   id="yonkers"
                   role="region"
                   aria-labelledby="yonkers-title"
                   hidden
                 >
-                  <div class="city__card--wrapper">
-                    <div class="city__card--wrapper-left">
-                      <ul class="city__card--list">
-                        <li class="city__element">City:</li>
-                        <li class="city__element">Phone:</li>
-                        <li class="city__element">Office address:</li>
+                  <div class="dropdown__city-card-container">
+                      <ul class="dropdown__city-card-list--left">
+                        <li class="dropdown__city-card-info">City:</li>
+                        <li class="dropdown__city-card-info">Phone:</li>
+                        <li class="dropdown__city-card-info">Office address:</li>
                       </ul>
-                    </div>
-                    <div class="city__card--wrapper-right">
-                      <ul class="city__card--list">
-                        <li class="adress__element" id="yonkers-title">
+                      <ul class="dropdown__city-card-list--right">
+                        <li class="dropdown__city-card-info" id="yonkers-title">
                           Yonkers, NY
                         </li>
-                        <li class="adress__element">+1 914 678 0003</li>
-                        <li class="adress__element">511 Warburton Ave</li>
+                        <li class="dropdown__city-card-info">+1 914 678 0003</li>
+                        <li class="dropdown__city-card-info">511 Warburton Ave</li>
                       </ul>
-                    </div>
                   </div>
                   <a
                     href="tel:+19146780003"
-                    class="mobile__number city__card--button"
+                    class="dropdown__city-card-call"
                     aria-label="Contact us by phone in Yonkers"
                     >Call us</a
                   >
                 </div>
                 <div
-                  class="city__card"
+                  class="dropdown__city-card"
                   data-value-content
                   id="sherrill"
                   role="region"
                   aria-labelledby="sherrill-title"
                   hidden
                 >
-                  <div class="city__card--wrapper">
-                    <div class="city__card--wrapper-left">
-                      <ul class="city__card--list">
-                        <li class="city__element">City:</li>
-                        <li class="city__element">Phone:</li>
-                        <li class="city__element">Office address:</li>
+                  <div class="dropdown__city-card-container">                    
+                      <ul class="dropdown__city-card-list--left">
+                        <li class="dropdown__city-card-info">City:</li>
+                        <li class="dropdown__city-card-info">Phone:</li>
+                        <li class="dropdown__city-card-info">Office address:</li>
                       </ul>
-                    </div>
-                    <div class="city__card--wrapper-right">
-                      <ul class="city__card--list">
-                        <li class="adress__element" id="sherrill-title">
+                      <ul class="dropdown__city-card-list--right">
+                        <li class="dropdown__city-card-info" id="sherrill-title">
                           Sherrill, NY
                         </li>
-                        <li class="adress__element">+1 315 908 0004</li>
-                        <li class="adress__element">14 WEST Noyes BLVD</li>
+                        <li class="dropdown__city-card-info">+1 315 908 0004</li>
+                        <li class="dropdown__city-card-info">14 WEST Noyes BLVD</li>
                       </ul>
-                    </div>
                   </div>
-
                   <a
                     href="tel:+13159080004"
-                    class="mobile__number city__card--button"
+                    class="dropdown__city-card-call"
                     aria-label="Contact us by phone in Sherrill"
                     >Call us</a
                   >
                 </div>
                 <div
-                  class="city__card"
+                  class="dropdown__city-card"
                   data-value-content
                   id="canandaigua"
                   role="region"
                   aria-labelledby="canandaigua-title"
                   hidden
                 >
-                  <div class="city__card--wrapper">
-                    <div class="city__card--wrapper-left">
-                      <ul class="city__card--list">
-                        <li class="city__element">City:</li>
-                        <li class="city__element">Phone:</li>
-                        <li class="city__element">Office address:</li>
+                  <div class="dropdown__city-card-container">
+                      <ul class="dropdown__city-card-list--left">
+                        <li class="dropdown__city-card-info">City:</li>
+                        <li class="dropdown__city-card-info">Phone:</li>
+                        <li class="dropdown__city-card-info">Office address:</li>
                       </ul>
-                    </div>
-                    <div class="city__card--wrapper-right">
-                      <ul class="city__card--list">
-                        <li class="adress__element" id="canandaigua-title">
+                      <ul class="dropdown__city-card-list--right">
+                        <li class="dropdown__city-card-info" id="canandaigua-title">
                           Canandaigua, NY
                         </li>
-                        <li class="adress__element">+1 585 393 0001</li>
-                        <li class="adress__element">151 Charlotte Street</li>
+                        <li class="dropdown__city-card-info">+1 585 393 0001</li>
+                        <li class="dropdown__city-card-info">151 Charlotte Street</li>
                       </ul>
-                    </div>
                   </div>
                   <a
                     href="tel:+15853930001"
-                    class="mobile__number city__card--button"
+                    class="mobile__number dropdown__city-card-call"
                     aria-label="Contact us by phone in Canandaigua"
                     >Call us</a
                   >
                 </div>
                 <div
-                  class="city__card"
+                  class="dropdown__city-card"
                   data-value-content
                   id="newyork"
                   role="region"
                   aria-labelledby="newyork-title"
                   hidden
                 >
-                  <div class="city__card--wrapper">
-                    <div class="city__card--wrapper-left">
-                      <ul class="city__card--list">
-                        <li class="city__element">City:</li>
-                        <li class="city__element">Phone:</li>
-                        <li class="city__element">Office address:</li>
+                  <div class="dropdown__city-card-container">
+                      <ul class="dropdown__city-card-list--left">
+                        <li class="dropdown__city-card-info">City:</li>
+                        <li class="dropdown__city-card-info">Phone:</li>
+                        <li class="dropdown__city-card-info">Office address:</li>
                       </ul>
-                    </div>
-                    <div class="city__card--wrapper-right">
-                      <ul class="city__card--list">
-                        <li class="adress__element" id="newyork-title">
+                      <ul class="dropdown__city-card-list--right">
+                        <li class="dropdown__city-card-info" id="newyork-title">
                           New York City
                         </li>
-                        <li class="adress__element">+1 212 456 0002</li>
-                        <li class="adress__element">9 East 91st Street</li>
+                        <li class="dropdown__city-card-info">+1 212 456 0002</li>
+                        <li class="dropdown__city-card-info">9 East 91st Street</li>
                       </ul>
-                    </div>
                   </div>
                   <a
                     href="tel:+12124560002"
-                    class="mobile__number city__card--button"
+                    class="mobile__number dropdown__city-card-call"
                     aria-label="Contact us by phone in New York City"
                     >Call us</a
                   >
@@ -838,13 +819,13 @@
     </main>
     <footer class="footer">
       <div class="wrapper">
-        <div class="footer__wrapper">
+        <div class="footer__container">
           <div class="footer__copyright">
             <h3 class="footer__copyright-text">&#169;</h3>
             <h3 class="footer__copyright-text">2025</h3>
 
             <a
-              class="footer__copyright-text footer__copyright-text-link"
+              class="footer__copyright-link"
               href="https://github.com/sashaivanovaPro"
               target="_blank"
               aria-label="Visit the author's GitHub"
@@ -869,12 +850,12 @@
               /></a>
             </li>
             <li>
-              <a class="footer__links-item footer__links-item3" href="#"
+              <a class="footer__links-item" href="#"
                 ><img src="./src/img/svg/tw.svg" alt="Twitter"
               /></a>
             </li>
             <li>
-              <a class="footer__links-item footer__links-item4" href="#"
+              <a class="footer__links-item" href="#"
                 ><img src="./src/img/svg/pinterest.svg" alt="Pinterest"
               /></a>
             </li>

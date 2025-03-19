@@ -9,62 +9,62 @@
   @include media-mobile {
     padding: $footer-mobile-padding;
   }
-}
 
-.footer__wrapper {
-  @include flex-between();
-  flex-wrap: nowrap;
-}
-
-.footer__copyright {
-  display: flex;
-  align-items: center;
-  gap: $copyright-gap-desktop;
-  flex-wrap: nowrap;
-}
-
-.footer__copyright-icon {
-  height: $copyright-icon-height-desktop;
-  width: auto;
-  vertical-align: middle;
-  margin-right: $copyright-icon-margin;
-}
-
-.footer__links {
-  @include flex-between();
-  justify-content: flex-end;
-  gap: $links-gap-desktop;
-  @media screen and (max-width: $footer-tablet-breakpoint) {
-    gap: $links-gap-tablet;
-  }
-  @include media-mobile {
-    margin-top: 0;
-    gap: $links-gap-mobile;
-  }
-  &-item img {
-    @include media-mobile {
-      width: auto;
-      height: $copyright-icon-height-mobile;
-    }
-  }
-}
-
-.footer__copyright-text {
-  @include font(2rem, 5rem, normal);
-  @media screen and (max-width: $footer-tablet-breakpoint) {
-    @include font(2rem, 2.6rem, normal);
+  &__container {
+    @include flex-between();
+    flex-wrap: nowrap;
   }
 
-  &-link {
+  &__copyright {
     display: flex;
     align-items: center;
-    white-space: nowrap;
+    gap: $copyright-gap-desktop;
+    flex-wrap: nowrap;
 
-    @media screen and (max-width: $tablet-width) {
-      font-size: 0;
+    &-text {
+      @include font(2rem, 5rem, normal);
+      @media screen and (max-width: $footer-tablet-breakpoint) {
+        @include font(2rem, 2.6rem, normal);
+      }
+    }
 
-      .footer__copyright-icon {
+    &-link {
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+
+      @media screen and (max-width: $tablet-width) {
+        font-size: 0;
+      }
+    }
+
+    &-icon {
+      height: $copyright-icon-height-desktop;
+      width: auto;
+      vertical-align: middle;
+      margin-right: $copyright-icon-margin;
+
+      @media screen and (max-width: $tablet-width) {
         margin-right: 0;
+      }
+    }
+  }
+
+  &__links {
+    @include flex-between();
+    justify-content: flex-end;
+    gap: $links-gap-desktop;
+    @media screen and (max-width: $footer-tablet-breakpoint) {
+      gap: $links-gap-tablet;
+    }
+    @include media-mobile {
+      margin-top: 0;
+      gap: $links-gap-mobile;
+    }
+    &-item img {
+      @include media-mobile {
+        width: auto;
+        height: $copyright-icon-height-mobile;
       }
     }
   }

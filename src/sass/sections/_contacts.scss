@@ -9,59 +9,59 @@
   @include media-mobile {
     padding: $contacts-mobile-padding;
   }
-}
 
-.contacts__wrapper {
-  display: flex;
-  justify-content: space-between;
+  &__container {
+    display: flex;
+    justify-content: space-between;
 
-  @include media-laptop {
-    flex-direction: column-reverse;
-    align-items: center;
-    gap: $contacts-laptop-gap;
+    @include media-laptop {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: $contacts-laptop-gap;
+    }
+
+    @include media-mobile {
+      gap: $contacts-mobile-gap;
+    }
   }
 
-  @include media-mobile {
-    gap: $contacts-mobile-gap;
+  &__image {
+    display: inline-block;
+    width: $contacts-image-width;
+    @include media-laptop {
+      width: $contacts-image-width-laptop;
+    }
+    @include media-mobile {
+      width: $contacts-image-width-mobile;
+    }
   }
-}
 
-.contacts__image {
-  display: inline-block;
-  width: $contacts-image-width;
-  @include media-laptop {
-    width: $contacts-image-width-laptop;
+  &__information {
+    display: flex;
+    flex-direction: column;
+    width: $contacts-wrapper-width-desktop;
+    @include media-laptop {
+      width: $contacts-wrapper-width-laptop;
+      max-width: 45rem;
+    }
+    @include media-mobile {
+      width: $contacts-wrapper-width-mobile;
+    }
   }
-  @include media-mobile {
-    width: $contacts-image-width-mobile;
-  }
-}
 
-.contacts__heading {
-  color: $color-green-primary;
-  font-weight: bold;
-  align-self: flex-start;
-  margin: $contacts-heading-margin;
-  @include media-laptop {
-    margin: $contacts-heading-margin-laptop;
-    align-self: center;
-    @include font(4rem, 5.2rem, bold);
-  }
-  @include media-mobile {
-    margin: $contacts-heading-margin-mobile;
-    @include font(2.5rem, 3.3rem, bold);
-  }
-}
-
-.contacts__info-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: $contacts-wrapper-width-desktop;
-  @include media-laptop {
-    width: $contacts-wrapper-width-laptop;
-    max-width: 45rem;
-  }
-  @include media-mobile {
-    width: $contacts-wrapper-width-mobile;
+  &__heading {
+    color: $color-green-primary;
+    font-weight: bold;
+    align-self: flex-start;
+    margin: $contacts-heading-margin;
+    @include media-laptop {
+      margin: $contacts-heading-margin-laptop;
+      align-self: center;
+      @include font(4rem, 5.2rem, bold);
+    }
+    @include media-mobile {
+      margin: $contacts-heading-margin-mobile;
+      @include font(2.5rem, 3.3rem, bold);
+    }
   }
 }

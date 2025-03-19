@@ -3,170 +3,166 @@
   align-self: flex-end;
   @include media-laptop {
     padding: 0;
-  }
-
-  @include media-laptop {
     align-self: center;
   }
-}
 
-.dropdown__button {
-  @include flex-between();
-  background-color: $color-accordion-active;
-  border: none;
-  padding: $dropdown-button-padding;
-  width: $dropdown-button-width;
-  box-shadow: $dropdown-box-shadow;
-  @extend %transition;
-  cursor: pointer;
-
-  &:hover {
-    background-color: $color-dropdown-active;
-  }
-
-  &[aria-expanded="true"],
-  &--active {
-    background-color: $color-dropdown-active;
-    box-shadow: none;
-
-    .icon__circle {
-      background-color: $color-btn-inactive;
-    }
-
-    .icon__arrow {
-      transform: rotate(180deg);
-    }
-  }
-
-  &:active .icon__circle {
-    background-color: $color-btn-inactive;
-  }
-
-  &:active .icon__arrow {
-    transform: rotate(180deg);
-  }
-  @media screen and (max-width: $dropdown-tablet-breakpoint) {
-    width: $dropdown-button-mobile-width;
-  }
-
-  @include media-mobile {
-    padding: $dropdown-button-mobile-padding;
-    margin: 0 auto;
-  }
-}
-
-.dropdown__city-name {
-  @include font(2rem, 4rem, 400);
-  letter-spacing: 0.1rem;
-  color: $color-gray-medium;
-}
-
-.dropdown__list {
-  display: none;
-  width: 100%;
-  position: absolute;
-  margin: 0 auto;
-  list-style-type: none;
-  flex-direction: column;
-  gap: $dropdown-list-gap;
-  background-color: $color-dropdown;
-  padding: $dropdown-list-padding;
-
-  &:not([hidden]) {
-    display: flex;
-  }
-
-  &--item {
-    @include font(1.6rem, 4rem, 400);
-    color: $color-green-primary;
-    border-bottom: 1px solid $color-accordion-btn-inactive;
-    letter-spacing: 1px;
+  &__button {
+    @include flex-between();
+    background-color: $color-accordion-active;
+    border: none;
+    padding: $dropdown-button-padding;
+    width: $dropdown-button-width;
+    box-shadow: $dropdown-box-shadow;
+    @extend %transition;
     cursor: pointer;
 
     &:hover {
+      background-color: $color-dropdown-active;
+    }
+
+    &[aria-expanded="true"],
+    &--active {
+      background-color: $color-dropdown-active;
+      box-shadow: none;
+
+      .icon__circle {
+        background-color: $color-btn-inactive;
+      }
+
+      .icon__arrow {
+        transform: rotate(180deg);
+      }
+    }
+
+    &:active .icon__circle {
+      background-color: $color-btn-inactive;
+    }
+
+    &:active .icon__arrow {
+      transform: rotate(180deg);
+    }
+    @media screen and (max-width: $dropdown-tablet-breakpoint) {
+      width: $dropdown-button-mobile-width;
+    }
+
+    @include media-mobile {
+      padding: $dropdown-button-mobile-padding;
+      margin: 0 auto;
+    }
+
+    &-city {
+      @include font(2rem, 4rem, 400);
+      letter-spacing: 0.1rem;
       color: $color-gray-medium;
-      border-bottom: 1px solid $color-gray-medium;
-    }
-  }
-}
-
-.city__card--wrapper {
-  display: flex;
-  align-items: flex-start;
-  width: 100%;
-  background-color: $color-accordion;
-
-  &-left {
-    margin-right: 1rem;
-
-    @include media-tablet {
-      margin-right: 0;
-      flex-basis: 30%;
     }
   }
 
-  &-right {
-    color: $color-gray-medium;
+  &__list {
+    display: none;
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    list-style-type: none;
+    flex-direction: column;
+    gap: $dropdown-list-gap;
+    background-color: $color-dropdown;
+    padding: $dropdown-list-padding;
+
+    &:not([hidden]) {
+      display: flex;
+    }
+
+    &-item {
+      @include font(1.6rem, 4rem, 400);
+      color: $color-green-primary;
+      border-bottom: 1px solid $color-accordion-btn-inactive;
+      letter-spacing: 1px;
+      cursor: pointer;
+
+      &:hover {
+        color: $color-gray-medium;
+        border-bottom: 1px solid $color-gray-medium;
+      }
+    }
   }
-}
 
-.city__card {
-  display: block;
-  list-style-type: none;
-  @include font(1.6rem, 4rem, 400);
-  letter-spacing: 1px;
-  color: $color-black;
-  background-color: $color-background-light;
-  padding: $city-card-padding;
-  border: 1px solid $color-black;
-  border-radius: $city-card-border-radius;
-  margin-top: $city-card-margin-top;
-
-  &:not([hidden]) {
+  &__city-card {
     display: block;
-  }
-
-  &--button {
-    display: block;
-    width: $contacts-button-width;
-    height: $contacts-button-height;
-    padding: $contacts-button-padding;
-    color: $color-gray-medium;
-    margin: $city-card-button-margin-top auto 0;
-    text-align: center;
-    border: 1px solid $color-orange-accent;
-    border-radius: $city-card-button-border-radius;
-    font-family: $font-family-secondary;
-    @include font(1rem, 1.3rem, 700);
+    list-style-type: none;
+    @include font(1.6rem, 4rem, 400);
+    letter-spacing: 1px;
+    color: $color-black;
     background-color: $color-background-light;
-    @extend %transition;
+    padding: $city-card-padding;
+    border: 1px solid $color-black;
+    border-radius: $city-card-border-radius;
+    margin-top: $city-card-margin-top;
 
-    &:hover {
-      box-shadow: $color-gray-medium 0.1rem 0.1rem 0.5rem;
-      background-color: $color-accordion-active;
+    &:not([hidden]) {
+      display: block;
     }
-  }
-  &--list li:last-child {
+
+    &-call {
+      display: block;
+      width: $contacts-button-width;
+      height: $contacts-button-height;
+      padding: $contacts-button-padding;
+      color: $color-gray-medium;
+      margin: $city-card-button-margin-top auto 0;
+      text-align: center;
+      border: 1px solid $color-orange-accent;
+      border-radius: $city-card-button-border-radius;
+      font-family: $font-family-secondary;
+      @include font(1rem, 1.3rem, 700);
+      background-color: $color-background-light;
+      @extend %transition;
+
+      &:hover {
+        box-shadow: $color-gray-medium 0.1rem 0.1rem 0.5rem;
+        background-color: $color-accordion-active;
+      }
+    }
+
     @include media-tablet {
-      line-height: 2rem;
-      letter-spacing: 0;
+      padding: $city-card-tablet-padding;
+      margin-top: $city-card-tablet-margin-top;
+    }
+
+    @include media-mobile {
+      width: 30rem;
+    }
+
+    &-container {
+      display: flex;
+      align-items: flex-start;
+      width: 100%;
+      background-color: $color-accordion;
+    }
+
+    &-list {
+      &--left {
+        margin-right: 1rem;
+
+        @include media-tablet {
+          margin-right: 0;
+          flex-basis: 30%;
+        }
+      }
+
+      &--right {
+        color: $color-gray-medium;
+      }
+
+      @include media-tablet {
+        &:last-child {
+          line-height: 2rem;
+          letter-spacing: 0;
+        }
+      }
+    }
+
+    &[hidden] {
+      display: none;
     }
   }
-
-  @include media-tablet {
-    padding: $city-card-tablet-padding;
-    margin-top: $city-card-tablet-margin-top;
-  }
-
-  @include media-mobile {
-    width: 30rem;
-  }
-
-  &--visible {
-    display: block;
-  }
-}
-
-[hidden] {
-  display: none;
 }

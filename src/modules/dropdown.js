@@ -2,12 +2,12 @@
 
 const dropdownBtn = document.querySelector(".dropdown__button");
 const dropdownList = document.querySelector(".dropdown__list");
-const cityList = document.querySelectorAll(".dropdown__list--item");
+const cityList = document.querySelectorAll(".dropdown__list-item");
 const rotation = document.querySelector("#rotate");
 const cityPicker = document.querySelector(".dropdown");
 const contactsSection = document.querySelector(".contacts");
 const contactsImage = document.querySelector(".contacts__image");
-const contactsWrapper = document.querySelector(".contacts__wrapper");
+const contactsWrapper = document.querySelector(".contacts__container");
 
 /**
  * Handle clicks inside the contacts section
