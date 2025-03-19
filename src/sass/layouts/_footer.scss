@@ -10,11 +10,13 @@
     padding: $footer-mobile-padding;
   }
 
+  // Main container
   &__container {
-    @include flex-between();
+    @extend %flex-between;
     flex-wrap: nowrap;
   }
 
+  // Copyright section
   &__copyright {
     display: flex;
     align-items: center;
@@ -23,7 +25,8 @@
 
     &-text {
       @include font(2rem, 5rem, normal);
-      @media screen and (max-width: $footer-tablet-breakpoint) {
+
+      @include media-tablet {
         @include font(2rem, 2.6rem, normal);
       }
     }
@@ -32,8 +35,19 @@
       display: flex;
       align-items: center;
       white-space: nowrap;
+      transition: all 0.3s ease-in-out;
 
-      @media screen and (max-width: $tablet-width) {
+      @media (hover: hover) {
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+
+      &:active {
+        opacity: 0.7;
+      }
+
+      @include media-tablet {
         font-size: 0;
       }
     }
@@ -44,24 +58,39 @@
       vertical-align: middle;
       margin-right: $copyright-icon-margin;
 
-      @media screen and (max-width: $tablet-width) {
+      @include media-tablet {
         margin-right: 0;
       }
     }
   }
 
+  // Social links
   &__links {
-    @include flex-between();
+    @extend %flex-between;
     justify-content: flex-end;
     gap: $links-gap-desktop;
-    @media screen and (max-width: $footer-tablet-breakpoint) {
+
+    @include media-tablet {
       gap: $links-gap-tablet;
     }
+
     @include media-mobile {
-      margin-top: 0;
       gap: $links-gap-mobile;
     }
+
     &-item img {
+      transition: all 0.3s ease-in-out;
+
+      @media (hover: hover) {
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+
+      &:active {
+        opacity: 0.7;
+      }
+
       @include media-mobile {
         width: auto;
         height: $copyright-icon-height-mobile;

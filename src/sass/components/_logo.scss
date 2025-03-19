@@ -9,20 +9,16 @@
 
   &__image {
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 
-    &:hover {
-      .logo__path {
-        fill: $color-orange-accent;
-      }
-
-      .logo__leaf {
-        fill: $color-green-primary;
+    @media (hover: hover) {
+      &:hover {
+        filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
       }
     }
-  }
 
-  &__path,
-  &__leaf {
-    @extend %transition;
+    &:active {
+      filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
+    }
   }
 }

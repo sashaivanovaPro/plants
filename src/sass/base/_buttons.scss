@@ -2,14 +2,20 @@
   width: $button-width;
   height: $button-height;
   font-family: $font-family-main;
-  @include flex-center();
+  @extend %flex-center;
 
   @include font(2rem, 2.6rem, 400);
   border: 1px solid $color-orange-accent;
   border-radius: $button-border-radius;
-  @extend %transition;
+  transition: all 0.3s ease-in-out;
 
-  &:hover {
+  @media (hover: hover) {
+    &:hover {
+      box-shadow: $color-gray-medium 0.3rem 0.3rem 1rem;
+    }
+  }
+
+  &:active {
     box-shadow: $color-gray-medium 0.3rem 0.3rem 1rem;
   }
 
@@ -30,15 +36,22 @@
     text-transform: uppercase;
     border-radius: $button-more-border-radius;
 
+    @media (hover: hover) {
+      &:hover {
+        color: $color-light;
+        background-color: $color-orange-accent;
+      }
+    }
+
+    &:active {
+      color: $color-light;
+      background-color: $color-orange-accent;
+    }
+
     @include media-mobile {
       width: $button-more-mobile-width;
       height: $button-more-mobile-height;
       @include font(1rem, 2rem, 400);
-    }
-
-    &:hover {
-      color: $color-light;
-      background-color: $color-orange-accent;
     }
   }
 
@@ -49,7 +62,14 @@
     font-weight: bold;
     font-family: "Inika";
 
-    &:hover {
+    @media (hover: hover) {
+      &:hover {
+        color: $color-light;
+        background-color: $color-orange-accent;
+      }
+    }
+
+    &:active {
       color: $color-light;
       background-color: $color-orange-accent;
     }
@@ -59,7 +79,7 @@
     }
 
     @include media-mobile {
-      margin-bottom: 0rem;
+      margin-bottom: 0;
     }
   }
 }

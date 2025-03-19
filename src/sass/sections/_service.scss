@@ -11,11 +11,11 @@
   }
 
   &__container {
-    @include flex-between;
+    @extend %flex-between;
     max-width: $service-wrapper-max-width;
     margin-bottom: $service-wrapper-margin-bottom;
 
-    @media screen and (max-width: 1200px) {
+    @include media-laptop {
       flex-direction: column;
       align-items: flex-start;
       margin-bottom: $service-wrapper-margin-bottom-laptop;
@@ -26,7 +26,7 @@
     color: $color-green-primary;
     max-width: $service-heading-max-width;
 
-    @media screen and (max-width: 1200px) {
+    @include media-laptop {
       margin-bottom: $service-heading-margin-bottom-laptop;
     }
 
@@ -36,11 +36,11 @@
   }
 
   &__buttons-wrapper {
-    @include flex-between;
+    @extend %flex-between;
     max-width: 56rem;
     flex-basis: 90%;
 
-    @media screen and (max-width: 1200px) {
+    @include media-laptop {
       display: inline-flex;
       gap: $service-buttons-gap-laptop;
     }
@@ -117,10 +117,17 @@
       filter: blur(4px);
       transition: all 0.3s ease-in-out;
 
-      &:hover {
+      @media (hover: hover) {
+        &:hover {
+          box-shadow: $grid-item-hover-shadow $color-gray-medium;
+          transform: scale($grid-item-hover-scale);
+          cursor: pointer;
+        }
+      }
+
+      &:active {
         box-shadow: $grid-item-hover-shadow $color-gray-medium;
         transform: scale($grid-item-hover-scale);
-        cursor: pointer;
       }
 
       &--no-blur {

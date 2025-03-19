@@ -24,7 +24,7 @@
   }
 
   &__container {
-    @include flex-between();
+    @extend %flex-between;
   }
 
   &__nav {

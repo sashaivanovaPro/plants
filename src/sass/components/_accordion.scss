@@ -5,6 +5,7 @@
   padding: $accordion-padding;
   @include flex-column(center);
   gap: $accordion-gap;
+
   @include media-mobile {
     margin: 0 auto;
     padding: $accordion-mobile-padding;
@@ -12,65 +13,84 @@
     gap: $accordion-mobile-gap;
   }
 
-  //
-  &__plan {
-    &-button {
-      @include flex-between();
-      background-color: $color-accordion;
-      padding: $accordion-item-padding;
-      border-radius: $accordion-border-radius;
-      width: 100%;
-      cursor: pointer;
-      @extend %transition;
+  &__plan-button {
+    @extend %flex-between;
+    background-color: $color-accordion;
+    padding: $accordion-item-padding;
+    border-radius: $accordion-border-radius;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 
-      &[hidden] {
-        display: none;
+    &[hidden] {
+      display: none;
+    }
+
+    &[aria-expanded="true"] {
+      .icon__arrow {
+        transform: rotate(180deg);
       }
+    }
 
-      &[aria-expanded="true"] {
-        .icon__arrow {
-          transform: rotate(180deg);
-        }
-      }
-
-      &:hover .icon__circle--light {
-        background-color: $color-btn-inactive;
-      }
-
-      &:hover .icon__arrow--dark {
-        background-image: url("/src/img/svg/arrow-light.svg");
-      }
-
+    @media (hover: hover) {
       &:hover {
         box-shadow: $color-gray-medium 0.3rem 0.3rem 10px;
         background-color: $color-accordion-active;
-      }
 
-      @include media-mobile {
-        padding: $accordion-item-mobile-padding;
+        .icon__circle--light {
+          background-color: $color-btn-inactive;
+        }
+
+        .icon__arrow--dark {
+          background-image: url("/src/img/svg/arrow-light.svg");
+        }
       }
     }
 
-    &-name {
-      margin: $accordion-plan-name-margin;
+    &:active {
+      box-shadow: $color-gray-medium 0.3rem 0.3rem 10px;
+      background-color: $color-accordion-active;
+
+      .icon__circle--light {
+        background-color: $color-btn-inactive;
+      }
+
+      .icon__arrow--dark {
+        background-image: url("/src/img/svg/arrow-light.svg");
+      }
     }
+
+    @include media-mobile {
+      padding: $accordion-item-mobile-padding;
+    }
+  }
+
+  &__plan-name {
+    margin: $accordion-plan-name-margin;
   }
 
   &__card {
     padding: $accordion-card-padding;
     background: $color-accordion-active;
     border-radius: $accordion-card-border-radius;
-    @extend %transition;
+    transition: all 0.3s ease-in-out;
 
     .icon__arrow {
       transform: rotate(180deg);
     }
+
     &[hidden] {
       display: none;
       opacity: 0;
     }
 
-    &:hover {
+    @media (hover: hover) {
+      &:hover {
+        box-shadow: $color-gray-medium 0.3rem 0.3rem 10px;
+      }
+    }
+
+    &:active {
       box-shadow: $color-gray-medium 0.3rem 0.3rem 10px;
     }
 
@@ -79,7 +99,7 @@
     }
 
     &-plan {
-      @include flex-between();
+      @extend %flex-between;
       position: relative;
 
       &::after {
@@ -92,7 +112,7 @@
     }
 
     &-name {
-      @include flex-between;
+      @extend %flex-between;
       cursor: pointer;
     }
 
@@ -102,38 +122,39 @@
       margin-bottom: $accordion-card-description-margin;
     }
 
-    h5 {
+    &-price {
       margin: $accordion-card-h5-margin;
       font-weight: 400;
-    }
 
-    &-price-value {
-      color: $color-orange-accent;
-      font-weight: 700;
-
-      &--bold {
-        font-size: 1.6rem;
+      &-value {
         color: $color-orange-accent;
         font-weight: 700;
+
+        &--bold {
+          font-size: 1.6rem;
+          color: $color-orange-accent;
+          font-weight: 700;
+        }
       }
     }
 
-    &-order-button {
-      // display: inline-block;
-      display: inline-flex;
-      padding: $accordion-card-button-padding;
-      background-color: $color-light;
-      border-radius: $accordion-card-button-border-radius;
-    }
-
-    &-order-link {
-      @include font(1.4rem, 2rem, 700);
-      color: $color-gray-medium;
+    &-order {
+      &-button {
+        display: inline-flex;
+        padding: $accordion-card-button-padding;
+        background-color: $color-light;
+        border-radius: $accordion-card-button-border-radius;
+      }
+      &-link {
+        @include font(1.4rem, 2rem, 700);
+        color: $color-gray-medium;
+      }
     }
   }
 
   &__button-close {
     display: flex;
     background: transparent;
+    cursor: pointer;
   }
 }

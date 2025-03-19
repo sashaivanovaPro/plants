@@ -1,23 +1,47 @@
 .dropdown {
   position: relative;
   align-self: flex-end;
+
   @include media-laptop {
     padding: 0;
     align-self: center;
   }
 
+  // Button
   &__button {
-    @include flex-between();
+    @extend %flex-between;
     background-color: $color-accordion-active;
     border: none;
     padding: $dropdown-button-padding;
     width: $dropdown-button-width;
     box-shadow: $dropdown-box-shadow;
-    @extend %transition;
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
 
-    &:hover {
+    @media (hover: hover) {
+      &:hover {
+        background-color: $color-dropdown-active;
+
+        .icon__circle {
+          background-color: $color-btn-inactive;
+        }
+
+        .icon__arrow {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    &:active {
       background-color: $color-dropdown-active;
+
+      .icon__circle {
+        background-color: $color-btn-inactive;
+      }
+
+      .icon__arrow {
+        transform: rotate(180deg);
+      }
     }
 
     &[aria-expanded="true"],
@@ -34,14 +58,7 @@
       }
     }
 
-    &:active .icon__circle {
-      background-color: $color-btn-inactive;
-    }
-
-    &:active .icon__arrow {
-      transform: rotate(180deg);
-    }
-    @media screen and (max-width: $dropdown-tablet-breakpoint) {
+    @include media-tablet {
       width: $dropdown-button-mobile-width;
     }
 
@@ -57,6 +74,7 @@
     }
   }
 
+  // Dropdown list
   &__list {
     display: none;
     width: 100%;
@@ -79,7 +97,14 @@
       letter-spacing: 1px;
       cursor: pointer;
 
-      &:hover {
+      @media (hover: hover) {
+        &:hover {
+          color: $color-gray-medium;
+          border-bottom: 1px solid $color-gray-medium;
+        }
+      }
+
+      &:active {
         color: $color-gray-medium;
         border-bottom: 1px solid $color-gray-medium;
       }
@@ -102,34 +127,8 @@
       display: block;
     }
 
-    &-call {
-      display: block;
-      width: $contacts-button-width;
-      height: $contacts-button-height;
-      padding: $contacts-button-padding;
-      color: $color-gray-medium;
-      margin: $city-card-button-margin-top auto 0;
-      text-align: center;
-      border: 1px solid $color-orange-accent;
-      border-radius: $city-card-button-border-radius;
-      font-family: $font-family-secondary;
-      @include font(1rem, 1.3rem, 700);
-      background-color: $color-background-light;
-      @extend %transition;
-
-      &:hover {
-        box-shadow: $color-gray-medium 0.1rem 0.1rem 0.5rem;
-        background-color: $color-accordion-active;
-      }
-    }
-
-    @include media-tablet {
-      padding: $city-card-tablet-padding;
-      margin-top: $city-card-tablet-margin-top;
-    }
-
-    @include media-mobile {
-      width: 30rem;
+    &[hidden] {
+      display: none;
     }
 
     &-container {
@@ -161,8 +160,41 @@
       }
     }
 
-    &[hidden] {
-      display: none;
+    &-call {
+      display: block;
+      width: $contacts-button-width;
+      height: $contacts-button-height;
+      padding: $contacts-button-padding;
+      color: $color-gray-medium;
+      margin: $city-card-button-margin-top auto 0;
+      text-align: center;
+      border: 1px solid $color-orange-accent;
+      border-radius: $city-card-button-border-radius;
+      font-family: $font-family-secondary;
+      @include font(1rem, 1.3rem, 700);
+      background-color: $color-background-light;
+      transition: all 0.3s ease-in-out;
+
+      @media (hover: hover) {
+        &:hover {
+          box-shadow: $color-gray-medium 0.1rem 0.1rem 0.5rem;
+          background-color: $color-accordion-active;
+        }
+      }
+
+      &:active {
+        box-shadow: $color-gray-medium 0.1rem 0.1rem 0.5rem;
+        background-color: $color-accordion-active;
+      }
+    }
+
+    @include media-tablet {
+      padding: $city-card-tablet-padding;
+      margin-top: $city-card-tablet-margin-top;
+    }
+
+    @include media-mobile {
+      width: 30rem;
     }
   }
 }

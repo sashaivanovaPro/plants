@@ -1,11 +1,12 @@
 // Menu styles
 .menu {
-  @include flex-between();
+  @extend %flex-between;
   @include font($font-size-base, $line-height-nav, $font-weight-normal);
   gap: $nav-link-gap;
   list-style: none;
   font-family: "Inika";
   margin: 0;
+
   @include media-tablet {
     @include flex-column(center);
     gap: $nav-link-gap-tablet;
@@ -14,10 +15,16 @@
   &__link {
     color: $color-dark-green;
     text-decoration: none;
-    @extend %transition;
-    @extend %transition;
+    transition: all 0.3s ease-in-out;
 
-    &:hover {
+    @media (hover: hover) {
+      &:hover {
+        color: $color-orange-accent;
+        font-weight: $font-weight-bold;
+      }
+    }
+
+    &:active {
       color: $color-orange-accent;
       font-weight: $font-weight-bold;
     }
